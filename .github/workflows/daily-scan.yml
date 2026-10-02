@@ -1,0 +1,70 @@
+name: Daily Swing Scan
+
+on:
+  schedule:
+    # 04:30 UTC, Tue-Sat = 07:30 Israel summer time / 06:30 winter (after every US session)
+    - cron: "30 4 * * 2-6"
+  workflow_dispatch: {}   # "Run workflow" button for a manual run
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+      MAIL_USER: ${{ secrets.GMAIL_ADDRESS }}
+      MAIL_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Hebrew fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-color-emoji fonts-dejavu-core
+
+      - name: Install libraries
+        run: pip install -q yfinance pandas numpy
+
+      - name: Run scanner
+        run: python scanner.py
+
+      - name: Save report to the repo
+        run: |
+          git config user.name "swing-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add Reports top_list_state.json
+          git commit -m "Scan $(date -u +%F)" || echo "nothing to commit"
+          git push
+
+      - name: Send to Telegram
+        if: ${{ env.TG_TOKEN != '' }}
+        run: |
+          FILE=$(cat Reports/latest_path.txt)
+          curl -s -F chat_id="$TG_CHAT" -F caption="$(cat Reports/summary.txt)" \
+               -F document=@"$FILE" "https://api.telegram.org/bot${TG_TOKEN}/sendDocument" > /dev/null
+
+      - name: Send by email
+        if: ${{ env.MAIL_PASS != '' }}
+        run: |
+          python - <<'EOF'
+          import os, smtplib
+          from email.message import EmailMessage
+          path = open("Reports/latest_path.txt", encoding="utf-8").read().strip()
+          summary = open("Reports/summary.txt", encoding="utf-8").read()
+          m = EmailMessage()
+          m["Subject"] = summary.splitlines()[0]
+          m["From"] = m["To"] = os.environ["MAIL_USER"]
+          m.set_content(summary)
+          with open(path, "rb") as f:
+              m.add_attachment(f.read(), maintype="application", subtype="pdf" if path.endswith(".pdf") else "octet-stream",
+                               filename=os.path.basename(path))
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(os.environ["MAIL_USER"], os.environ["MAIL_PASS"])
+              s.send_message(m)
+          EOF
