@@ -371,6 +371,7 @@ h3 .bar i {{ display:block; height:100%; background:{GREEN}; }}
 h3 small {{ color:#5a6678; font-weight:400; }}
 .head {{ background:#1f4e79; color:#fff; padding:12px 14px; border-radius:6px; }}
 .head small {{ opacity:.85; }}
+.logo {{ float:left; height:46px; max-width:150px; object-fit:contain; background:#fff; border-radius:6px; padding:3px; margin-top:-2px; }}
 .sum {{ display:flex; gap:6px; margin:10px 0; }}
 .box {{ flex:1; border:1px solid #d5dce6; border-radius:6px; padding:6px; text-align:center; }}
 .box b {{ display:block; font-size:19px; color:#1f4e79; }}
@@ -393,7 +394,7 @@ table {{ border-collapse:collapse; width:100%; }}
 .empty {{ color:#5a6678; padding:3px 0; }}
 .sector {{ page-break-inside:avoid; }}
 </style></head><body>
-<div class="head"><h1>סריקת סווינג יומית</h1>
+<div class="head">{logo_html()}<h1>סריקת סווינג יומית</h1>
 <small>נתוני סגירה של {data_date} · הופק {dt.datetime.now():%d/%m/%Y %H:%M} UTC · כלל ראשי: פריצה מעל SMA150 ו-SMA200 שהחזיקה לפחות יום אחד</small></div>
 <div class="sum">
  <div class="box"><b>{n_setup}</b>✅ פרצו והחזיקו</div>
@@ -491,21 +492,37 @@ RSI ממכ"י = RSI14 חצה את {RSI_OVERSOLD} כלפי מעלה ב-{RSI_LOOKB
 
 
 def html_to_pdf(html_path, pdf_path):
-    """ממיר ל-PDF עם Microsoft Edge שמותקן בכל Windows (ללא התקנות נוספות)."""
+    """ממיר ל-PDF עם Edge/Chrome. מוחק קודם PDF ישן כדי לא להחזיר בטעות קובץ מריצה קודמת."""
     candidates = [
         r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
         r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
         r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-        "/usr/bin/chromium", "/usr/bin/google-chrome",
+        "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser",
     ]
+    if os.path.exists(pdf_path):
+        os.remove(pdf_path)
     for exe in candidates:
-        if os.path.exists(exe):
-            subprocess.run([exe, "--headless", "--disable-gpu", "--no-pdf-header-footer",
+        if not os.path.exists(exe):
+            continue
+        p = subprocess.run([exe, "--headless=new", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
                             f"--print-to-pdf={pdf_path}", html_path.resolve().as_uri()],
-                           check=False, timeout=120, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            if os.path.exists(pdf_path):
-                return True
+                           check=False, timeout=300, capture_output=True, text=True)
+        if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 1000:
+            return True
+        log(f"המרה נכשלה עם {exe}: {(p.stderr or '')[-500:]}")
     return False
+
+
+def logo_html():
+    """מחפש logo.png / logo.svg / logo.jpg בתיקיית הסורק ומטמיע אותו בכותרת."""
+    import base64
+    for name, mime in (("logo.svg", "image/svg+xml"), ("logo.png", "image/png"),
+                       ("logo.jpg", "image/jpeg"), ("logo.jpeg", "image/jpeg")):
+        f = BASE_DIR / name
+        if f.exists():
+            b64 = base64.b64encode(f.read_bytes()).decode()
+            return f'<img class="logo" src="data:{mime};base64,{b64}" alt="כ״ח 28">'
+    return ""
 
 
 # ---------------------------- main ----------------------------
