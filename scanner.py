@@ -29,7 +29,8 @@ from yfinance import EquityQuery as Q
 # ============================ SETTINGS ============================
 TOP_N = 28                    # כמה מניות גדולות לעקוב
 MIN_MCAP_DISCOVERY = 2e9      # סף שווי שוק לגילוי מניות חדשות
-MAX_DISCOVERY = 1500          # כמה מניות לכל היותר ביקום הגילוי
+MAX_DISCOVERY = 1500          # כמה מניות לכל היותר ביקום הגילוי (לכל סקטור)
+MAX_MARKET_PER_SECTOR = 3000  # מפת הסקטורים: כל השוק, בכל גודל
 SMA_A, SMA_B = 150, 200
 HOLD_DAYS_MIN = 1             # כמה ימים הפריצה צריכה להחזיק אחרי יום הפריצה
 BREAKOUT_LOOKBACK = 5         # פריצה טרייה = התרחשה ב-5 ימי המסחר האחרונים לכל היותר
@@ -138,6 +139,29 @@ def get_discovery_universe():
     return out
 
 
+def get_market_universe():
+    """כל מניות ארה"ב בנאסד"ק/NYSE בכל גודל — לחישוב מפת הסקטורים בלבד."""
+    out = {}
+    for sec in SECTORS:
+        query = Q("and", [
+            Q("eq", ["region", "us"]),
+            Q("is-in", ["exchange"] + NASDAQ + NYSE),
+            Q("eq", ["sector", sec]),
+            Q("gt", ["intradaymarketcap", 0]),
+        ])
+        try:
+            quotes = _screen_all(query, limit=MAX_MARKET_PER_SECTOR)
+        except Exception as e:
+            log(f"שוק מלא — סקטור {sec} נכשל: {e}")
+            continue
+        for q in quotes:
+            if _is_common_stock(q):
+                out[q["symbol"]] = {"name": q.get("shortName") or q["symbol"],
+                                    "mcap": q.get("marketCap") or 0, "sector": sec}
+        log(f"שוק מלא — {sec}: {len(quotes)}")
+    return out
+
+
 def fill_sectors(top, disc):
     """משלים סקטור למניות Top שלא הופיעו ביקום הגילוי (למשל חברה ללא רווח)."""
     for t in top:
@@ -174,6 +198,8 @@ def download_history(symbols):
     for i in range(0, len(symbols), 100):
         chunk = symbols[i:i + 100]
         log(f"מוריד נתונים {i + 1}-{i + len(chunk)} מתוך {len(symbols)}")
+        if i:
+            import time; time.sleep(1)
         data = yf.download(chunk, period="18mo", interval="1d", auto_adjust=False,
                            group_by="ticker", threads=True, progress=False)
         for s in chunk:
@@ -329,12 +355,14 @@ def chk(ok):
     return f'<span class="{"ok" if ok else "no"}">{"✔" if ok else "✖"}</span>'
 
 
-def build_html(top, disc_meta, results, entered, exited, errors):
+def build_html(top, disc_meta, results, entered, exited, errors, market=None):
     today = dt.date.today()
     data_date = max((r["date"] for r in results.values()), default=today)
     top_meta = {t["symbol"]: t for t in top}
-    meta = dict(disc_meta)
+    meta = dict(market or {})
+    meta.update(disc_meta)
     meta.update(top_meta)
+    pool = set(top_meta) | set(disc_meta)          # סיגנלים רק ב-Top + מניות רווחיות מעל 2B$
     sector_of = lambda s: meta.get(s, {}).get("sector", "Other")
 
     # --- סטטיסטיקה לפי סקטור ---
@@ -346,6 +374,8 @@ def build_html(top, disc_meta, results, entered, exited, errors):
             d["above"] += 1
         if r["status"] in ("between", "touch"):
             d["between"] += 1
+        if s not in pool:
+            continue
         if r["status"] == "setup":
             d["setup"].append(s)
         elif r["status"] == "breakout_today":
@@ -401,7 +431,7 @@ table {{ border-collapse:collapse; width:100%; }}
  <div class="box"><b>{n_today}</b>👀 פרצו היום</div>
  <div class="box"><b>{n_touch}</b>🎯 נגעו מלמטה</div>
  <div class="box"><b>{tot_above / max(tot_n, 1) * 100:.0f}%</b>מהשוק מעל שני הממוצעים</div>
- <div class="box"><b>{tot_n}</b>מניות נסרקו</div>
+ <div class="box"><b>{tot_n:,}</b>מניות בשוק נבדקו</div>
 </div>"""]
 
     if entered or exited:
@@ -412,7 +442,7 @@ table {{ border-collapse:collapse; width:100%; }}
     # --- טבלת סקטורים ---
     html.append("<h2>מפת סקטורים — כמה מהמניות מעל שני הממוצעים</h2>")
     html.append('<table class="grid sec"><tr><th></th><th>סקטור</th><th>מעל שניהם</th><th>מתחת</th>'
-                '<th>מתוכן בין הממוצעים</th><th>מניות</th><th>✅</th><th>👀</th><th>🎯</th></tr>')
+                '<th>מתוכן בין הממוצעים</th><th>מניות בסקטור</th><th>✅</th><th>👀</th><th>🎯</th></tr>')
     for k in order:
         d = secs[k]
         pa = d["above"] / d["n"] * 100
@@ -484,7 +514,8 @@ table {{ border-collapse:collapse; width:100%; }}
 👀 = הפריצה התרחשה ביום המסחר האחרון, צריך עוד יום. 🎯 = אחרי {TOUCH_PRIOR_DAYS}+ סגירות מתחת, השיא היומי הגיע לממוצע העליון מבין השניים (עד {TOUCH_TOL*100:g}% ממנו) אבל הסגירה נשארה מתחתיו; האחוז = מרחק הסגירה מהממוצע.
 מחזור×2 = מחזור ≥ פי {VOL_MULT:g} מממוצע 20 יום באחד מימי הפריצה. התנגדות = סגירה מעל שיא {RES_LOOKBACK} הימים שלפני הפריצה.
 RSI ממכ"י = RSI14 חצה את {RSI_OVERSOLD} כלפי מעלה ב-{RSI_LOOKBACK} הימים האחרונים. שורה ירוקה = לפחות 2 אישורים. סטופ = סגירה פחות {ATR_MULT:g}×ATR14.
-מפת סקטורים: "מעל" = סגירה מעל שני הממוצעים; "מתחת" = מתחת לאחד מהם לפחות. היקום: Top {TOP_N} + מניות ארה"ב מעל 2B$ עם רווח נקי חיובי.
+מפת סקטורים: כל מניות נאסד"ק ו-NYSE בכל גודל שיש להן לפחות 210 ימי מסחר. "מעל" = סגירה מעל שני הממוצעים; "מתחת" = מתחת לאחד מהם לפחות.
+הסיגנלים (✅ 👀 🎯) מוצגים רק ל-Top {TOP_N} ולמניות בשווי מעל 2B$ עם רווח נקי חיובי.
 נתונים: Yahoo Finance. כלי סינון טכני בלבד, לא ייעוץ השקעות.
 {('<br><b>שגיאות:</b> ' + '; '.join(errors)) if errors else ''}
 </div></body></html>""")
@@ -552,7 +583,15 @@ def main():
     log(f"יקום גילוי: {len(disc)} מניות")
     fill_sectors(top, disc)
 
-    frames = download_history([t["symbol"] for t in top] + list(disc))
+    log("מושך את כל השוק למפת הסקטורים...")
+    try:
+        market = get_market_universe()
+    except Exception as e:
+        errors.append(f"Market: {e}")
+        market = {}
+    log(f"שוק מלא: {len(market)} מניות")
+
+    frames = download_history([t["symbol"] for t in top] + list(disc) + list(market))
     log(f"התקבלו נתונים ל-{len(frames)} מניות. מנתח...")
 
     results = {}
@@ -562,7 +601,7 @@ def main():
         except Exception as e:
             errors.append(f"{s}: {e}")
 
-    html = build_html(top, disc, results, entered, exited, errors[:10])
+    html = build_html(top, disc, results, entered, exited, errors[:10], market)
     stamp = dt.date.today().isoformat()
     html_path = REPORT_DIR / f"scan_{stamp}.html"
     pdf_path = REPORT_DIR / f"scan_{stamp}.pdf"
