@@ -55,7 +55,7 @@ jobs:
           python - <<'EOF'
           import os, smtplib, sys
           from email.message import EmailMessage
-          user = os.environ.get("MAIL_USER", "").strip()
+          user = os.environ.get("MAIL_USER", "").strip() or "artyum159@gmail.com"
           pw = os.environ.get("MAIL_PASS", "").replace(" ", "").strip()
           print(f"::notice::address set={bool(user)} has_at={'@' in user} pw_len={len(pw)}")
           try:
