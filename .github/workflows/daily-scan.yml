@@ -18,6 +18,10 @@ jobs:
       TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
       MAIL_USER: ${{ secrets.GMAIL_ADDRESS }}
       MAIL_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
+      GREEN_ID: ${{ secrets.GREEN_ID_INSTANCE }}
+      GREEN_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
+      GREEN_URL: ${{ secrets.GREEN_MEDIA_URL }}
+      WA_TO: ${{ secrets.WHATSAPP_TO }}
     steps:
       - uses: actions/checkout@v4
 
@@ -76,5 +80,37 @@ jobs:
               print("::notice::email sent")
           except Exception as e:
               print(f"::error::{type(e).__name__}: {str(e)[:300]}")
+              sys.exit(1)
+          EOF
+
+      - name: Send to WhatsApp (Green-API)
+        if: ${{ env.GREEN_TOKEN != '' }}
+        run: |
+          python - <<'EOF'
+          import os, sys, json, urllib.request, uuid
+          inst = os.environ["GREEN_ID"].strip()
+          tok = os.environ["GREEN_TOKEN"].strip()
+          base = (os.environ.get("GREEN_URL") or "https://media.green-api.com").strip().rstrip("/")
+          to = "".join(c for c in (os.environ.get("WA_TO") or "972522942484") if c.isdigit())
+          if to.startswith("0"):
+              to = "972" + to[1:]
+          path = open("Reports/latest_path.txt", encoding="utf-8").read().strip()
+          summary = open("Reports/summary.txt", encoding="utf-8").read()[:1000]
+          name = os.path.basename(path)
+          b = uuid.uuid4().hex
+          parts = []
+          for k, v in (("chatId", f"{to}@c.us"), ("fileName", name), ("caption", summary)):
+              parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n{v}\r\n'.encode())
+          parts.append(f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="{name}"\r\nContent-Type: application/pdf\r\n\r\n'.encode())
+          parts.append(open(path, "rb").read())
+          parts.append(f"\r\n--{b}--\r\n".encode())
+          req = urllib.request.Request(f"{base}/waInstance{inst}/sendFileByUpload/{tok}", data=b"".join(parts),
+                                       headers={"Content-Type": f"multipart/form-data; boundary={b}"})
+          try:
+              r = urllib.request.urlopen(req, timeout=120).read().decode()
+              print(f"::notice::whatsapp sent to ...{to[-4:]}: {r[:120]}")
+          except Exception as e:
+              body = getattr(e, "read", lambda: b"")().decode(errors="ignore")[:200]
+              print(f"::error::WhatsApp {type(e).__name__}: {e} {body}")
               sys.exit(1)
           EOF
