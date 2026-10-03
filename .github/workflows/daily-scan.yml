@@ -88,9 +88,9 @@ jobs:
         run: |
           python - <<'EOF'
           import os, sys, json, urllib.request, uuid
-          inst = os.environ["GREEN_ID"].strip()
+          inst = "710722754800"   # Green-API instance id (not secret)
           tok = os.environ["GREEN_TOKEN"].strip()
-          base = (os.environ.get("GREEN_URL") or f"https://{inst[:4]}.media.greenapi.com").strip().rstrip("/")
+          base = (os.environ.get("GREEN_URL") or "https://media.green-api.com").strip().rstrip("/")
           print(f"::notice::green id_len={len(inst)} token_len={len(tok)} host={base.split('//')[1]}")
           try:
               st = urllib.request.urlopen(f"https://{inst[:4]}.api.greenapi.com/waInstance{inst}/getStateInstance/{tok}", timeout=30).read().decode()
