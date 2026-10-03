@@ -325,6 +325,13 @@ STATUS_HE = {
 GREEN, RED, AMBER = "#2e8b57", "#c0392b", "#d4a017"
 
 
+HE_DAYS = ["שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת", "ראשון"]
+
+
+def he_date(d):
+    return f"יום {HE_DAYS[d.weekday()]} {d:%d/%m/%Y}"
+
+
 def fmt_mcap(x):
     if not x:
         return "—"
@@ -401,7 +408,8 @@ h3 .bar i {{ display:block; height:100%; background:{GREEN}; }}
 h3 small {{ color:#5a6678; font-weight:400; }}
 .head {{ background:#1f4e79; color:#fff; padding:12px 14px; border-radius:6px; }}
 .head small {{ opacity:.85; }}
-.logo {{ float:left; height:46px; max-width:150px; object-fit:contain; background:#fff; border-radius:6px; padding:3px; margin-top:-2px; }}
+.logo {{ float:left; height:58px; width:58px; margin:-3px 0 0 4px; }}
+.dt {{ display:inline-block; background:rgba(255,255,255,.14); border-radius:12px; padding:2px 10px; font-size:12px; font-weight:700; margin:5px 0 4px; }}
 .sum {{ display:flex; gap:6px; margin:10px 0; }}
 .box {{ flex:1; border:1px solid #d5dce6; border-radius:6px; padding:6px; text-align:center; }}
 .box b {{ display:block; font-size:19px; color:#1f4e79; }}
@@ -425,7 +433,8 @@ table {{ border-collapse:collapse; width:100%; }}
 .sector {{ page-break-inside:avoid; }}
 </style></head><body>
 <div class="head">{logo_html()}<h1>סריקת סווינג יומית</h1>
-<small>נתוני סגירה של {data_date} · הופק {dt.datetime.now():%d/%m/%Y %H:%M} UTC · כלל ראשי: פריצה מעל SMA150 ו-SMA200 שהחזיקה לפחות יום אחד</small></div>
+<div class="dt">📅 {he_date(today)} · נתוני מסחר מיום {he_date(data_date)}</div><br>
+<small>הופק {dt.datetime.now():%d/%m/%Y %H:%M} UTC · כלל ראשי: פריצה מעל SMA150 ו-SMA200 שהחזיקה לפחות יום אחד</small></div>
 <div class="sum">
  <div class="box"><b>{n_setup}</b>✅ פרצו והחזיקו</div>
  <div class="box"><b>{n_today}</b>👀 פרצו היום</div>
@@ -622,7 +631,8 @@ def main():
     ds = pick("setup", [s for s in disc if s not in top_syms])
     wt = list(dict.fromkeys(pick("breakout_today", top_syms) + pick("breakout_today", list(disc))))
     tc = list(dict.fromkeys(pick("touch", top_syms) + pick("touch", list(disc))))
-    lines = [f"סריקת סווינג {stamp}",
+    data_date = max((r["date"] for r in results.values()), default=dt.date.today())
+    lines = [f"סריקת סווינג כ״ח 28 | {he_date(dt.date.today())} | נתוני מסחר {data_date:%d/%m/%Y}",
              f"סט-אפים Top {TOP_N}: " + (", ".join(ts) or "אין"),
              f"סט-אפים גילוי: " + (", ".join(ds[:15]) or "אין") + (f" (+{len(ds)-15})" if len(ds) > 15 else ""),
              f"פרצו היום (מעקב): " + (", ".join(wt[:15]) or "אין"),
