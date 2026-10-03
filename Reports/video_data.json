@@ -1,0 +1,242 @@
+{
+ "date": "2026-10-03",
+ "dateHe": "שבת 03/10/2026",
+ "tradeDateHe": "יום שישי 02/10/2026",
+ "checked": 5213,
+ "pctAbove": 35,
+ "counts": {
+  "setup": 85,
+  "today": 43,
+  "touch": 34
+ },
+ "sectors": [
+  [
+   "פיננסים",
+   46
+  ],
+  [
+   "טכנולוגיה",
+   44
+  ],
+  [
+   "אנרגיה",
+   43
+  ],
+  [
+   "בריאות",
+   34
+  ],
+  [
+   "תעשייה",
+   33
+  ],
+  [
+   "צריכה מחזורית",
+   28
+  ],
+  [
+   "תקשורת ומדיה",
+   27
+  ],
+  [
+   "חומרי גלם",
+   24
+  ],
+  [
+   "צריכה בסיסית",
+   22
+  ],
+  [
+   "נדל\"ן",
+   16
+  ],
+  [
+   "תשתיות",
+   12
+  ]
+ ],
+ "top": {
+  "n": 28,
+  "above": 21,
+  "below": [
+   "AVGO",
+   "TSLA",
+   "WMT",
+   "ORCL"
+  ],
+  "between": [],
+  "setup": [],
+  "today": [],
+  "touch": [
+   [
+    "GOOGL",
+    "SMA150",
+    -0.5
+   ]
+  ],
+  "leaders": [
+   [
+    "AMD",
+    69.2
+   ],
+   [
+    "MU",
+    57.7
+   ],
+   [
+    "INTC",
+    47.0
+   ]
+  ],
+  "entered": [],
+  "exited": [],
+  "names": {
+   "GOOGL": "Alphabet Inc.",
+   "AMD": "Advanced Micro Devices, Inc.",
+   "MU": "Micron Technology, Inc.",
+   "INTC": "Intel Corporation"
+  }
+ },
+ "setups": [
+  {
+   "sym": "ACN",
+   "name": "Accenture plc",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "close": 198.9,
+   "stop": 183.95,
+   "risk": 7.5,
+   "rsi": 59,
+   "vol": 5.44,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "EFXT",
+   "name": "Enerflex Ltd.",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "close": 24.59,
+   "stop": 22.99,
+   "risk": 6.5,
+   "rsi": 63,
+   "vol": 3.91,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "SNPS",
+   "name": "Synopsys, Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "close": 489.9,
+   "stop": 461.32,
+   "risk": 5.8,
+   "rsi": 74,
+   "vol": 3.32,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "VIRT",
+   "name": "Virtu Financial, Inc.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "close": 58.79,
+   "stop": 55.12,
+   "risk": 6.2,
+   "rsi": 53,
+   "vol": 2.26,
+   "days": 2,
+   "score": 2,
+   "conf": [
+    "vol",
+    "rsi"
+   ]
+  }
+ ],
+ "watch": [
+  {
+   "sym": "VSH",
+   "name": "Vishay Intertechnology, Inc.",
+   "sector": "",
+   "isTop": false,
+   "vol": 2.89
+  },
+  {
+   "sym": "QGEN",
+   "name": "Qiagen N.V.",
+   "sector": "",
+   "isTop": false,
+   "vol": 2.36
+  },
+  {
+   "sym": "STM",
+   "name": "STMicroelectronics N.V.",
+   "sector": "",
+   "isTop": false,
+   "vol": 1.94
+  },
+  {
+   "sym": "BBD",
+   "name": "Banco Bradesco S.A.",
+   "sector": "",
+   "isTop": false,
+   "vol": 1.68
+  }
+ ],
+ "touch": [
+  {
+   "sym": "GOOGL",
+   "name": "Alphabet Inc.",
+   "sector": "",
+   "isTop": true,
+   "level": "SMA150",
+   "pct": -0.5
+  },
+  {
+   "sym": "GOOG",
+   "name": "Alphabet Inc.",
+   "sector": "",
+   "isTop": true,
+   "level": "SMA150",
+   "pct": -0.8
+  },
+  {
+   "sym": "GLW",
+   "name": "Corning Incorporated",
+   "sector": "",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.5
+  },
+  {
+   "sym": "ON",
+   "name": "ON Semiconductor Corporation",
+   "sector": "",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -2.0
+  },
+  {
+   "sym": "CTSH",
+   "name": "Cognizant Technology Solutions Corporation",
+   "sector": "",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -4.0
+  }
+ ]
+}

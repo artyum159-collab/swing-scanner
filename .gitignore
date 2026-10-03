@@ -1,2 +1,3 @@
 Reports/*.html
 __pycache__/
+out/

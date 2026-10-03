@@ -4,7 +4,13 @@ on:
   schedule:
     # 04:30 UTC, Tue-Sat = 07:30 Israel summer time / 06:30 winter (after every US session)
     - cron: "30 4 * * 2-6"
-  workflow_dispatch: {}   # "Run workflow" button for a manual run
+  workflow_dispatch:      # "Run workflow" button for a manual run
+    inputs:
+      mode:
+        description: "full = סריקה + דוח + סרטון ושליחה | video_test = רק סרטון מהנתונים האחרונים, בלי שליחה"
+        type: choice
+        options: [full, video_test]
+        default: full
 
 permissions:
   contents: write
@@ -22,6 +28,7 @@ jobs:
       GREEN_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
       GREEN_URL: ${{ secrets.GREEN_MEDIA_URL }}
       WA_TO: ${{ secrets.WHATSAPP_TO }}
+      MODE: ${{ inputs.mode || 'full' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -30,15 +37,19 @@ jobs:
           python-version: "3.12"
 
       - name: Install Hebrew fonts
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-color-emoji fonts-dejavu-core
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-core fonts-noto-color-emoji fonts-dejavu-core ffmpeg
 
       - name: Install libraries
-        run: pip install -q yfinance pandas numpy
+        run: |
+          pip install -q yfinance pandas numpy edge-tts playwright
+          python -m playwright install --with-deps chromium
 
       - name: Run scanner
+        if: ${{ env.MODE == 'full' }}
         run: python scanner.py
 
       - name: Save report to the repo
+        if: ${{ env.MODE == 'full' }}
         run: |
           git config user.name "swing-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -46,15 +57,32 @@ jobs:
           git commit -m "Scan $(date -u +%F)" || echo "nothing to commit"
           git push
 
+      - name: Make daily news video
+        id: video
+        continue-on-error: true
+        timeout-minutes: 25
+        run: python video/make_video.py
+
+      - name: Save video test to the video-test branch
+        if: ${{ env.MODE == 'video_test' }}
+        run: |
+          F=$(cat out/latest_video.txt)
+          cp "$F" /tmp/news.mp4 && cp out/_work/script.txt /tmp/script.txt
+          git config user.name "swing-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout --orphan video-test && git rm -rfq --cached . && git clean -fdxq -e out
+          cp /tmp/news.mp4 /tmp/script.txt . && git add news.mp4 script.txt
+          git commit -qm "Video test $(date -u +%F_%H%M)" && git push -f origin video-test
+
       - name: Send to Telegram
-        if: ${{ env.TG_TOKEN != '' }}
+        if: ${{ env.TG_TOKEN != '' && env.MODE == 'full' }}
         run: |
           FILE=$(cat Reports/latest_path.txt)
           curl -s -F chat_id="$TG_CHAT" -F caption="$(cat Reports/summary.txt)" \
                -F document=@"$FILE" "https://api.telegram.org/bot${TG_TOKEN}/sendDocument" > /dev/null
 
       - name: Send by email
-        if: ${{ env.MAIL_PASS != '' }}
+        if: ${{ env.MAIL_PASS != '' && env.MODE == 'full' }}
         run: |
           python - <<'EOF'
           import os, smtplib, sys
@@ -74,6 +102,11 @@ jobs:
                   m.add_attachment(f.read(), maintype="application",
                                    subtype="pdf" if path.endswith(".pdf") else "octet-stream",
                                    filename=os.path.basename(path))
+              if os.path.exists("out/latest_video.txt"):
+                  vp = open("out/latest_video.txt", encoding="utf-8").read().strip()
+                  if os.path.exists(vp) and os.path.getsize(vp) < 20e6:
+                      with open(vp, "rb") as f:
+                          m.add_attachment(f.read(), maintype="video", subtype="mp4", filename=os.path.basename(vp))
               with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
                   s.login(user, pw)
                   s.send_message(m)
@@ -84,7 +117,7 @@ jobs:
           EOF
 
       - name: Send to WhatsApp (Green-API)
-        if: ${{ env.GREEN_TOKEN != '' }}
+        if: ${{ env.GREEN_TOKEN != '' && env.MODE == 'full' }}
         run: |
           python - <<'EOF'
           import os, sys, json, urllib.request, uuid
@@ -118,5 +151,37 @@ jobs:
           except Exception as e:
               body = getattr(e, "read", lambda: b"")().decode(errors="ignore")[:200]
               print(f"::error::WhatsApp {type(e).__name__}: {e} {body}")
+              sys.exit(1)
+          EOF
+
+      - name: Send video to WhatsApp (Green-API)
+        if: ${{ env.GREEN_TOKEN != '' && env.MODE == 'full' && hashFiles('out/latest_video.txt') != '' }}
+        continue-on-error: true
+        run: |
+          python - <<'EOF'
+          import os, sys, urllib.request, uuid
+          inst = "710722754800"
+          tok = os.environ["GREEN_TOKEN"].strip()
+          base = (os.environ.get("GREEN_URL") or "https://media.green-api.com").strip().rstrip("/")
+          to = "".join(c for c in (os.environ.get("WA_TO") or "972522942484") if c.isdigit())
+          if to.startswith("0"):
+              to = "972" + to[1:]
+          path = open("out/latest_video.txt", encoding="utf-8").read().strip()
+          name = os.path.basename(path)
+          b = uuid.uuid4().hex
+          parts = []
+          for k, v in (("chatId", f"{to}@c.us"), ("fileName", name), ("caption", "🎬 חדשות הסורק — סיכום יומי")):
+              parts.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n{v}\r\n'.encode())
+          parts.append(f'--{b}\r\nContent-Disposition: form-data; name="file"; filename="{name}"\r\nContent-Type: video/mp4\r\n\r\n'.encode())
+          parts.append(open(path, "rb").read())
+          parts.append(f"\r\n--{b}--\r\n".encode())
+          req = urllib.request.Request(f"{base}/waInstance{inst}/sendFileByUpload/{tok}", data=b"".join(parts),
+                                       headers={"Content-Type": f"multipart/form-data; boundary={b}"})
+          try:
+              r = urllib.request.urlopen(req, timeout=300).read().decode()
+              print(f"::notice::whatsapp video sent: {r[:120]}")
+          except Exception as e:
+              body = getattr(e, "read", lambda: b"")().decode(errors="ignore")[:200]
+              print(f"::error::WhatsApp video {type(e).__name__}: {e} {body}")
               sys.exit(1)
           EOF

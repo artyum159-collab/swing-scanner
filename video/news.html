@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: Rubik; font-weight: 400; src: url(fonts/rubik-hebrew-400-normal.woff2); unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+@font-face { font-family: Rubik; font-weight: 500; src: url(fonts/rubik-hebrew-500-normal.woff2); unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+@font-face { font-family: Rubik; font-weight: 700; src: url(fonts/rubik-hebrew-700-normal.woff2); unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+@font-face { font-family: Rubik; font-weight: 900; src: url(fonts/rubik-hebrew-900-normal.woff2); unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F; }
+@font-face { font-family: Rubik; font-weight: 400; src: url(fonts/rubik-latin-400-normal.woff2); unicode-range: U+0000-00FF, U+2000-206F, U+2190-22FF; }
+@font-face { font-family: Rubik; font-weight: 500; src: url(fonts/rubik-latin-500-normal.woff2); unicode-range: U+0000-00FF, U+2000-206F, U+2190-22FF; }
+@font-face { font-family: Rubik; font-weight: 700; src: url(fonts/rubik-latin-700-normal.woff2); unicode-range: U+0000-00FF, U+2000-206F, U+2190-22FF; }
+@font-face { font-family: Rubik; font-weight: 900; src: url(fonts/rubik-latin-900-normal.woff2); unicode-range: U+0000-00FF, U+2000-206F, U+2190-22FF; }
+
+:root {
+  --bg1: #0a1830; --bg2: #102a50; --card: rgba(255,255,255,0.06); --line: rgba(255,255,255,0.12);
+  --ink: #f4f6fb; --muted: #9fb0cc; --gold: #e4b95b; --gold2: #c8952c;
+  --green: #36d399; --red: #f87171; --amber: #fbbf24; --blue: #60a5fa;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg1); }
+body { font-family: Rubik, sans-serif; color: var(--ink); position: relative; }
+.num { font-variant-numeric: tabular-nums; direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+#bg { position: absolute; inset: 0; background: radial-gradient(1200px 900px at 80% 10%, #1b3f73 0%, transparent 60%), radial-gradient(1000px 900px at 10% 90%, #13305c 0%, transparent 60%), linear-gradient(180deg, var(--bg1), var(--bg2)); }
+#grid { position: absolute; inset: 0; opacity: .07; background-image: linear-gradient(var(--ink) 1px, transparent 1px), linear-gradient(90deg, var(--ink) 1px, transparent 1px); background-size: 90px 90px; }
+
+#hdr { position: absolute; top: 0; left: 0; right: 0; height: 170px; display: flex; align-items: center; justify-content: space-between; padding: 0 60px; border-bottom: 2px solid var(--line); background: rgba(5,12,26,.55); z-index: 5; }
+#hdr .brand { display: flex; align-items: center; gap: 24px; }
+#hdr img { width: 96px; height: 96px; border-radius: 22px; }
+#hdr .t1 { font-size: 46px; font-weight: 900; }
+#hdr .t2 { font-size: 28px; color: var(--muted); margin-top: 4px; }
+#live { display: flex; align-items: center; gap: 14px; background: #b91c1c; padding: 12px 26px; border-radius: 12px; font-weight: 700; font-size: 30px; }
+#live i { width: 16px; height: 16px; border-radius: 50%; background: #fff; display: block; }
+#prog { position: absolute; top: 170px; right: 0; height: 6px; background: linear-gradient(90deg, var(--gold2), var(--gold)); z-index: 6; }
+
+.scene { position: absolute; top: 230px; left: 60px; right: 60px; bottom: 420px; opacity: 0; visibility: hidden; }
+.kicker { font-size: 34px; font-weight: 700; color: var(--gold); letter-spacing: 1px; margin-bottom: 18px; }
+.h1 { font-size: 104px; font-weight: 900; line-height: 1.1; }
+.h2 { font-size: 62px; font-weight: 900; line-height: 1.15; }
+.sub { font-size: 36px; color: var(--muted); margin-top: 18px; line-height: 1.4; }
+
+.center { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.center img { width: 360px; height: 360px; border-radius: 80px; box-shadow: 0 30px 80px rgba(0,0,0,.45); margin-bottom: 60px; }
+.center .date { margin-top: 30px; font-size: 44px; font-weight: 700; color: var(--gold); }
+
+.donutwrap { display: flex; align-items: center; gap: 50px; margin-top: 40px; }
+.donut { width: 380px; height: 380px; position: relative; flex: none; }
+.donut svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.donut .c { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.donut .c b { font-size: 104px; font-weight: 900; line-height: 1; }
+.donut .c > span { font-size: 28px; color: var(--muted); margin-top: 8px; }
+.stats { display: grid; gap: 24px; margin-top: 50px; }
+.stat { display: flex; align-items: center; gap: 30px; }
+.badge { width: 92px; height: 92px; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 50px; font-weight: 900; flex: none; }
+.b-green { background: rgba(54,211,153,.16); color: var(--green); border: 2px solid rgba(54,211,153,.5); }
+.b-amber { background: rgba(251,191,36,.14); color: var(--amber); border: 2px solid rgba(251,191,36,.5); }
+.b-blue { background: rgba(96,165,250,.14); color: var(--blue); border: 2px solid rgba(96,165,250,.5); }
+.stat b { font-size: 80px; font-weight: 900; min-width: 160px; text-align: center; }
+.stat span { font-size: 38px; line-height: 1.25; }
+.stat small { display: block; font-size: 28px; color: var(--muted); }
+
+.bars { margin-top: 36px; display: grid; gap: 20px; }
+.bar { display: grid; grid-template-columns: 300px 1fr 120px; align-items: center; gap: 22px; }
+.bar .n { font-size: 36px; font-weight: 500; }
+.bar .tr { height: 54px; border-radius: 14px; background: rgba(248,113,113,.22); overflow: hidden; position: relative; }
+.bar .tr i { position: absolute; top: 0; bottom: 0; right: 0; background: linear-gradient(270deg, #22b37c, var(--green)); border-radius: 14px; display: block; }
+.bar .p { font-size: 40px; font-weight: 900; text-align: left; }
+.legend { display: flex; gap: 40px; margin-top: 28px; font-size: 28px; color: var(--muted); }
+.legend i { display: inline-block; width: 26px; height: 26px; border-radius: 6px; vertical-align: -4px; margin-left: 10px; }
+
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+.tile { border-radius: 28px; padding: 30px 34px; border: 2px solid var(--line); background: var(--card); }
+.tile b { font-size: 96px; font-weight: 900; display: block; line-height: 1; }
+.tile span { font-size: 32px; color: var(--muted); display: block; margin-top: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+.chip { font-size: 34px; font-weight: 700; padding: 12px 24px; border-radius: 14px; background: rgba(255,255,255,.08); border: 2px solid var(--line); direction: ltr; }
+.chip em { font-style: normal; font-weight: 500; color: var(--muted); margin-left: 12px; font-size: 28px; }
+.chip.g { border-color: rgba(54,211,153,.5); } .chip.g em { color: var(--green); }
+.chip.r { border-color: rgba(248,113,113,.5); } .chip.r em { color: var(--red); }
+.chip.a { border-color: rgba(251,191,36,.5); } .chip.a em { color: var(--amber); }
+.chip.b { border-color: rgba(96,165,250,.5); } .chip.b em { color: var(--blue); }
+.row-title { font-size: 34px; font-weight: 700; margin-top: 40px; }
+
+.setups { display: grid; gap: 24px; margin-top: 34px; }
+.su { display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; padding: 28px 34px; border-radius: 28px; background: linear-gradient(270deg, rgba(54,211,153,.13), rgba(255,255,255,.04)); border: 2px solid rgba(54,211,153,.45); }
+.su.weak { background: var(--card); border-color: var(--line); }
+.su .sym { font-size: 58px; font-weight: 900; direction: ltr; text-align: right; }
+.su .sym small { font-size: 28px; font-weight: 500; color: var(--muted); margin-left: 14px; }
+.su .vol { font-size: 46px; font-weight: 900; color: var(--green); align-self: center; }
+.su .vol small { font-size: 26px; color: var(--muted); font-weight: 500; }
+.su .meta { grid-column: 1 / -1; display: flex; gap: 34px; font-size: 30px; color: var(--muted); flex-wrap: wrap; }
+.su .meta b { color: var(--ink); font-weight: 700; }
+.su .meta .stop b { color: var(--red); }
+.su .conf { grid-column: 1 / -1; display: flex; gap: 14px; min-height: 10px; }
+.su .conf span { font-size: 26px; font-weight: 700; padding: 8px 18px; border-radius: 10px; background: rgba(54,211,153,.16); color: var(--green); }
+
+.disc { margin-top: 50px; font-size: 32px; color: var(--muted); border-top: 2px solid var(--line); padding-top: 30px; line-height: 1.5; }
+
+#cap { position: absolute; left: 60px; right: 60px; bottom: 150px; height: 230px; display: flex; align-items: center; justify-content: center; text-align: center; z-index: 5; }
+#cap div { background: rgba(3,8,18,.8); border: 2px solid var(--line); border-radius: 24px; padding: 24px 36px; font-size: 40px; font-weight: 500; line-height: 1.4; }
+#ticker { position: absolute; left: 0; right: 0; bottom: 0; height: 110px; background: #050c1a; border-top: 3px solid var(--gold); overflow: hidden; z-index: 5; }
+#ticker .lbl { position: absolute; right: 0; top: 0; bottom: 0; width: 220px; background: var(--gold); color: #1a1205; font-weight: 900; font-size: 36px; display: flex; align-items: center; justify-content: center; z-index: 2; }
+#tape { position: absolute; top: 0; bottom: 0; left: 0; display: flex; align-items: center; gap: 56px; white-space: nowrap; direction: ltr; font-size: 36px; font-weight: 700; }
+#tape span em { font-style: normal; margin-left: 12px; }
+</style>
+</head>
+<body>
+<div id="bg"></div><div id="grid"></div>
+<div id="hdr">
+  <div class="brand"><img src="icon.png"><div><div class="t1">חדשות הסורק</div><div class="t2" id="hdrDate"></div></div></div>
+  <div id="live"><i></i>סריקה יומית</div>
+</div>
+<div id="prog"></div>
+<div id="stage"></div>
+<div id="cap"><div id="capT"></div></div>
+<div id="ticker"><div class="lbl">סורק 28</div><div id="tape"></div></div>
+
+<script>
+// window.DATA (Reports/video_data.json) ו-window.SCENES מוזרקים ע"י make_video.py
+const D = window.DATA, SC = window.SCENES;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const f2 = x => Number(x).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const sg = x => (x > 0 ? '+' : '') + Number(x).toFixed(1) + '%';
+const chip = (cls, a, b) => `<div class="chip ${cls}">${esc(a)}${b ? `<em>${esc(b)}</em>` : ''}</div>`;
+const CONF = { vol: 'מחזור חריג', res: 'פריצת התנגדות', rsi: 'RSI יצא ממכירת יתר' };
+document.getElementById('hdrDate').textContent = D.dateHe;
+
+const B = {
+  intro: () => `<div class="center" style="height:100%">
+      <img class="it" data-d="0" src="icon.png">
+      <div class="h1 it" data-d="0.4">סריקת הסווינג<br>היומית</div>
+      <div class="date it" data-d="0.9">${esc(D.dateHe)}</div>
+      <div class="sub it" data-d="1.2">נתוני מסחר מ${esc(D.tradeDateHe)}</div></div>`,
+  pulse: (s) => {
+    const c = D.pctAbove >= 55 ? 'var(--green)' : D.pctAbove >= 40 ? 'var(--amber)' : 'var(--red)';
+    return `<div class="kicker it" data-d="0">דופק השוק</div>
+    <div class="h2 it" data-d="0.2">${esc(s.title)}</div>
+    <div class="donutwrap it" data-d="0.5">
+      <div class="donut"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(248,113,113,.35)" stroke-width="12"/><circle class="arc" cx="50" cy="50" r="42" fill="none" stroke="#36d399" stroke-width="12" stroke-linecap="round" stroke-dasharray="263.9" stroke-dashoffset="263.9"/></svg>
+        <div class="c"><b class="num" style="color:${c}"><span data-n="${D.pctAbove}" data-d="0.7">0</span>%</b><span>מעל שני הממוצעים</span></div></div>
+      <div class="sub" style="margin:0;font-size:38px">מתוך <b style="color:var(--ink)"><span class="num" data-n="${D.checked}" data-d="0.7" data-fmt="1">0</span></b> מניות בנאסד"ק וב-NYSE שנבדקו</div>
+    </div>
+    <div class="stats">
+      <div class="stat it" data-d="2.2"><div class="badge b-green">✓</div><b class="num" data-n="${D.counts.setup}" data-d="2.2">0</b><span>פרצו והחזיקו<small>סט-אפ מלא לפי הכלל הראשי</small></span></div>
+      <div class="stat it" data-d="2.9"><div class="badge b-amber">◉</div><b class="num" data-n="${D.counts.today}" data-d="2.9">0</b><span>פרצו היום<small>מחכות ליום אישור</small></span></div>
+      <div class="stat it" data-d="3.6"><div class="badge b-blue">↑</div><b class="num" data-n="${D.counts.touch}" data-d="3.6">0</b><span>נגעו מלמטה<small>הגיעו לממוצע ונסגרו מתחתיו</small></span></div>
+    </div>`;
+  },
+  sectors: (s) => `<div class="kicker it" data-d="0">מפת סקטורים</div>
+    <div class="h2 it" data-d="0.2">${esc(s.title)}</div>
+    <div class="bars">${D.sectors.slice(0, 11).map(([n, p], i) => {
+      const d = 0.6 + i * 0.12, c = p >= 50 ? 'var(--green)' : p >= 30 ? 'var(--amber)' : 'var(--red)';
+      return `<div class="bar it" data-d="${d - 0.1}"><div class="n">${esc(n)}</div><div class="tr"><i data-w="${p}" data-d="${d}"></i></div><div class="p num" style="color:${c}"><span data-n="${p}" data-d="${d}" data-t="1">0</span>%</div></div>`;
+    }).join('')}</div>
+    <div class="legend it" data-d="2.5"><span><i style="background:var(--green)"></i>מעל שני הממוצעים</span><span><i style="background:rgba(248,113,113,.45)"></i>מתחת לאחד מהם לפחות</span></div>`,
+  top: (s) => {
+    const T = D.top; let d = 1.6, rows = '';
+    const row = (title, chips) => { const r = `<div class="row-title it" data-d="${d}">${title}</div><div class="chips it" data-d="${d + 0.2}">${chips}</div>`; d += 0.9; return r; };
+    if (T.setup.length) rows += row('✓ פרצו והחזיקו', T.setup.map(x => chip('g', x)).join(''));
+    if (T.today.length) rows += row('◉ פרצו היום', T.today.map(x => chip('a', x)).join(''));
+    if (T.touch.length) rows += row('↑ נגעו מלמטה', T.touch.map(([x, l, p]) => chip('b', x, `${l} ${sg(p)}`)).join(''));
+    if (T.below.length) rows += row('מתחת לשני הממוצעים', T.below.slice(0, 8).map(x => chip('r', x)).join(''));
+    if (T.leaders.length && d < 5) rows += row('הכי רחוקות מעל SMA200', T.leaders.map(([x, p]) => chip('g', x, sg(p))).join(''));
+    return `<div class="kicker it" data-d="0">Top ${T.n} לפי שווי שוק</div>
+    <div class="h2 it" data-d="0.2">${esc(s.title)}</div>
+    <div class="tiles">
+      <div class="tile it" data-d="0.6"><b class="num" style="color:var(--green)" data-n="${T.above}" data-d="0.6">0</b><span>מעל שני הממוצעים</span></div>
+      <div class="tile it" data-d="0.9"><b class="num" style="color:var(--red)" data-n="${T.below.length + T.between.length + T.touch.length}" data-d="0.9">0</b><span>מתחת לאחד מהם לפחות</span></div>
+    </div>${rows}`;
+  },
+  setups: (s) => `<div class="kicker it" data-d="0">הסט-אפים החזקים</div>
+    <div class="h2 it" data-d="0.2">${esc(s.title)}</div>
+    <div class="setups">${D.setups.map((x, i) => `
+      <div class="su it ${x.score >= 2 ? '' : 'weak'}" data-d="${0.6 + i * (s.step || 1)}">
+        <div class="sym">${esc(x.sym)}<small>${esc(x.name.split(/[ ,]/)[0])}</small></div>
+        <div class="vol"><small>מחזור </small><span class="num">${x.vol.toFixed(2)}×</span></div>
+        <div class="meta"><span>סגירה <b class="num">${f2(x.close)}</b></span><span class="stop">סטופ <b class="num">${f2(x.stop)}</b></span><span>סיכון <b class="num">${x.risk.toFixed(1)}%</b></span><span>RSI <b class="num">${x.rsi}</b></span><span>${esc(x.sector)}</span></div>
+        <div class="conf">${x.conf.map(c => `<span>✓ ${CONF[c]}</span>`).join('')}</div>
+      </div>`).join('')}</div>`,
+  radar: (s) => {
+    let h = `<div class="kicker it" data-d="0">על הרדאר למחר</div>`, d = 0.2;
+    if (D.watch.length) { h += `<div class="h2 it" data-d="${d}">פרצו היום, מחכות לאישור</div><div class="sub it" data-d="${d + 0.2}">צריכות להחזיק עוד יום מעל שני הממוצעים</div><div class="chips it" data-d="${d + 0.6}">${D.watch.map(x => chip('a', x.sym, x.vol.toFixed(2) + '×')).join('')}</div>`; d = s.split || 2.6; }
+    if (D.touch.length) h += `<div class="h2 it" data-d="${d}" style="margin-top:${D.watch.length ? 70 : 0}px">נגעו בממוצע מלמטה</div><div class="sub it" data-d="${d + 0.2}">הגיעו לממוצע אחרי 5+ ימים מתחת, ונסגרו מתחתיו</div><div class="chips it" data-d="${d + 0.6}">${D.touch.map(x => chip('b', x.sym, `${x.level} ${sg(x.pct)}`)).join('')}</div>`;
+    return h;
+  },
+  outro: () => `<div class="center" style="height:100%">
+      <img class="it" data-d="0" src="icon.png" style="width:240px;height:240px;border-radius:56px;margin-bottom:50px">
+      <div class="h2 it" data-d="0.3">הדוח המלא ב-PDF<br>מחכה לך במייל ובוואטסאפ</div>
+      <div class="disc it" data-d="0.9">כלי סינון טכני בלבד, לא ייעוץ השקעות.<br>נתונים: Yahoo Finance</div></div>`,
+};
+
+const stage = document.getElementById('stage');
+stage.innerHTML = SC.map(s => `<section class="scene" id="${s.id}">${B[s.kind](s)}</section>`).join('');
+const els = SC.map(s => document.getElementById(s.id));
+
+const tapeItems = [...D.setups.map(x => [x.sym, '✓ ' + x.vol.toFixed(2) + '×', 'var(--green)']),
+  ...D.watch.map(x => [x.sym, '◉ ' + x.vol.toFixed(2) + '×', 'var(--amber)']),
+  ...D.touch.map(x => [x.sym, '↑ ' + x.level + ' ' + sg(x.pct), 'var(--blue)']),
+  ...D.top.leaders.map(([x, p]) => [x, 'SMA200 ' + sg(p), 'var(--green)'])];
+const tapeHTML = tapeItems.map(([a, b, c]) => `<span>${esc(a)}<em style="color:${c}">${esc(b)}</em></span>`).join('') || '<span>חדשות הסורק</span>';
+const tape = document.getElementById('tape');
+tape.innerHTML = tapeHTML.repeat(4);
+const tapeW = tape.scrollWidth / 4;
+
+const TOTAL = window.TOTAL;
+const clamp = x => Math.max(0, Math.min(1, x));
+const ease = x => 1 - Math.pow(1 - clamp(x), 3);
+const capEl = document.getElementById('capT'), capBox = document.getElementById('cap');
+
+window.render = function (t) {
+  document.getElementById('prog').style.width = (100 * t / TOTAL) + '%';
+  tape.style.transform = `translateX(${-((t * 110) % tapeW)}px)`;
+  document.querySelector('#live i').style.opacity = Math.sin(t * 5) > 0 ? 1 : .25;
+  document.getElementById('grid').style.backgroundPosition = `${t * 12}px ${t * 6}px`;
+  let cap = '', capA = 0;
+  SC.forEach((s, i) => {
+    const el = els[i], L = t - s.start;
+    const a = Math.min(clamp(L / 0.5), clamp((s.dur - L) / 0.5));
+    el.style.opacity = a; el.style.visibility = a > 0 ? 'visible' : 'hidden';
+    if (a <= 0) return;
+    el.style.transform = `scale(${0.98 + 0.02 * ease(L / 0.6)})`;
+    el.querySelectorAll('.it').forEach(it => { const p = ease((L - +it.dataset.d) / 0.6); it.style.opacity = p; it.style.transform = `translateY(${(1 - p) * 40}px)`; });
+    el.querySelectorAll('[data-n]').forEach(n => {
+      const v = +n.dataset.n * ease((L - +n.dataset.d) / (n.dataset.t ? 1.0 : 1.4));
+      n.textContent = n.dataset.fmt ? Math.round(v).toLocaleString('en-US') : Math.round(v);
+    });
+    el.querySelectorAll('[data-w]').forEach(b => { b.style.width = (+b.dataset.w * ease((L - +b.dataset.d) / 1.0)) + '%'; });
+    const arc = el.querySelector('.arc');
+    if (arc) arc.style.strokeDashoffset = 263.9 * (1 - D.pctAbove / 100 * ease((L - 0.7) / 1.4));
+    (s.caps || []).forEach(([c0, c1, txt]) => {
+      const ca = Math.min(clamp((L - c0 + 0.15) / 0.3), clamp((c1 - L) / 0.3));
+      if (ca > capA) { capA = ca; cap = txt; }
+    });
+  });
+  if (capEl.textContent !== cap) capEl.textContent = cap;
+  capBox.style.opacity = capA;
+};
+window.render(0);
+</script>
+</body>
+</html>

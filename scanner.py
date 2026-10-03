@@ -531,6 +531,71 @@ RSI ממכ"י = RSI14 חצה את {RSI_OVERSOLD} כלפי מעלה ב-{RSI_LOOKB
     return "\n".join(html)
 
 
+def export_video_data(top, disc_meta, results, market=None, entered=(), exited=(), path=None):
+    """שומר את נתוני היום ל-JSON שממנו נבנה סרטון החדשות היומי (video/make_video.py)."""
+    today = dt.date.today()
+    data_date = max((r["date"] for r in results.values()), default=today)
+    top_meta = {t["symbol"]: t for t in top}
+    meta = dict(market or {})
+    meta.update(disc_meta)
+    meta.update(top_meta)
+    pool = set(top_meta) | set(disc_meta)
+    sector_of = lambda s: meta.get(s, {}).get("sector", "Other")
+    clean = lambda x: None if x is None or x != x else x
+
+    secs = {}
+    for s, r in results.items():
+        d = secs.setdefault(sector_of(s), [0, 0])
+        d[0] += 1
+        if r["status"] in ("setup", "breakout_today", "above"):
+            d[1] += 1
+    sectors = sorted(([SECTOR_HE.get(k, k), round(a / n * 100)] for k, (n, a) in secs.items() if k != "Other" and n >= 20),
+                     key=lambda x: -x[1])
+    tot_n = sum(n for n, _ in secs.values())
+    tot_above = sum(a for _, a in secs.values())
+    in_pool = lambda st: [s for s in results if s in pool and results[s]["status"] == st]
+
+    setups = sorted(in_pool("setup"), key=lambda s: (-results[s]["score"], -(results[s]["bo_relvol"] or 0)))
+    watch = sorted(in_pool("breakout_today"), key=lambda s: -(clean(results[s]["relvol"]) or 0))
+    touch = sorted(in_pool("touch"), key=lambda s: (s not in top_meta, -results[s]["pct_top_ma"]))
+
+    top_res = [(t["symbol"], results.get(t["symbol"])) for t in top]
+    top_ok = [(s, r) for s, r in top_res if r]
+    stock = lambda s: {"sym": s, "name": (meta.get(s, {}).get("name") or s)[:28],
+                       "sector": SECTOR_HE.get(sector_of(s), ""), "isTop": s in top_meta}
+    data = {
+        "date": today.isoformat(),
+        "dateHe": he_date(today).replace("יום ", ""),
+        "tradeDateHe": he_date(data_date),
+        "checked": tot_n,
+        "pctAbove": round(tot_above / max(tot_n, 1) * 100),
+        "counts": {"setup": len(setups), "today": len(watch), "touch": len(touch)},
+        "sectors": sectors,
+        "top": {
+            "n": len(top),
+            "above": sum(r["status"] in ("setup", "breakout_today", "above") for _, r in top_ok),
+            "below": [s for s, r in top_ok if r["status"] == "below_both"],
+            "between": [s for s, r in top_ok if r["status"] == "between"],
+            "setup": [s for s, r in top_ok if r["status"] == "setup"],
+            "today": [s for s, r in top_ok if r["status"] == "breakout_today"],
+            "touch": [[s, r.get("touch_level", ""), round(r["pct_top_ma"], 1)] for s, r in top_ok if r["status"] == "touch"],
+            "leaders": [[s, round(r["pct200"], 1)] for s, r in sorted(top_ok, key=lambda x: -x[1]["pct200"])[:3]],
+            "entered": list(entered), "exited": list(exited),
+            "names": {t["symbol"]: t.get("name") or t["symbol"] for t in top},
+        },
+        "setups": [dict(stock(s), close=results[s]["close"], stop=results[s]["stop"], risk=round(results[s]["risk_pct"], 1),
+                        rsi=round(results[s]["rsi"]), vol=round(results[s]["bo_relvol"] or 0, 2),
+                        days=results[s]["days_held"], score=results[s]["score"],
+                        conf=[n for n, ok in (("vol", results[s]["vol_confirm"]), ("res", results[s]["res_break"]),
+                                              ("rsi", results[s]["rsi_oversold_exit"])) if ok])
+                   for s in setups[:4]],
+        "watch": [dict(stock(s), vol=round(clean(results[s]["relvol"]) or 0, 2)) for s in watch[:6]],
+        "touch": [dict(stock(s), level=results[s]["touch_level"], pct=round(results[s]["pct_top_ma"], 1)) for s in touch[:6]],
+    }
+    (path or REPORT_DIR / "video_data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return data
+
+
 def html_to_pdf(html_path, pdf_path):
     """ממיר ל-PDF עם Edge/Chrome. מוחק קודם PDF ישן כדי לא להחזיר בטעות קובץ מריצה קודמת."""
     candidates = [
@@ -641,6 +706,10 @@ def main():
         lines.append(f"שינוי ב-Top: נכנסו {', '.join(entered) or '—'} | יצאו {', '.join(exited) or '—'}")
     (REPORT_DIR / "summary.txt").write_text("\n".join(lines), encoding="utf-8")
     (REPORT_DIR / "latest_path.txt").write_text(str(final), encoding="utf-8")
+    try:
+        export_video_data(top, disc, results, market, entered, exited)
+    except Exception as e:
+        log(f"נתוני סרטון לא נשמרו: {e}")
 
     if "--open" in sys.argv and hasattr(os, "startfile"):
         os.startfile(final)
