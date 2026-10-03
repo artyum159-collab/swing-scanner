@@ -63,7 +63,8 @@ jobs:
               summary = open("Reports/summary.txt", encoding="utf-8").read()
               m = EmailMessage()
               m["Subject"] = summary.splitlines()[0]
-              m["From"] = m["To"] = user
+              m["From"] = user
+              m["To"] = ", ".join([user, "artyumfinance@gmail.com"])
               m.set_content(summary)
               with open(path, "rb") as f:
                   m.add_attachment(f.read(), maintype="application",
