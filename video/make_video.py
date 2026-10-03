@@ -233,7 +233,7 @@ def render_frames(D, scenes, total, out_silent):
         pg.goto((HERE / "news.html").as_uri())
         pg.evaluate("document.fonts.ready")
         ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(FPS),
-                               "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "23",
+                               "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "27",
                                "-preset", "medium", str(out_silent)], stdin=subprocess.PIPE)
         for i in range(n):
             pg.evaluate(f"render({i / FPS})")
