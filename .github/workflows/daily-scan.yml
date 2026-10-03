@@ -53,18 +53,27 @@ jobs:
         if: ${{ env.MAIL_PASS != '' }}
         run: |
           python - <<'EOF'
-          import os, smtplib
+          import os, smtplib, sys
           from email.message import EmailMessage
-          path = open("Reports/latest_path.txt", encoding="utf-8").read().strip()
-          summary = open("Reports/summary.txt", encoding="utf-8").read()
-          m = EmailMessage()
-          m["Subject"] = summary.splitlines()[0]
-          m["From"] = m["To"] = os.environ["MAIL_USER"]
-          m.set_content(summary)
-          with open(path, "rb") as f:
-              m.add_attachment(f.read(), maintype="application", subtype="pdf" if path.endswith(".pdf") else "octet-stream",
-                               filename=os.path.basename(path))
-          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
-              s.login(os.environ["MAIL_USER"], os.environ["MAIL_PASS"])
-              s.send_message(m)
+          user = os.environ.get("MAIL_USER", "").strip()
+          pw = os.environ.get("MAIL_PASS", "").replace(" ", "").strip()
+          print(f"::notice::address set={bool(user)} has_at={'@' in user} pw_len={len(pw)}")
+          try:
+              path = open("Reports/latest_path.txt", encoding="utf-8").read().strip()
+              summary = open("Reports/summary.txt", encoding="utf-8").read()
+              m = EmailMessage()
+              m["Subject"] = summary.splitlines()[0]
+              m["From"] = m["To"] = user
+              m.set_content(summary)
+              with open(path, "rb") as f:
+                  m.add_attachment(f.read(), maintype="application",
+                                   subtype="pdf" if path.endswith(".pdf") else "octet-stream",
+                                   filename=os.path.basename(path))
+              with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+                  s.login(user, pw)
+                  s.send_message(m)
+              print("::notice::email sent")
+          except Exception as e:
+              print(f"::error::{type(e).__name__}: {str(e)[:300]}")
+              sys.exit(1)
           EOF
