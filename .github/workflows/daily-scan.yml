@@ -90,7 +90,13 @@ jobs:
           import os, sys, json, urllib.request, uuid
           inst = os.environ["GREEN_ID"].strip()
           tok = os.environ["GREEN_TOKEN"].strip()
-          base = (os.environ.get("GREEN_URL") or "https://media.green-api.com").strip().rstrip("/")
+          base = (os.environ.get("GREEN_URL") or f"https://{inst[:4]}.media.greenapi.com").strip().rstrip("/")
+          print(f"::notice::green id_len={len(inst)} token_len={len(tok)} host={base.split('//')[1]}")
+          try:
+              st = urllib.request.urlopen(f"https://{inst[:4]}.api.greenapi.com/waInstance{inst}/getStateInstance/{tok}", timeout=30).read().decode()
+              print(f"::notice::green state {st[:100]}")
+          except Exception as e:
+              print(f"::notice::green state check failed: {e}")
           to = "".join(c for c in (os.environ.get("WA_TO") or "972522942484") if c.isdigit())
           if to.startswith("0"):
               to = "972" + to[1:]
