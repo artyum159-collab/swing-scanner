@@ -1,5 +1,6 @@
-סריקת סווינג כ״ח 28 | יום שבת 03/10/2026 | נתוני מסחר 02/10/2026
+סריקת סווינג כ״ח 28 | יום שלישי 06/10/2026 | נתוני מסחר 05/10/2026
 סט-אפים Top 28: אין
-סט-אפים גילוי: KLAC, ACN, CDNS, SNPS, MPWR, COHR, TEL, FLEX, MDB, ZM, MTSI, CDW, LOGI, GWRE, GDDY (+70)
-פרצו היום (מעקב): STM, MCHP, TOST, RMBS, ST, VSH, LYFT, BULL, BELFB, NATL, TIGO, MAR, DASH, GTX, USFD
-נגעו מלמטה בממוצע: GOOGL, GLW, ON, CTSH, EXTR, ATEN, GOOG, RL, AVY, HAS, MHO, AMBP, LOPE, AJG, BBDO (+19)
+סט-אפים גילוי: KLAC, CDNS, SNPS, MPWR, COHR, TEL, STM, MCHP, FLEX, MDB, ZM, MTSI, TOST, CDW, LOGI (+96)
+פרצו היום (מעקב): GOOGL, PTC, BSY, PAGS, ATEN, NCNO, GOOG, LYV, FOXA, FOX, FWONK, FWONA, PPLI, MELI, HAS
+נגעו מלמטה בממוצע: GLW, ON, TTMI, EXTR, GM, RL, CCK, GAP, ZGN, ASO, AMBP, LW, OLLI, PNFP, PRI (+19)
+שינוי ב-Top: נכנסו BRK-B | יצאו BRK-A
