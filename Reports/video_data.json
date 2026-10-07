@@ -1,22 +1,22 @@
 {
- "date": "2026-10-06",
- "dateHe": "שלישי 06/10/2026",
- "tradeDateHe": "יום שני 05/10/2026",
- "checked": 5315,
- "pctAbove": 35,
+ "date": "2026-10-07",
+ "dateHe": "רביעי 07/10/2026",
+ "tradeDateHe": "יום שלישי 06/10/2026",
+ "checked": 5314,
+ "pctAbove": 36,
  "counts": {
-  "setup": 111,
-  "today": 43,
-  "touch": 34
+  "setup": 137,
+  "today": 39,
+  "touch": 47
  },
  "sectors": [
   [
-   "טכנולוגיה",
+   "אנרגיה",
    46
   ],
   [
-   "אנרגיה",
-   46
+   "טכנולוגיה",
+   45
   ],
   [
    "פיננסים",
@@ -35,61 +35,66 @@
    31
   ],
   [
+   "צריכה מחזורית",
+   29
+  ],
+  [
    "חומרי גלם",
    28
   ],
   [
-   "צריכה מחזורית",
-   27
-  ],
-  [
    "צריכה בסיסית",
-   23
-  ],
-  [
-   "נדל\"ן",
-   15
+   25
   ],
   [
    "תשתיות",
-   13
+   18
+  ],
+  [
+   "נדל\"ן",
+   16
   ]
  ],
  "top": {
   "n": 28,
   "above": 22,
   "below": [
-   "AVGO",
    "WMT",
    "ORCL"
   ],
   "between": [
    "TSLA"
   ],
-  "setup": [],
-  "today": [
+  "setup": [
    "GOOGL"
   ],
-  "touch": [],
+  "today": [],
+  "touch": [
+   [
+    "AVGO",
+    "SMA150",
+    -0.8
+   ]
+  ],
   "leaders": [
    [
     "AMD",
-    67.6
+    71.3
    ],
    [
     "MU",
-    55.1
+    51.6
    ],
    [
     "INTC",
-    42.4
+    37.3
    ]
   ],
   "entered": [
-   "BRK-B"
+   "AMAT"
   ],
   "exited": [
-   "BRK-A"
+   "LRCX"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -112,28 +117,62 @@
    "ASML": "ASML Holding N.V. - New York Re",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
-   "INTC": "Intel Corporation",
    "JNJ": "Johnson & Johnson",
+   "INTC": "Intel Corporation",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "PLTR": "Palantir Technologies Inc.",
    "CSCO": "Cisco Systems, Inc.",
-   "LRCX": "Lam Research Corporation",
-   "ORCL": "Oracle Corporation"
+   "PLTR": "Palantir Technologies Inc.",
+   "ORCL": "Oracle Corporation",
+   "AMAT": "Applied Materials, Inc."
   }
  },
  "setups": [
+  {
+   "sym": "PTC",
+   "name": "PTC Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "close": 193.0,
+   "stop": 181.20000895315542,
+   "risk": 6.1,
+   "rsi": 81,
+   "vol": 16.89,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "PAGS",
+   "name": "PagSeguro Digital Ltd.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "close": 10.720000267028809,
+   "stop": 10.023354167271656,
+   "risk": 6.5,
+   "rsi": 68,
+   "vol": 5.93,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
   {
    "sym": "BBD",
    "name": "Banco Bradesco Sa",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 4.329999923706055,
-   "stop": 4.087897150864476,
+   "close": 4.510000228881836,
+   "stop": 4.258404796957514,
    "risk": 5.6,
-   "rsi": 79,
+   "rsi": 82,
    "vol": 4.39,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -145,46 +184,12 @@
    "name": "Itau Unibanco Banco Holding ",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 9.920000076293945,
-   "stop": 9.394209372819248,
-   "risk": 5.3,
-   "rsi": 79,
-   "vol": 4.32,
-   "days": 3,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "EFXT",
-   "name": "Enerflex Ltd",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "close": 25.020000457763672,
-   "stop": 23.420383823631216,
-   "risk": 6.4,
-   "rsi": 65,
-   "vol": 3.91,
-   "days": 2,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "CIG-C",
-   "name": "Comp En De Mn Cemig",
-   "sector": "תשתיות",
-   "isTop": false,
-   "close": 3.6089000701904297,
-   "stop": 3.423242831142727,
+   "close": 10.149999618530273,
+   "stop": 9.631765422485426,
    "risk": 5.1,
-   "rsi": 67,
-   "vol": 3.57,
-   "days": 1,
+   "rsi": 80,
+   "vol": 4.32,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -194,56 +199,64 @@
  ],
  "watch": [
   {
-   "sym": "PTC",
-   "name": "PTC Inc.",
-   "sector": "טכנולוגיה",
+   "sym": "OPCH",
+   "name": "Option Care Health, Inc.",
+   "sector": "בריאות",
    "isTop": false,
-   "vol": 16.89
+   "vol": 29.51
   },
   {
-   "sym": "PAGS",
-   "name": "PagSeguro Digital Ltd.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 5.93
-  },
-  {
-   "sym": "SBS",
-   "name": "Companhia de saneamento Basi",
+   "sym": "CEG",
+   "name": "Constellation Energy Corpora",
    "sector": "תשתיות",
    "isTop": false,
-   "vol": 4.16
+   "vol": 4.35
   },
   {
-   "sym": "BBDO",
-   "name": "Banco Bradesco Sa",
+   "sym": "VST",
+   "name": "Vistra Corp.",
+   "sector": "תשתיות",
+   "isTop": false,
+   "vol": 3.27
+  },
+  {
+   "sym": "CIEN",
+   "name": "Ciena Corporation",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 2.47
+  },
+  {
+   "sym": "BSBR",
+   "name": "Banco Santander Brasil SA",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 4.02
+   "vol": 2.25
   },
   {
-   "sym": "CIG",
-   "name": "Comp En De Mn Cemig",
-   "sector": "תשתיות",
+   "sym": "INTR",
+   "name": "Inter & Co. Inc.",
+   "sector": "פיננסים",
    "isTop": false,
-   "vol": 3.46
-  },
-  {
-   "sym": "ABEV",
-   "name": "Ambev S.A.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 2.74
+   "vol": 2.0
   }
  ],
  "touch": [
   {
-   "sym": "CNR",
-   "name": "Core Natural Resources, Inc.",
-   "sector": "אנרגיה",
+   "sym": "AVGO",
+   "name": "Broadcom Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": true,
+   "level": "SMA150",
+   "pct": -0.8
+  },
+  {
+   "sym": "CB",
+   "name": "Chubb Limited",
+   "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
+   "level": "SMA150",
+   "pct": -0.1
   },
   {
    "sym": "AMBP",
@@ -251,39 +264,31 @@
    "sector": "צריכה מחזורית",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "RL",
-   "name": "Ralph Lauren Corporation",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA150",
    "pct": -0.2
   },
   {
-   "sym": "VLYPP",
-   "name": "Valley National Bancorp - 6.",
-   "sector": "פיננסים",
+   "sym": "ASO",
+   "name": "Academy Sports and Outdoors,",
+   "sector": "צריכה מחזורית",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.3
+   "pct": -0.2
   },
   {
-   "sym": "EXTR",
-   "name": "Extreme Networks, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.5
-  },
-  {
-   "sym": "DLB",
-   "name": "Dolby Laboratories",
+   "sym": "RSG",
+   "name": "Republic Services, Inc.",
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.5
+   "pct": -0.2
+  },
+  {
+   "sym": "AERO",
+   "name": "Grupo Aeromexico, S.A.B. de ",
+   "sector": "תעשייה",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
   }
  ]
 }
