@@ -1,100 +1,98 @@
 {
- "date": "2026-10-07",
- "dateHe": "רביעי 07/10/2026",
- "tradeDateHe": "יום שלישי 06/10/2026",
+ "date": "2026-10-08",
+ "dateHe": "חמישי 08/10/2026",
+ "tradeDateHe": "יום רביעי 07/10/2026",
  "checked": 5314,
- "pctAbove": 36,
+ "pctAbove": 33,
  "counts": {
-  "setup": 137,
-  "today": 39,
-  "touch": 47
+  "setup": 121,
+  "today": 12,
+  "touch": 27
  },
  "sectors": [
   [
-   "אנרגיה",
-   46
-  ],
-  [
    "טכנולוגיה",
-   45
-  ],
-  [
-   "פיננסים",
    44
   ],
   [
-   "בריאות",
-   34
+   "אנרגיה",
+   43
   ],
   [
-   "תעשייה",
+   "פיננסים",
+   41
+  ],
+  [
+   "בריאות",
    33
   ],
   [
    "תקשורת ומדיה",
-   31
+   30
+  ],
+  [
+   "תעשייה",
+   30
   ],
   [
    "צריכה מחזורית",
-   29
+   27
   ],
   [
    "חומרי גלם",
-   28
-  ],
-  [
-   "צריכה בסיסית",
    25
   ],
   [
+   "צריכה בסיסית",
+   23
+  ],
+  [
    "תשתיות",
-   18
+   17
   ],
   [
    "נדל\"ן",
-   16
+   12
   ]
  ],
  "top": {
   "n": 28,
-  "above": 22,
+  "above": 21,
   "below": [
+   "TSLA",
    "WMT",
-   "ORCL"
+   "ORCL",
+   "COST"
   ],
   "between": [
-   "TSLA"
+   "AVGO"
   ],
   "setup": [
    "GOOGL"
   ],
   "today": [],
-  "touch": [
-   [
-    "AVGO",
-    "SMA150",
-    -0.8
-   ]
-  ],
+  "touch": [],
   "leaders": [
    [
     "AMD",
-    71.3
+    69.4
    ],
    [
     "MU",
-    51.6
+    56.8
    ],
    [
     "INTC",
-    37.3
+    37.4
    ]
   ],
   "entered": [
-   "AMAT"
+   "BRK-A",
+   "COST"
   ],
   "exited": [
-   "LRCX"
+   "BRK-B",
+   "AMAT"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -109,36 +107,53 @@
    "TSLA": "Tesla, Inc.",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
-   "BRK-B": "Berkshire Hathaway Inc. New",
-   "AMD": "Advanced Micro Devices, Inc.",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
+   "AMD": "Advanced Micro Devices, Inc.",
    "JPM": "JP Morgan Chase & Co.",
    "WMT": "Walmart Inc.",
-   "ASML": "ASML Holding N.V. - New York Re",
    "V": "Visa Inc.",
+   "ASML": "ASML Holding N.V. - New York Re",
    "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
    "INTC": "Intel Corporation",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "CSCO": "Cisco Systems, Inc.",
    "PLTR": "Palantir Technologies Inc.",
+   "CSCO": "Cisco Systems, Inc.",
    "ORCL": "Oracle Corporation",
-   "AMAT": "Applied Materials, Inc."
+   "COST": "Costco Wholesale Corporation"
   }
  },
  "setups": [
+  {
+   "sym": "OPCH",
+   "name": "Option Care Health, Inc.",
+   "sector": "בריאות",
+   "isTop": false,
+   "close": 31.010000228881836,
+   "stop": 29.379674609669863,
+   "risk": 5.3,
+   "rsi": 84,
+   "vol": 29.51,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
   {
    "sym": "PTC",
    "name": "PTC Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 193.0,
-   "stop": 181.20000895315542,
-   "risk": 6.1,
+   "close": 193.60000610351562,
+   "stop": 182.51537129843763,
+   "risk": 5.7,
    "rsi": 81,
    "vol": 16.89,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -150,28 +165,11 @@
    "name": "PagSeguro Digital Ltd.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 10.720000267028809,
-   "stop": 10.023354167271656,
-   "risk": 6.5,
-   "rsi": 68,
+   "close": 10.510000228881836,
+   "stop": 9.815971650458533,
+   "risk": 6.6,
+   "rsi": 64,
    "vol": 5.93,
-   "days": 1,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "BBD",
-   "name": "Banco Bradesco Sa",
-   "sector": "פיננסים",
-   "isTop": false,
-   "close": 4.510000228881836,
-   "stop": 4.258404796957514,
-   "risk": 5.6,
-   "rsi": 82,
-   "vol": 4.39,
    "days": 2,
    "score": 2,
    "conf": [
@@ -180,16 +178,16 @@
    ]
   },
   {
-   "sym": "ITUB",
-   "name": "Itau Unibanco Banco Holding ",
-   "sector": "פיננסים",
+   "sym": "CTVA",
+   "name": "Corteva, Inc.",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "close": 10.149999618530273,
-   "stop": 9.631765422485426,
-   "risk": 5.1,
-   "rsi": 80,
-   "vol": 4.32,
-   "days": 4,
+   "close": 14.449999809265137,
+   "stop": 13.436166544261852,
+   "risk": 7.0,
+   "rsi": 72,
+   "vol": 5.18,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -199,96 +197,96 @@
  ],
  "watch": [
   {
-   "sym": "OPCH",
-   "name": "Option Care Health, Inc.",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 29.51
-  },
-  {
-   "sym": "CEG",
-   "name": "Constellation Energy Corpora",
+   "sym": "BKH",
+   "name": "Black Hills Corporation",
    "sector": "תשתיות",
    "isTop": false,
-   "vol": 4.35
+   "vol": 3.85
   },
   {
-   "sym": "VST",
-   "name": "Vistra Corp.",
+   "sym": "NWE",
+   "name": "NorthWestern Energy Group, I",
    "sector": "תשתיות",
    "isTop": false,
-   "vol": 3.27
+   "vol": 3.47
   },
   {
-   "sym": "CIEN",
-   "name": "Ciena Corporation",
+   "sym": "SPOT",
+   "name": "Spotify Technology S.A.",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "vol": 1.4
+  },
+  {
+   "sym": "GRND",
+   "name": "Grindr Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 2.47
+   "vol": 1.27
   },
   {
-   "sym": "BSBR",
-   "name": "Banco Santander Brasil SA",
-   "sector": "פיננסים",
+   "sym": "RMD",
+   "name": "ResMed Inc.",
+   "sector": "בריאות",
    "isTop": false,
-   "vol": 2.25
+   "vol": 0.95
   },
   {
-   "sym": "INTR",
-   "name": "Inter & Co. Inc.",
-   "sector": "פיננסים",
+   "sym": "MO",
+   "name": "Altria Group, Inc.",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 2.0
+   "vol": 0.9
   }
  ],
  "touch": [
   {
-   "sym": "AVGO",
-   "name": "Broadcom Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": true,
-   "level": "SMA150",
-   "pct": -0.8
-  },
-  {
-   "sym": "CB",
-   "name": "Chubb Limited",
-   "sector": "פיננסים",
+   "sym": "CHD",
+   "name": "Church & Dwight Company, Inc",
+   "sector": "צריכה בסיסית",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.1
   },
   {
-   "sym": "AMBP",
-   "name": "Ardagh Metal Packaging S.A.",
-   "sector": "צריכה מחזורית",
+   "sym": "COR",
+   "name": "Cencora, Inc.",
+   "sector": "בריאות",
    "isTop": false,
    "level": "SMA200",
    "pct": -0.2
   },
   {
-   "sym": "ASO",
-   "name": "Academy Sports and Outdoors,",
-   "sector": "צריכה מחזורית",
+   "sym": "INDV",
+   "name": "Indivior Pharmaceuticals, In",
+   "sector": "בריאות",
    "isTop": false,
-   "level": "SMA200",
+   "level": "SMA150",
    "pct": -0.2
   },
   {
-   "sym": "RSG",
-   "name": "Republic Services, Inc.",
-   "sector": "תעשייה",
+   "sym": "BIP",
+   "name": "Brookfield Infrastructure Pa",
+   "sector": "תשתיות",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
+   "level": "SMA150",
+   "pct": -0.3
   },
   {
-   "sym": "AERO",
-   "name": "Grupo Aeromexico, S.A.B. de ",
-   "sector": "תעשייה",
+   "sym": "VLYPO",
+   "name": "Valley National Bancorp - 5.",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.5
+  },
+  {
+   "sym": "CI",
+   "name": "The Cigna Group",
+   "sector": "בריאות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.5
   }
  ]
 }
