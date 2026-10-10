@@ -1,34 +1,34 @@
 {
- "date": "2026-10-09",
- "dateHe": "שישי 09/10/2026",
- "tradeDateHe": "יום חמישי 08/10/2026",
- "checked": 5220,
- "pctAbove": 34,
+ "date": "2026-10-10",
+ "dateHe": "שבת 10/10/2026",
+ "tradeDateHe": "יום שישי 09/10/2026",
+ "checked": 5038,
+ "pctAbove": 35,
  "counts": {
-  "setup": 106,
-  "today": 67,
-  "touch": 28
+  "setup": 118,
+  "today": 27,
+  "touch": 34
  },
  "sectors": [
   [
-   "אנרגיה",
+   "תקשורת ומדיה",
    49
   ],
   [
-   "פיננסים",
-   45
+   "אנרגיה",
+   48
   ],
   [
    "טכנולוגיה",
-   41
+   43
+  ],
+  [
+   "פיננסים",
+   43
   ],
   [
    "בריאות",
-   32
-  ],
-  [
-   "תקשורת ומדיה",
-   31
+   34
   ],
   [
    "צריכה בסיסית",
@@ -40,15 +40,15 @@
   ],
   [
    "צריכה מחזורית",
-   28
+   27
   ],
   [
    "חומרי גלם",
-   26
+   25
   ],
   [
    "תשתיות",
-   19
+   21
   ],
   [
    "נדל\"ן",
@@ -57,14 +57,16 @@
  ],
  "top": {
   "n": 28,
-  "above": 22,
+  "above": 21,
   "below": [
    "AVGO",
-   "TSLA",
    "WMT",
+   "ORCL",
    "COST"
   ],
-  "between": [],
+  "between": [
+   "TSLA"
+  ],
   "setup": [
    "GOOGL"
   ],
@@ -73,22 +75,22 @@
   "leaders": [
    [
     "AMD",
-    61.9
+    57.8
    ],
    [
     "MU",
-    48.4
+    46.6
    ],
    [
     "PLTR",
-    30.6
+    37.2
    ]
   ],
   "entered": [
-   "CVX"
+   "ORCL"
   ],
   "exited": [
-   "ORCL"
+   "CVX"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -106,19 +108,19 @@
    "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
    "AMD": "Advanced Micro Devices, Inc.",
-   "JPM": "JP Morgan Chase & Co.",
    "WMT": "Walmart Inc.",
+   "JPM": "JP Morgan Chase & Co.",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
    "JNJ": "Johnson & Johnson",
    "INTC": "Intel Corporation",
    "MA": "Mastercard Incorporated",
-   "ABBV": "AbbVie Inc.",
    "PLTR": "Palantir Technologies Inc.",
+   "ABBV": "AbbVie Inc.",
    "CSCO": "Cisco Systems, Inc.",
-   "COST": "Costco Wholesale Corporation",
-   "CVX": "Chevron Corporation"
+   "ORCL": "Oracle Corporation",
+   "COST": "Costco Wholesale Corporation"
   }
  },
  "setups": [
@@ -127,12 +129,12 @@
    "name": "Option Care Health, Inc.",
    "sector": "בריאות",
    "isTop": false,
-   "close": 31.049999237060547,
-   "stop": 29.527554027394437,
-   "risk": 4.9,
+   "close": 31.06999969482422,
+   "stop": 29.64772915116658,
+   "risk": 4.6,
    "rsi": 84,
    "vol": 29.51,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -144,12 +146,12 @@
    "name": "PTC Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 193.72999572753906,
-   "stop": 183.35462009362558,
-   "risk": 5.4,
+   "close": 194.4499969482422,
+   "stop": 184.68714847230655,
+   "risk": 5.0,
    "rsi": 81,
    "vol": 16.89,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -161,12 +163,12 @@
    "name": "PagSeguro Digital Ltd.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 10.680000305175781,
-   "stop": 9.985188025172071,
-   "risk": 6.5,
-   "rsi": 66,
+   "close": 11.15999984741211,
+   "stop": 10.462317040503647,
+   "risk": 6.3,
+   "rsi": 70,
    "vol": 5.93,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -178,12 +180,12 @@
    "name": "Comp En De Mn Cemig",
    "sector": "תשתיות",
    "isTop": false,
-   "close": 3.5999999046325684,
-   "stop": 3.4126892493777308,
-   "risk": 5.2,
-   "rsi": 64,
-   "vol": 5.03,
-   "days": 4,
+   "close": 3.6500000953674316,
+   "stop": 3.470711609337831,
+   "risk": 4.9,
+   "rsi": 66,
+   "vol": 5.04,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -193,88 +195,56 @@
  ],
  "watch": [
   {
-   "sym": "TDC",
-   "name": "Teradata Corporation",
-   "sector": "טכנולוגיה",
+   "sym": "AMT",
+   "name": "American Tower Corporation (",
+   "sector": "נדל\"ן",
    "isTop": false,
-   "vol": 2.41
+   "vol": 2.99
   },
   {
-   "sym": "AMBP",
-   "name": "Ardagh Metal Packaging S.A.",
-   "sector": "צריכה מחזורית",
+   "sym": "MDT",
+   "name": "Medtronic plc.",
+   "sector": "בריאות",
    "isTop": false,
-   "vol": 2.31
+   "vol": 1.54
   },
   {
-   "sym": "RELX",
-   "name": "RELX PLC PLC",
+   "sym": "UNH",
+   "name": "UnitedHealth Group Incorpora",
+   "sector": "בריאות",
+   "isTop": false,
+   "vol": 1.48
+  },
+  {
+   "sym": "MOG-B",
+   "name": "Moog Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.73
+   "vol": 1.43
   },
   {
-   "sym": "MICC",
-   "name": "The Magnum Ice Cream Company",
-   "sector": "צריכה בסיסית",
+   "sym": "CME",
+   "name": "CME Group Inc.",
+   "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.49
+   "vol": 1.42
   },
   {
-   "sym": "OPLN",
-   "name": "OPENLANE, Inc.",
-   "sector": "צריכה מחזורית",
+   "sym": "NTES",
+   "name": "NetEase, Inc.",
+   "sector": "תקשורת ומדיה",
    "isTop": false,
-   "vol": 1.41
-  },
-  {
-   "sym": "OKE",
-   "name": "ONEOK, Inc.",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "vol": 1.33
+   "vol": 1.32
   }
  ],
  "touch": [
   {
-   "sym": "WTW",
-   "name": "Willis Towers Watson Public ",
+   "sym": "C",
+   "name": "Citigroup, Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "HCA",
-   "name": "HCA Healthcare, Inc.",
-   "sector": "בריאות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "MRSH",
-   "name": "Marsh",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "ACGL",
-   "name": "Arch Capital Group Ltd.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.3
-  },
-  {
-   "sym": "CPK",
-   "name": "Chesapeake Utilities Corpora",
-   "sector": "תשתיות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.3
+   "level": "SMA150",
+   "pct": -0.0
   },
   {
    "sym": "GNRC",
@@ -282,6 +252,38 @@
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
+   "pct": -0.2
+  },
+  {
+   "sym": "AEM",
+   "name": "Agnico Eagle Mines Limited",
+   "sector": "חומרי גלם",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
+  },
+  {
+   "sym": "STNE",
+   "name": "StoneCo Ltd.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
+  },
+  {
+   "sym": "LAMR",
+   "name": "Lamar Advertising Company",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.3
+  },
+  {
+   "sym": "VLYPP",
+   "name": "Valley National Bancorp - 6.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA200",
    "pct": -0.3
   }
  ]

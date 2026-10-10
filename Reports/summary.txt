@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום שישי 09/10/2026 | נתוני מסחר 08/10/2026
+סריקת סווינג כ״ח 28 | יום שבת 10/10/2026 | נתוני מסחר 09/10/2026
 סט-אפים Top 28: GOOGL
-סט-אפים גילוי: ACN, CDNS, SNPS, MPWR, TEL, FLEX, ZM, MTSI, PTC, TOST, CDW, GWRE, BSY, INGM, LYFT (+90)
-פרצו היום (מעקב): PAYX, MNDY, TDC, FOXA, FOX, WMG, MAR, HLT, EXPE, ULTA, RL, PKG, CCK, OPLN, AMBP
-נגעו מלמטה בממוצע: CTSH, CL, FMX, BF-A, BF-B, PRDO, CME, MRSH, ALL, AFL, ACGL, WTW, MTG, VLYPO, VLYPP (+13)
-שינוי ב-Top: נכנסו CVX | יצאו ORCL
+סט-אפים גילוי: ACN, PAYX, PTC, TOST, BSY, LYFT, MNDY, NATL, EXTR, PAGS, TDC, GRND, NCNO, BLKB, BVC (+102)
+פרצו היום (מעקב): CIEN, DOCN, ATEN, NTES, PINS, BZ, DG, PRDO, UBS, CME, IX, TROW, FCFS, UNH, MDT
+נגעו מלמטה בממוצע: ADSK, ROP, CTSH, STNE, SIRI, MUSA, ZGN, PTRN, UL, CL, FMX, WFC, C, MRSH, ALL (+19)
+שינוי ב-Top: נכנסו ORCL | יצאו CVX
