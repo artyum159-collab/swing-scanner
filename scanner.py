@@ -15,6 +15,7 @@
 import os
 import sys
 import json
+import re
 import math
 import datetime as dt
 import subprocess
@@ -362,7 +363,135 @@ def chk(ok):
     return f'<span class="{"ok" if ok else "no"}">{"✔" if ok else "✖"}</span>'
 
 
-def build_html(top, disc_meta, results, entered, exited, errors, market=None):
+def _he_list(items, limit=6):
+    items = list(items)
+    if not items:
+        return ""
+    shown = items[:limit]
+    vav = lambda w: ("ו" if "\u05d0" <= w[:1] <= "\u05ea" else "ו-") + w   # "ואנרגיה" / "ו-COST"
+    txt = (", ".join(shown[:-1]) + " " + vav(shown[-1])) if len(shown) > 1 else shown[0]
+    if len(items) > limit:
+        txt = ", ".join(shown) + f" ועוד {len(items) - limit}"
+    return txt
+
+
+def build_narrative(data, prev=None):
+    """מלל מסכם בעברית לראש הדוח — נבנה מאותם נתונים של video_data.json, בהשוואה לריצה הקודמת אם קיימת."""
+    if prev and prev.get("date") == data.get("date"):
+        prev = None                                     # ריצה חוזרת באותו יום — אין השוואה אמיתית
+    paras = []
+    pa, n = data["pctAbove"], data["checked"]
+    tone = "חלש" if pa < 30 else "מעורב" if pa < 50 else "חזק"
+    t = f"<b>רוחב השוק:</b> {pa}% מתוך {n:,} המניות שנבדקו נסגרו מעל שני הממוצעים (SMA150 ו-SMA200) — רוחב {tone}"
+    if prev and "pctAbove" in prev:
+        d = pa - prev["pctAbove"]
+        t += (f", שינוי של {d:+d} {'נקודה' if abs(d) == 1 else 'נקודות'} לעומת הסריקה הקודמת ({prev['pctAbove']}%)" if d else
+              f", ללא שינוי לעומת הסריקה הקודמת")
+    t += ". " + ("רוב השוק עדיין מתחת לממוצעים, כך שהעוצמה מרוכזת בחלק קטן יחסית של המניות."
+                 if pa < 50 else "יותר ממחצית השוק מעל הממוצעים — רקע תומך לפריצות.")
+    paras.append(t)
+
+    secs = data.get("sectors") or []
+    if secs:
+        t = (f"<b>סקטורים:</b> החזקים הם {_he_list([f'{k} ({v}%)' for k, v in secs[:2]])}; "
+             f"החלשים הם {_he_list([f'{k} ({v}%)' for k, v in secs[-2:]])}.")
+        if prev and prev.get("sectors"):
+            old = dict(map(tuple, prev["sectors"]))
+            moves = sorted(((k, v - old[k]) for k, v in secs if k in old and abs(v - old[k]) >= 4),
+                           key=lambda x: -abs(x[1]))
+            if moves:
+                t += " שינויים בולטים מהסריקה הקודמת: " + _he_list([f"{k} {d:+d}" for k, d in moves[:3]]) + " נקודות."
+        paras.append(t)
+
+    tp = data["top"]
+    t = f"<b>Top {tp['n']}:</b> {tp['above']} מתוך {tp['n']} הגדולות מעל שני הממוצעים."
+    if tp["setup"]:
+        t += f" בסט-אפ פעיל (פרצה והחזיקה): {_he_list(tp['setup'])}."
+    if tp["today"]:
+        t += f" פרצו ביום המסחר האחרון וממתינות ליום אישור: {_he_list(tp['today'])}."
+    if tp["touch"]:
+        t += " נגעו בממוצע מלמטה ונסגרו מתחתיו: " + _he_list([f"{s} ({lvl} {p:+.1f}%)" for s, lvl, p in tp["touch"]]) + "."
+    if tp["between"]:
+        t += f" בין הממוצעים: {_he_list(tp['between'])}."
+    if tp["below"]:
+        t += f" מתחת לשניהם: {_he_list(tp['below'])}."
+    if prev and prev.get("top"):
+        pt = prev["top"]
+        def state(top, s):
+            for k in ("setup", "today", "between", "below"):
+                if s in top.get(k, []):
+                    return k
+            if s in [x[0] for x in top.get("touch", [])]:
+                return "touch"
+            return "above"
+        rank = {"below": 0, "touch": 1, "between": 1, "today": 2, "setup": 3, "above": 3}
+        he = {"below": "מתחת לשניהם", "touch": "נגיעה מלמטה", "between": "בין הממוצעים",
+              "today": "פריצה ביום האחרון", "setup": "סט-אפ", "above": "מעל שניהם"}
+        up, down = [], []
+        for s in tp.get("names", {}):
+            if s in tp.get("entered", []):
+                continue
+            a, b = state(pt, s), state(tp, s)
+            if a != b and rank[a] != rank[b]:
+                (up if rank[b] > rank[a] else down).append(f"{s} ({he[a]} ← {he[b]})")
+        if up:
+            t += f" השתפרו מאז הסריקה הקודמת: {_he_list(up)}."
+        if down:
+            t += f" נחלשו: {_he_list(down)}."
+        if not up and not down:
+            t += " אין שינוי מצב במניות ה-Top לעומת הסריקה הקודמת."
+    if tp.get("leaders"):
+        t += " המובילות במרחק מ-SMA200: " + _he_list([f"{s} ({p:+.0f}%)" for s, p in tp["leaders"]]) + "."
+    if tp.get("entered") or tp.get("exited"):
+        t += f" שינוי ברשימה: נכנסה {_he_list(tp['entered']) or '—'}, יצאה {_he_list(tp['exited']) or '—'}."
+    paras.append(t)
+
+    c = data["counts"]
+    t = (f"<b>סיגנלים בכל היקום (Top + רווחיות מעל 2B$):</b> {c['setup']} סט-אפים שפרצו והחזיקו, "
+         f"{c['today']} פריצות טריות ביום האחרון, {c['touch']} נגיעות מלמטה")
+    if prev and prev.get("counts"):
+        pc_ = prev["counts"]
+        t += f" (בסריקה הקודמת: {pc_['setup']}, {pc_['today']} ו-{pc_['touch']} בהתאמה)"
+    t += "."
+    strong = [x for x in data.get("setups", []) if x.get("score", 0) >= 2]
+    if strong:
+        cname = {"vol": "מחזור", "res": "התנגדות", "rsi": "RSI"}
+        t += " הסט-אפים עם הכי הרבה אישורים: " + _he_list(
+            [f"{x['sym']} ({'+'.join(cname[k] for k in x['conf'])}, מחזור ×{x['vol']:.1f}, סיכון {x['risk']}%)" for x in strong]) + "."
+        hot = [x["sym"] for x in strong if x.get("rsi", 0) >= 75]
+        if hot:
+            t += f" שים לב: RSI גבוה (75+) ב-{_he_list(hot)} — המניות מתוחות אחרי ריצה חדה."
+    if data.get("watch"):
+        t += " ברשימת המעקב לפי מחזור: " + _he_list([f"{x['sym']} (×{x['vol']:.1f})" for x in data["watch"][:4]]) + "."
+    paras.append(t)
+
+    bottom = []
+    if pa < 40:
+        bottom.append("השוק הרחב עדיין חלש יחסית, והסיגנלים החזקים ביותר הם אלה עם יותר מאישור אחד ובסקטורים המובילים")
+    else:
+        bottom.append("רוחב השוק סביר, והסט-אפים החדשים נהנים מרקע תומך")
+    if c["today"]:
+        bottom.append(f"{c['today']} הפריצות הטריות יקבלו אישור או ייכשלו ביום המסחר הבא")
+    paras.append("<b>בשורה התחתונה:</b> " + "; ".join(bottom) + ". (סינון טכני בלבד, לא ייעוץ השקעות.)")
+    return paras
+
+
+_LTR_RUN = re.compile(r"(?:(?<![\u0590-\u05ff])[+\-])?[A-Za-z0-9$×][A-Za-z0-9.,$%×+\-]*[A-Za-z0-9$%×]|[A-Za-z0-9]")
+
+
+def _isolate_ltr(html):
+    """עוטף טיקרים ומספרים ב-<bdi> כדי שלא ישבשו את סדר הטקסט העברי (לא נוגע בתוך תגיות)."""
+    parts = re.split(r"(<[^>]+>)", html)
+    return "".join(x if x.startswith("<") else _LTR_RUN.sub(lambda m: f"<bdi>{m.group(0)}</bdi>", x) for x in parts)
+
+
+def narrative_html(paras):
+    if not paras:
+        return ""
+    return ('<h2>סיכום היום</h2><div class="narr">' + "".join(f"<p>{_isolate_ltr(x)}</p>" for x in paras) + "</div>")
+
+
+def build_html(top, disc_meta, results, entered, exited, errors, market=None, narrative=None):
     today = dt.date.today()
     data_date = max((r["date"] for r in results.values()), default=today)
     top_meta = {t["symbol"]: t for t in top}
@@ -431,6 +560,8 @@ table {{ border-collapse:collapse; width:100%; }}
 .note {{ color:#5a6678; font-size:9.5px; margin-top:14px; line-height:1.5; }}
 .empty {{ color:#5a6678; padding:3px 0; }}
 .sector {{ page-break-inside:avoid; }}
+.narr {{ background:#f6f8fb; border-right:4px solid #1f4e79; border-radius:4px; padding:6px 12px; line-height:1.65; font-size:11px; }}
+.narr p {{ margin:5px 0; }}
 </style></head><body>
 <div class="head">{logo_html()}<h1>סריקת סווינג יומית</h1>
 <div class="dt">📅 {he_date(today)} · נתוני מסחר מיום {he_date(data_date)}</div><br>
@@ -442,6 +573,8 @@ table {{ border-collapse:collapse; width:100%; }}
  <div class="box"><b>{tot_above / max(tot_n, 1) * 100:.0f}%</b>מהשוק מעל שני הממוצעים</div>
  <div class="box"><b>{tot_n:,}</b>מניות בשוק נבדקו</div>
 </div>"""]
+
+    html.append(narrative_html(narrative))
 
     if entered or exited:
         html.append(f'<div class="box" style="text-align:right">שינוי ברשימת Top {TOP_N}: '
@@ -675,7 +808,22 @@ def main():
         except Exception as e:
             errors.append(f"{s}: {e}")
 
-    html = build_html(top, disc, results, entered, exited, errors[:10], market)
+    # נתוני הריצה הקודמת (video_data.json שנשמר ב-repo) — להשוואה במלל המסכם
+    prev = None
+    try:
+        prev = json.loads((REPORT_DIR / "video_data.json").read_text(encoding="utf-8"))
+    except Exception:
+        pass
+    narrative = None
+    try:
+        data = export_video_data(top, disc, results, market, entered, exited)
+        narrative = build_narrative(data, prev)
+        (REPORT_DIR / "narrative.txt").write_text(
+            "\n\n".join(re.sub(r"<[^>]+>", "", x) for x in narrative), encoding="utf-8")
+    except Exception as e:
+        log(f"מלל מסכם / נתוני סרטון לא נבנו: {e}")
+
+    html = build_html(top, disc, results, entered, exited, errors[:10], market, narrative)
     stamp = dt.date.today().isoformat()
     html_path = REPORT_DIR / f"scan_{stamp}.html"
     pdf_path = REPORT_DIR / f"scan_{stamp}.pdf"
@@ -706,10 +854,6 @@ def main():
         lines.append(f"שינוי ב-Top: נכנסו {', '.join(entered) or '—'} | יצאו {', '.join(exited) or '—'}")
     (REPORT_DIR / "summary.txt").write_text("\n".join(lines), encoding="utf-8")
     (REPORT_DIR / "latest_path.txt").write_text(str(final), encoding="utf-8")
-    try:
-        export_video_data(top, disc, results, market, entered, exited)
-    except Exception as e:
-        log(f"נתוני סרטון לא נשמרו: {e}")
 
     if "--open" in sys.argv and hasattr(os, "startfile"):
         os.startfile(final)

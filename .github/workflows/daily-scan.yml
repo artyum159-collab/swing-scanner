@@ -97,7 +97,8 @@ jobs:
               m["Subject"] = summary.splitlines()[0]
               m["From"] = user
               m["To"] = ", ".join([user, "artyumfinance@gmail.com"])
-              m.set_content(summary)
+              narr = open("Reports/narrative.txt", encoding="utf-8").read() if os.path.exists("Reports/narrative.txt") else ""
+              m.set_content(summary + ("\n\n— סיכום היום —\n\n" + narr if narr else ""))
               with open(path, "rb") as f:
                   m.add_attachment(f.read(), maintype="application",
                                    subtype="pdf" if path.endswith(".pdf") else "octet-stream",
