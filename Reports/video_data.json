@@ -1,38 +1,38 @@
 {
- "date": "2026-10-10",
- "dateHe": "שבת 10/10/2026",
- "tradeDateHe": "יום שישי 09/10/2026",
- "checked": 5038,
- "pctAbove": 35,
+ "date": "2026-10-13",
+ "dateHe": "שלישי 13/10/2026",
+ "tradeDateHe": "יום שני 12/10/2026",
+ "checked": 5320,
+ "pctAbove": 34,
  "counts": {
-  "setup": 118,
-  "today": 27,
-  "touch": 34
+  "setup": 123,
+  "today": 34,
+  "touch": 35
  },
  "sectors": [
   [
-   "תקשורת ומדיה",
-   49
-  ],
-  [
    "אנרגיה",
-   48
-  ],
-  [
-   "טכנולוגיה",
-   43
+   51
   ],
   [
    "פיננסים",
    43
   ],
   [
+   "טכנולוגיה",
+   40
+  ],
+  [
    "בריאות",
    34
   ],
   [
+   "תקשורת ומדיה",
+   30
+  ],
+  [
    "צריכה בסיסית",
-   29
+   30
   ],
   [
    "תעשייה",
@@ -44,7 +44,7 @@
   ],
   [
    "חומרי גלם",
-   25
+   27
   ],
   [
    "תשתיות",
@@ -52,17 +52,15 @@
   ],
   [
    "נדל\"ן",
-   14
+   16
   ]
  ],
  "top": {
   "n": 28,
-  "above": 21,
+  "above": 22,
   "below": [
    "AVGO",
-   "WMT",
-   "ORCL",
-   "COST"
+   "WMT"
   ],
   "between": [
    "TSLA"
@@ -71,26 +69,32 @@
    "GOOGL"
   ],
   "today": [],
-  "touch": [],
+  "touch": [
+   [
+    "COST",
+    "SMA150",
+    -0.6
+   ]
+  ],
   "leaders": [
    [
     "AMD",
-    57.8
+    53.5
    ],
    [
     "MU",
-    46.6
+    40.2
    ],
    [
     "PLTR",
-    37.2
+    37.1
    ]
   ],
   "entered": [
-   "ORCL"
+   "CVX"
   ],
   "exited": [
-   "CVX"
+   "ORCL"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -119,22 +123,40 @@
    "PLTR": "Palantir Technologies Inc.",
    "ABBV": "AbbVie Inc.",
    "CSCO": "Cisco Systems, Inc.",
-   "ORCL": "Oracle Corporation",
-   "COST": "Costco Wholesale Corporation"
+   "COST": "Costco Wholesale Corporation",
+   "CVX": "Chevron Corporation"
   }
  },
  "setups": [
+  {
+   "sym": "AMT",
+   "name": "American Tower Corporation (",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "close": 182.55999755859375,
+   "stop": 175.79236668175457,
+   "risk": 3.7,
+   "rsi": 67,
+   "vol": 2.99,
+   "days": 1,
+   "score": 3,
+   "conf": [
+    "vol",
+    "res",
+    "rsi"
+   ]
+  },
   {
    "sym": "OPCH",
    "name": "Option Care Health, Inc.",
    "sector": "בריאות",
    "isTop": false,
-   "close": 31.06999969482422,
-   "stop": 29.64772915116658,
-   "risk": 4.6,
+   "close": 31.100000381469727,
+   "stop": 29.770749170534533,
+   "risk": 4.3,
    "rsi": 84,
    "vol": 29.51,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -146,12 +168,12 @@
    "name": "PTC Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 194.4499969482422,
-   "stop": 184.68714847230655,
-   "risk": 5.0,
+   "close": 194.38999938964844,
+   "stop": 185.1927119769058,
+   "risk": 4.7,
    "rsi": 81,
    "vol": 16.89,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -163,28 +185,11 @@
    "name": "PagSeguro Digital Ltd.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 11.15999984741211,
-   "stop": 10.462317040503647,
-   "risk": 6.3,
+   "close": 11.140000343322754,
+   "stop": 10.464937767970556,
+   "risk": 6.1,
    "rsi": 70,
    "vol": 5.93,
-   "days": 4,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "CIG-C",
-   "name": "Comp En De Mn Cemig",
-   "sector": "תשתיות",
-   "isTop": false,
-   "close": 3.6500000953674316,
-   "stop": 3.470711609337831,
-   "risk": 4.9,
-   "rsi": 66,
-   "vol": 5.04,
    "days": 5,
    "score": 2,
    "conf": [
@@ -195,80 +200,56 @@
  ],
  "watch": [
   {
-   "sym": "AMT",
-   "name": "American Tower Corporation (",
-   "sector": "נדל\"ן",
+   "sym": "NOVT",
+   "name": "Novanta Inc.",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 2.99
+   "vol": 3.02
   },
   {
-   "sym": "MDT",
-   "name": "Medtronic plc.",
-   "sector": "בריאות",
+   "sym": "AVNT",
+   "name": "Avient Corporation",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "vol": 1.54
+   "vol": 2.03
   },
   {
-   "sym": "UNH",
-   "name": "UnitedHealth Group Incorpora",
-   "sector": "בריאות",
+   "sym": "WMB",
+   "name": "Williams Companies, Inc. (Th",
+   "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.48
+   "vol": 1.01
   },
   {
-   "sym": "MOG-B",
-   "name": "Moog Inc.",
-   "sector": "תעשייה",
+   "sym": "VIST",
+   "name": "Vista Energy S.A.B. de C.V.",
+   "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.43
+   "vol": 1.0
   },
   {
-   "sym": "CME",
-   "name": "CME Group Inc.",
-   "sector": "פיננסים",
+   "sym": "CNR",
+   "name": "Core Natural Resources, Inc.",
+   "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.42
+   "vol": 0.98
   },
-  {
-   "sym": "NTES",
-   "name": "NetEase, Inc.",
-   "sector": "תקשורת ומדיה",
-   "isTop": false,
-   "vol": 1.32
-  }
- ],
- "touch": [
   {
    "sym": "C",
    "name": "Citigroup, Inc.",
    "sector": "פיננסים",
    "isTop": false,
+   "vol": 0.92
+  }
+ ],
+ "touch": [
+  {
+   "sym": "COST",
+   "name": "Costco Wholesale Corporation",
+   "sector": "צריכה בסיסית",
+   "isTop": true,
    "level": "SMA150",
-   "pct": -0.0
-  },
-  {
-   "sym": "GNRC",
-   "name": "Generac Holdlings Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.2
-  },
-  {
-   "sym": "AEM",
-   "name": "Agnico Eagle Mines Limited",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
-  },
-  {
-   "sym": "STNE",
-   "name": "StoneCo Ltd.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.6
   },
   {
    "sym": "LAMR",
@@ -276,12 +257,36 @@
    "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.3
+   "pct": -0.0
   },
   {
-   "sym": "VLYPP",
-   "name": "Valley National Bancorp - 6.",
+   "sym": "MRSH",
+   "name": "Marsh",
    "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "BF-A",
+   "name": "Brown Forman Inc",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
+  },
+  {
+   "sym": "OUT",
+   "name": "OUTFRONT Media Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.2
+  },
+  {
+   "sym": "BF-B",
+   "name": "Brown Forman Inc",
+   "sector": "צריכה בסיסית",
    "isTop": false,
    "level": "SMA200",
    "pct": -0.3
