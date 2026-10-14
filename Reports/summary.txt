@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום שלישי 13/10/2026 | נתוני מסחר 12/10/2026
-סט-אפים Top 28: GOOGL
-סט-אפים גילוי: ACN, PAYX, PTC, DOCN, BSY, PAGS, TDC, GRND, BLKB, ATEN, NCNO, DXC, GOOG, DIS, SPOT (+107)
-פרצו היום (מעקב): ROP, NOVT, BUD, UL, CL, FMX, DAR, C, BMO, MCO, ALL, ACGL, WTW, ONB, HOMB
-נגעו מלמטה בממוצע: COST, ADSK, CTSH, TYL, OTEX, STNE, ROST, ZGN, BF-A, BF-B, CENTA, WFC, SCHW, MRSH, AFL (+20)
-שינוי ב-Top: נכנסו CVX | יצאו ORCL
+סריקת סווינג כ״ח 28 | יום רביעי 14/10/2026 | נתוני מסחר 13/10/2026
+סט-אפים Top 28: אין
+סט-אפים גילוי: ACN, PAYX, ROP, DOCN, NOVT, TDC, GRND, ATEN, DIS, SPOT, NTES, WMG, PINS, BZ, MAR (+98)
+פרצו היום (מעקב): QCOM, CTSH, LOGI, TYL, OTEX, LYV, OMC, DRI, PKG, MGA, ZGN, BF-A, BF-B, PSMT, RY
+נגעו מלמטה בממוצע: ADSK, BR, PPLI, ROST, BALL, FIVE, COST, KR, OLLI, CENTA, IBN, MSCI, SYF, UMBF, CACC (+20)
+שינוי ב-Top: נכנסו BRK-B, ORCL | יצאו BRK-A, COST
