@@ -1,58 +1,58 @@
 {
- "date": "2026-10-14",
- "dateHe": "רביעי 14/10/2026",
- "tradeDateHe": "יום שלישי 13/10/2026",
- "checked": 5221,
- "pctAbove": 34,
+ "date": "2026-10-15",
+ "dateHe": "חמישי 15/10/2026",
+ "tradeDateHe": "יום רביעי 14/10/2026",
+ "checked": 5331,
+ "pctAbove": 31,
  "counts": {
-  "setup": 113,
-  "today": 30,
-  "touch": 35
+  "setup": 100,
+  "today": 25,
+  "touch": 28
  },
  "sectors": [
   [
    "אנרגיה",
-   54
+   49
   ],
   [
    "פיננסים",
-   43
-  ],
-  [
-   "טכנולוגיה",
    39
   ],
   [
-   "בריאות",
-   31
+   "טכנולוגיה",
+   35
   ],
   [
    "צריכה בסיסית",
-   31
+   35
   ],
   [
-   "תקשורת ומדיה",
-   30
-  ],
-  [
-   "תעשייה",
+   "בריאות",
    29
   ],
   [
    "צריכה מחזורית",
-   28
+   27
   ],
   [
-   "חומרי גלם",
+   "תקשורת ומדיה",
+   26
+  ],
+  [
+   "תעשייה",
    26
   ],
   [
    "תשתיות",
-   25
+   24
+  ],
+  [
+   "חומרי גלם",
+   22
   ],
   [
    "נדל\"ן",
-   16
+   12
   ]
  ],
  "top": {
@@ -61,34 +61,37 @@
   "below": [
    "AVGO",
    "TSLA",
-   "WMT",
-   "ORCL"
+   "WMT"
   ],
-  "between": [],
+  "between": [
+   "GOOGL"
+  ],
   "setup": [],
-  "today": [],
+  "today": [
+   "COST"
+  ],
   "touch": [],
   "leaders": [
    [
     "AMD",
-    55.6
+    46.0
    ],
    [
     "PLTR",
-    36.9
+    31.7
    ],
    [
     "MU",
-    34.5
+    28.4
    ]
   ],
   "entered": [
-   "BRK-B",
-   "ORCL"
-  ],
-  "exited": [
    "BRK-A",
    "COST"
+  ],
+  "exited": [
+   "BRK-B",
+   "ORCL"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -101,10 +104,10 @@
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "SKHY": "SK hynix Inc.",
-   "BRK-B": "Berkshire Hathaway Inc. New",
-   "MU": "Micron Technology, Inc.",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
+   "SKHY": "SK hynix Inc.",
+   "MU": "Micron Technology, Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
    "WMT": "Walmart Inc.",
    "JPM": "JP Morgan Chase & Co.",
@@ -112,26 +115,26 @@
    "XOM": "ExxonMobil Holdings Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
    "JNJ": "Johnson & Johnson",
-   "INTC": "Intel Corporation",
    "MA": "Mastercard Incorporated",
-   "PLTR": "Palantir Technologies Inc.",
+   "INTC": "Intel Corporation",
    "ABBV": "AbbVie Inc.",
+   "PLTR": "Palantir Technologies Inc.",
    "CSCO": "Cisco Systems, Inc.",
-   "ORCL": "Oracle Corporation",
-   "CVX": "Chevron Corporation"
+   "CVX": "Chevron Corporation",
+   "COST": "Costco Wholesale Corporation"
   }
  },
  "setups": [
   {
-   "sym": "OPCH",
-   "name": "Option Care Health, Inc.",
-   "sector": "בריאות",
+   "sym": "NWE",
+   "name": "NorthWestern Energy Group, I",
+   "sector": "תשתיות",
    "isTop": false,
-   "close": 31.100000381469727,
-   "stop": 29.857124265204256,
-   "risk": 4.0,
-   "rsi": 84,
-   "vol": 29.51,
+   "close": 74.48999786376953,
+   "stop": 71.68442967439351,
+   "risk": 3.8,
+   "rsi": 65,
+   "vol": 3.47,
    "days": 5,
    "score": 2,
    "conf": [
@@ -140,16 +143,16 @@
    ]
   },
   {
-   "sym": "LW",
-   "name": "Lamb Weston Holdings, Inc.",
-   "sector": "צריכה בסיסית",
+   "sym": "AMT",
+   "name": "American Tower Corporation (",
+   "sector": "נדל\"ן",
    "isTop": false,
-   "close": 51.959999084472656,
-   "stop": 48.959739644497205,
-   "risk": 5.8,
-   "rsi": 64,
-   "vol": 4.23,
-   "days": 5,
+   "close": 179.39999389648438,
+   "stop": 172.65124544747914,
+   "risk": 3.8,
+   "rsi": 61,
+   "vol": 2.99,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -157,116 +160,92 @@
    ]
   },
   {
-   "sym": "BKH",
-   "name": "Black Hills Corporation",
-   "sector": "תשתיות",
+   "sym": "AVAL",
+   "name": "Grupo Aval Acciones y Valore",
+   "sector": "פיננסים",
    "isTop": false,
-   "close": 77.23999786376953,
-   "stop": 74.3555073633229,
-   "risk": 3.7,
-   "rsi": 70,
-   "vol": 3.85,
-   "days": 4,
+   "close": 4.900000095367432,
+   "stop": 4.664828614422639,
+   "risk": 4.8,
+   "rsi": 44,
+   "vol": 2.04,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
-    "res"
+    "rsi"
    ]
   },
   {
-   "sym": "NWE",
-   "name": "NorthWestern Energy Group, I",
-   "sector": "תשתיות",
+   "sym": "AVNT",
+   "name": "Avient Corporation",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "close": 75.26000213623047,
-   "stop": 72.46246744475654,
-   "risk": 3.7,
-   "rsi": 70,
-   "vol": 3.47,
-   "days": 4,
+   "close": 38.849998474121094,
+   "stop": 36.86653962994686,
+   "risk": 5.1,
+   "rsi": 39,
+   "vol": 2.03,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
-    "res"
+    "rsi"
    ]
   }
  ],
  "watch": [
   {
-   "sym": "PSMT",
-   "name": "PriceSmart, Inc.",
+   "sym": "MPLX",
+   "name": "MPLX LP",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.54
+  },
+  {
+   "sym": "OGE",
+   "name": "OGE Energy Corp",
+   "sector": "תשתיות",
+   "isTop": false,
+   "vol": 1.44
+  },
+  {
+   "sym": "COST",
+   "name": "Costco Wholesale Corporation",
+   "sector": "צריכה בסיסית",
+   "isTop": true,
+   "vol": 1.33
+  },
+  {
+   "sym": "OLLI",
+   "name": "Ollie's Bargain Outlet Holdi",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 2.25
+   "vol": 1.21
   },
   {
-   "sym": "OTEX",
-   "name": "Open Text Corporation",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 1.6
-  },
-  {
-   "sym": "RY",
-   "name": "Royal Bank Of Canada",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.42
-  },
-  {
-   "sym": "AVAL",
-   "name": "Grupo Aval Acciones y Valore",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.28
-  },
-  {
-   "sym": "MGA",
-   "name": "Magna International, Inc.",
+   "sym": "BALL",
+   "name": "Ball Corporation",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "vol": 1.22
+   "vol": 1.17
   },
   {
-   "sym": "MRSH",
-   "name": "Marsh",
-   "sector": "פיננסים",
+   "sym": "MNST",
+   "name": "Monster Beverage Corporation",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 1.21
+   "vol": 1.15
   }
  ],
  "touch": [
   {
-   "sym": "UHS",
-   "name": "Universal Health Services, I",
+   "sym": "ABT",
+   "name": "Abbott Laboratories",
    "sector": "בריאות",
    "isTop": false,
    "level": "SMA200",
    "pct": -0.0
-  },
-  {
-   "sym": "CENTA",
-   "name": "Central Garden & Pet Company",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
-  },
-  {
-   "sym": "OUT",
-   "name": "OUTFRONT Media Inc.",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
-  },
-  {
-   "sym": "IBN",
-   "name": "ICICI Bank Limited",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
   },
   {
    "sym": "BR",
@@ -274,15 +253,39 @@
    "sector": "טכנולוגיה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.3
+   "pct": -0.2
   },
   {
-   "sym": "OLLI",
-   "name": "Ollie's Bargain Outlet Holdi",
-   "sector": "צריכה בסיסית",
+   "sym": "AVY",
+   "name": "Avery Dennison Corporation",
+   "sector": "צריכה מחזורית",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.3
+   "pct": -0.2
+  },
+  {
+   "sym": "AWK",
+   "name": "American Water Works Company",
+   "sector": "תשתיות",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.4
+  },
+  {
+   "sym": "FIVE",
+   "name": "Five Below, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.4
+  },
+  {
+   "sym": "FELE",
+   "name": "Franklin Electric Co., Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.4
   }
  ]
 }
