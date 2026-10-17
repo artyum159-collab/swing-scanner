@@ -1,99 +1,99 @@
 {
- "date": "2026-10-16",
- "dateHe": "שישי 16/10/2026",
- "tradeDateHe": "יום חמישי 15/10/2026",
- "checked": 5234,
- "pctAbove": 34,
+ "date": "2026-10-17",
+ "dateHe": "שבת 17/10/2026",
+ "tradeDateHe": "יום שישי 16/10/2026",
+ "checked": 5332,
+ "pctAbove": 32,
  "counts": {
-  "setup": 105,
-  "today": 83,
-  "touch": 51
+  "setup": 128,
+  "today": 32,
+  "touch": 58
  },
  "sectors": [
   [
-   "פיננסים",
-   44
-  ],
-  [
    "אנרגיה",
-   44
+   50
   ],
   [
-   "טכנולוגיה",
-   38
+   "פיננסים",
+   41
   ],
   [
    "צריכה בסיסית",
-   36
+   38
+  ],
+  [
+   "טכנולוגיה",
+   33
   ],
   [
    "צריכה מחזורית",
-   31
-  ],
-  [
-   "בריאות",
-   31
-  ],
-  [
-   "תקשורת ומדיה",
    30
   ],
   [
-   "תעשייה",
+   "בריאות",
+   28
+  ],
+  [
+   "תקשורת ומדיה",
    26
   ],
   [
    "חומרי גלם",
-   24
+   26
+  ],
+  [
+   "תעשייה",
+   25
   ],
   [
    "תשתיות",
-   23
+   25
   ],
   [
    "נדל\"ן",
-   14
+   13
   ]
  ],
  "top": {
   "n": 28,
-  "above": 22,
+  "above": 21,
   "below": [
+   "GOOGL",
    "AVGO",
    "TSLA"
   ],
   "between": [
+   "ASML",
    "INTC"
   ],
   "setup": [
    "COST"
   ],
   "today": [
-   "GOOGL"
+   "WMT"
   ],
-  "touch": [
-   [
-    "WMT",
-    "SMA200",
-    -0.3
-   ]
-  ],
+  "touch": [],
   "leaders": [
    [
     "AMD",
-    43.2
-   ],
-   [
-    "PLTR",
-    31.4
+    34.1
    ],
    [
     "MU",
-    30.3
+    22.4
+   ],
+   [
+    "ABBV",
+    22.0
    ]
   ],
-  "entered": [],
-  "exited": [],
+  "entered": [
+   "BRK-B"
+  ],
+  "exited": [
+   "BRK-A"
+  ],
   "names": {
    "NVDA": "NVIDIA Corporation",
    "AAPL": "Apple Inc.",
@@ -105,24 +105,24 @@
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "BRK-A": "Berkshire Hathaway Inc.",
+   "BRK-B": "Berkshire Hathaway Inc. New",
    "LLY": "Eli Lilly and Company",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
    "WMT": "Walmart Inc.",
-   "AMD": "Advanced Micro Devices, Inc.",
    "JPM": "JP Morgan Chase & Co.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
    "JNJ": "Johnson & Johnson",
    "MA": "Mastercard Incorporated",
-   "INTC": "Intel Corporation",
    "ABBV": "AbbVie Inc.",
+   "INTC": "Intel Corporation",
    "PLTR": "Palantir Technologies Inc.",
+   "CVX": "Chevron Corporation",
    "COST": "Costco Wholesale Corporation",
-   "CSCO": "Cisco Systems, Inc.",
-   "CVX": "Chevron Corporation"
+   "CSCO": "Cisco Systems, Inc."
   }
  },
  "setups": [
@@ -131,12 +131,12 @@
    "name": "American Tower Corporation (",
    "sector": "נדל\"ן",
    "isTop": false,
-   "close": 181.36000061035156,
-   "stop": 174.52651899217736,
-   "risk": 3.8,
-   "rsi": 64,
+   "close": 185.27000427246094,
+   "stop": 178.3524843845098,
+   "risk": 3.7,
+   "rsi": 68,
    "vol": 2.99,
-   "days": 4,
+   "days": 5,
    "score": 3,
    "conf": [
     "vol",
@@ -145,33 +145,16 @@
    ]
   },
   {
-   "sym": "WMG",
-   "name": "Warner Music Group Corp.",
-   "sector": "תקשורת ומדיה",
+   "sym": "WCN",
+   "name": "Waste Connections, Inc.",
+   "sector": "תעשייה",
    "isTop": false,
-   "close": 30.690000534057617,
-   "stop": 29.32281778137422,
-   "risk": 4.5,
-   "rsi": 72,
-   "vol": 2.29,
-   "days": 5,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "AVAL",
-   "name": "Grupo Aval Acciones y Valore",
-   "sector": "פיננסים",
-   "isTop": false,
-   "close": 4.900000095367432,
-   "stop": 4.668769446751414,
-   "risk": 4.7,
-   "rsi": 44,
-   "vol": 2.04,
-   "days": 2,
+   "close": 167.89999389648438,
+   "stop": 162.82619963442323,
+   "risk": 3.0,
+   "rsi": 71,
+   "vol": 2.74,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
@@ -183,111 +166,127 @@
    "name": "Avient Corporation",
    "sector": "חומרי גלם",
    "isTop": false,
-   "close": 39.0,
-   "stop": 37.058573897711284,
+   "close": 38.97999954223633,
+   "stop": 37.042246912804515,
    "risk": 5.0,
    "rsi": 40,
    "vol": 2.03,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
     "rsi"
    ]
+  },
+  {
+   "sym": "FMX",
+   "name": "Fomento Economico Mexicano S",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "close": 126.45999908447266,
+   "stop": 121.93492193901139,
+   "risk": 3.6,
+   "rsi": 67,
+   "vol": 3.12,
+   "days": 4,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
   }
  ],
  "watch": [
   {
-   "sym": "HOMB",
-   "name": "Home BancShares, Inc.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 3.07
-  },
-  {
-   "sym": "WCN",
-   "name": "Waste Connections, Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 2.74
-  },
-  {
-   "sym": "KMB",
-   "name": "Kimberly-Clark Corporation",
+   "sym": "BTI",
+   "name": "British American Tobacco  In",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 1.85
+   "vol": 3.04
   },
   {
-   "sym": "BBWI",
-   "name": "Bath & Body Works, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 1.78
-  },
-  {
-   "sym": "AMBP",
-   "name": "Ardagh Metal Packaging S.A.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 1.74
-  },
-  {
-   "sym": "RLI",
-   "name": "RLI Corp.",
+   "sym": "USB",
+   "name": "U.S. Bancorp",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.69
+   "vol": 2.1
+  },
+  {
+   "sym": "EBC",
+   "name": "Eastern Bankshares, Inc.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.5
+  },
+  {
+   "sym": "MTDR",
+   "name": "Matador Resources Company",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.28
+  },
+  {
+   "sym": "AR",
+   "name": "Antero Resources Corporation",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.25
+  },
+  {
+   "sym": "CINF",
+   "name": "Cincinnati Financial Corpora",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.24
   }
  ],
  "touch": [
   {
-   "sym": "WMT",
-   "name": "Walmart Inc.",
-   "sector": "צריכה בסיסית",
-   "isTop": true,
-   "level": "SMA200",
-   "pct": -0.3
-  },
-  {
-   "sym": "BPOP",
-   "name": "Popular, Inc.",
-   "sector": "פיננסים",
+   "sym": "AEM",
+   "name": "Agnico Eagle Mines Limited",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "level": "SMA150",
+   "level": "SMA200",
    "pct": -0.0
   },
   {
-   "sym": "SBCF",
-   "name": "Seacoast Banking Corporation",
-   "sector": "פיננסים",
+   "sym": "CCI",
+   "name": "Crown Castle Inc.",
+   "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.1
+   "pct": -0.2
   },
   {
-   "sym": "SYF",
-   "name": "Synchrony Financial",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "WM",
-   "name": "Waste Management, Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "PTON",
-   "name": "Peloton Interactive, Inc.",
-   "sector": "צריכה מחזורית",
+   "sym": "BIP",
+   "name": "Brookfield Infrastructure Pa",
+   "sector": "תשתיות",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.1
+   "pct": -0.2
+  },
+  {
+   "sym": "ASB",
+   "name": "Associated Banc-Corp",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.2
+  },
+  {
+   "sym": "FFBC",
+   "name": "First Financial Bancorp.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.2
+  },
+  {
+   "sym": "HIG",
+   "name": "The Hartford Insurance Group",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
   }
  ]
 }
