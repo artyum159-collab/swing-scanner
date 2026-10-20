@@ -1,13 +1,13 @@
 {
- "date": "2026-10-17",
- "dateHe": "שבת 17/10/2026",
- "tradeDateHe": "יום שישי 16/10/2026",
- "checked": 5332,
+ "date": "2026-10-20",
+ "dateHe": "שלישי 20/10/2026",
+ "tradeDateHe": "יום שני 19/10/2026",
+ "checked": 5224,
  "pctAbove": 32,
  "counts": {
-  "setup": 128,
-  "today": 32,
-  "touch": 58
+  "setup": 124,
+  "today": 19,
+  "touch": 27
  },
  "sectors": [
   [
@@ -19,12 +19,12 @@
    41
   ],
   [
-   "צריכה בסיסית",
-   38
+   "טכנולוגיה",
+   35
   ],
   [
-   "טכנולוגיה",
-   33
+   "צריכה בסיסית",
+   35
   ],
   [
    "צריכה מחזורית",
@@ -32,67 +32,67 @@
   ],
   [
    "בריאות",
-   28
+   30
   ],
   [
    "תקשורת ומדיה",
-   26
-  ],
-  [
-   "חומרי גלם",
-   26
+   27
   ],
   [
    "תעשייה",
-   25
+   24
+  ],
+  [
+   "חומרי גלם",
+   24
   ],
   [
    "תשתיות",
-   25
+   22
   ],
   [
    "נדל\"ן",
-   13
+   11
   ]
  ],
  "top": {
   "n": 28,
-  "above": 21,
+  "above": 20,
   "below": [
-   "GOOGL",
    "AVGO",
    "TSLA"
   ],
   "between": [
+   "GOOGL",
    "ASML",
-   "INTC"
+   "INTC",
+   "CSCO"
   ],
   "setup": [
+   "WMT",
    "COST"
   ],
-  "today": [
-   "WMT"
-  ],
+  "today": [],
   "touch": [],
   "leaders": [
    [
     "AMD",
-    34.1
+    35.9
+   ],
+   [
+    "PLTR",
+    27.1
    ],
    [
     "MU",
-    22.4
-   ],
-   [
-    "ABBV",
-    22.0
+    25.5
    ]
   ],
   "entered": [
-   "BRK-B"
+   "BRK-A"
   ],
   "exited": [
-   "BRK-A"
+   "BRK-B"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -105,7 +105,7 @@
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "BRK-B": "Berkshire Hathaway Inc. New",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
@@ -120,41 +120,23 @@
    "ABBV": "AbbVie Inc.",
    "INTC": "Intel Corporation",
    "PLTR": "Palantir Technologies Inc.",
-   "CVX": "Chevron Corporation",
    "COST": "Costco Wholesale Corporation",
+   "CVX": "Chevron Corporation",
    "CSCO": "Cisco Systems, Inc."
   }
  },
  "setups": [
   {
-   "sym": "AMT",
-   "name": "American Tower Corporation (",
-   "sector": "נדל\"ן",
+   "sym": "RY",
+   "name": "Royal Bank Of Canada",
+   "sector": "פיננסים",
    "isTop": false,
-   "close": 185.27000427246094,
-   "stop": 178.3524843845098,
-   "risk": 3.7,
-   "rsi": 68,
-   "vol": 2.99,
-   "days": 5,
-   "score": 3,
-   "conf": [
-    "vol",
-    "res",
-    "rsi"
-   ]
-  },
-  {
-   "sym": "WCN",
-   "name": "Waste Connections, Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "close": 167.89999389648438,
-   "stop": 162.82619963442323,
-   "risk": 3.0,
-   "rsi": 71,
-   "vol": 2.74,
-   "days": 1,
+   "close": 196.3000030517578,
+   "stop": 191.82090217167652,
+   "risk": 2.3,
+   "rsi": 46,
+   "vol": 2.12,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -166,12 +148,12 @@
    "name": "Avient Corporation",
    "sector": "חומרי גלם",
    "isTop": false,
-   "close": 38.97999954223633,
-   "stop": 37.042246912804515,
-   "risk": 5.0,
-   "rsi": 40,
+   "close": 39.5099983215332,
+   "stop": 37.57672802277569,
+   "risk": 4.9,
+   "rsi": 44,
    "vol": 2.03,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -183,12 +165,28 @@
    "name": "Fomento Economico Mexicano S",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "close": 126.45999908447266,
-   "stop": 121.93492193901139,
-   "risk": 3.6,
-   "rsi": 67,
+   "close": 126.93000030517578,
+   "stop": 122.4592133380719,
+   "risk": 3.5,
+   "rsi": 68,
    "vol": 3.12,
-   "days": 4,
+   "days": 5,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
+  },
+  {
+   "sym": "HOMB",
+   "name": "Home BancShares, Inc.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "close": 29.1299991607666,
+   "stop": 28.36541931480049,
+   "risk": 2.6,
+   "rsi": 53,
+   "vol": 3.07,
+   "days": 2,
    "score": 1,
    "conf": [
     "vol"
@@ -197,88 +195,88 @@
  ],
  "watch": [
   {
-   "sym": "BTI",
-   "name": "British American Tobacco  In",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 3.04
-  },
-  {
-   "sym": "USB",
-   "name": "U.S. Bancorp",
+   "sym": "SYF",
+   "name": "Synchrony Financial",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 2.1
+   "vol": 1.61
   },
   {
-   "sym": "EBC",
-   "name": "Eastern Bankshares, Inc.",
-   "sector": "פיננסים",
+   "sym": "ALKS",
+   "name": "Alkermes plc",
+   "sector": "בריאות",
    "isTop": false,
-   "vol": 1.5
+   "vol": 1.16
   },
   {
-   "sym": "MTDR",
-   "name": "Matador Resources Company",
+   "sym": "VAL",
+   "name": "Valaris Limited",
    "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.28
+   "vol": 1.08
   },
   {
-   "sym": "AR",
-   "name": "Antero Resources Corporation",
-   "sector": "אנרגיה",
+   "sym": "ENTG",
+   "name": "Entegris, Inc.",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 1.25
+   "vol": 1.06
   },
   {
-   "sym": "CINF",
-   "name": "Cincinnati Financial Corpora",
-   "sector": "פיננסים",
+   "sym": "KEYS",
+   "name": "Keysight Technologies Inc.",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 1.24
+   "vol": 0.96
+  },
+  {
+   "sym": "H",
+   "name": "Hyatt Hotels Corporation",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 0.92
   }
  ],
  "touch": [
   {
-   "sym": "AEM",
-   "name": "Agnico Eagle Mines Limited",
-   "sector": "חומרי גלם",
+   "sym": "NVS",
+   "name": "Novartis AG",
+   "sector": "בריאות",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.0
+   "pct": -0.6
   },
   {
-   "sym": "CCI",
-   "name": "Crown Castle Inc.",
-   "sector": "נדל\"ן",
+   "sym": "VLYPP",
+   "name": "Valley National Bancorp - 6.",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.7
   },
   {
-   "sym": "BIP",
-   "name": "Brookfield Infrastructure Pa",
-   "sector": "תשתיות",
+   "sym": "AYI",
+   "name": "Acuity Inc.",
+   "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
+   "pct": -0.7
   },
   {
-   "sym": "ASB",
-   "name": "Associated Banc-Corp",
-   "sector": "פיננסים",
+   "sym": "AKO-B",
+   "name": "Embotelladora Andina S.A.",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.2
+   "level": "SMA200",
+   "pct": -0.7
   },
   {
-   "sym": "FFBC",
-   "name": "First Financial Bancorp.",
-   "sector": "פיננסים",
+   "sym": "HXL",
+   "name": "Hexcel Corporation",
+   "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
+   "pct": -0.8
   },
   {
    "sym": "HIG",
@@ -286,7 +284,7 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.8
   }
  ]
 }
