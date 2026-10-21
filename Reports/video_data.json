@@ -1,75 +1,75 @@
 {
- "date": "2026-10-20",
- "dateHe": "שלישי 20/10/2026",
- "tradeDateHe": "יום שני 19/10/2026",
- "checked": 5224,
- "pctAbove": 32,
+ "date": "2026-10-21",
+ "dateHe": "רביעי 21/10/2026",
+ "tradeDateHe": "יום שלישי 20/10/2026",
+ "checked": 5234,
+ "pctAbove": 34,
  "counts": {
-  "setup": 124,
-  "today": 19,
-  "touch": 27
+  "setup": 121,
+  "today": 58,
+  "touch": 48
  },
  "sectors": [
   [
    "אנרגיה",
-   50
+   51
   ],
   [
    "פיננסים",
-   41
+   45
   ],
   [
    "טכנולוגיה",
-   35
+   36
   ],
   [
    "צריכה בסיסית",
    35
   ],
   [
-   "צריכה מחזורית",
-   30
+   "בריאות",
+   33
   ],
   [
-   "בריאות",
-   30
+   "צריכה מחזורית",
+   31
   ],
   [
    "תקשורת ומדיה",
-   27
+   29
   ],
   [
    "תעשייה",
-   24
+   25
   ],
   [
    "חומרי גלם",
-   24
+   25
   ],
   [
    "תשתיות",
-   22
+   25
   ],
   [
    "נדל\"ן",
-   11
+   15
   ]
  ],
  "top": {
   "n": 28,
-  "above": 20,
+  "above": 19,
   "below": [
+   "GOOGL",
    "AVGO",
    "TSLA"
   ],
   "between": [
-   "GOOGL",
+   "WMT",
    "ASML",
    "INTC",
    "CSCO"
   ],
   "setup": [
-   "WMT",
    "COST"
   ],
   "today": [],
@@ -77,22 +77,22 @@
   "leaders": [
    [
     "AMD",
-    35.9
+    34.6
    ],
    [
     "PLTR",
-    27.1
+    26.0
    ],
    [
     "MU",
-    25.5
+    23.8
    ]
   ],
   "entered": [
-   "BRK-A"
+   "BRK-B"
   ],
   "exited": [
-   "BRK-B"
+   "BRK-A"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -105,7 +105,7 @@
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "BRK-A": "Berkshire Hathaway Inc.",
+   "BRK-B": "Berkshire Hathaway Inc. New",
    "LLY": "Eli Lilly and Company",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
@@ -120,8 +120,8 @@
    "ABBV": "AbbVie Inc.",
    "INTC": "Intel Corporation",
    "PLTR": "Palantir Technologies Inc.",
-   "COST": "Costco Wholesale Corporation",
    "CVX": "Chevron Corporation",
+   "COST": "Costco Wholesale Corporation",
    "CSCO": "Cisco Systems, Inc."
   }
  },
@@ -131,49 +131,16 @@
    "name": "Royal Bank Of Canada",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 196.3000030517578,
-   "stop": 191.82090217167652,
+   "close": 199.0500030517578,
+   "stop": 194.52762372850572,
    "risk": 2.3,
-   "rsi": 46,
+   "rsi": 52,
    "vol": 2.12,
-   "days": 4,
-   "score": 2,
-   "conf": [
-    "vol",
-    "rsi"
-   ]
-  },
-  {
-   "sym": "AVNT",
-   "name": "Avient Corporation",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "close": 39.5099983215332,
-   "stop": 37.57672802277569,
-   "risk": 4.9,
-   "rsi": 44,
-   "vol": 2.03,
    "days": 5,
    "score": 2,
    "conf": [
     "vol",
     "rsi"
-   ]
-  },
-  {
-   "sym": "FMX",
-   "name": "Fomento Economico Mexicano S",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "close": 126.93000030517578,
-   "stop": 122.4592133380719,
-   "risk": 3.5,
-   "rsi": 68,
-   "vol": 3.12,
-   "days": 5,
-   "score": 1,
-   "conf": [
-    "vol"
    ]
   },
   {
@@ -181,12 +148,44 @@
    "name": "Home BancShares, Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 29.1299991607666,
-   "stop": 28.36541931480049,
+   "close": 29.389999389648438,
+   "stop": 28.62003224268444,
    "risk": 2.6,
-   "rsi": 53,
+   "rsi": 57,
    "vol": 3.07,
-   "days": 2,
+   "days": 3,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
+  },
+  {
+   "sym": "UL",
+   "name": "Unilever PLC",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "close": 65.22000122070312,
+   "stop": 63.554514115656566,
+   "risk": 2.6,
+   "rsi": 63,
+   "vol": 2.85,
+   "days": 4,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
+  },
+  {
+   "sym": "WCN",
+   "name": "Waste Connections, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 169.47999572753906,
+   "stop": 164.42325657838967,
+   "risk": 3.0,
+   "rsi": 70,
+   "vol": 2.74,
+   "days": 3,
    "score": 1,
    "conf": [
     "vol"
@@ -195,96 +194,96 @@
  ],
  "watch": [
   {
-   "sym": "SYF",
-   "name": "Synchrony Financial",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.61
-  },
-  {
-   "sym": "ALKS",
-   "name": "Alkermes plc",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 1.16
-  },
-  {
-   "sym": "VAL",
-   "name": "Valaris Limited",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "vol": 1.08
-  },
-  {
-   "sym": "ENTG",
-   "name": "Entegris, Inc.",
+   "sym": "TDY",
+   "name": "Teledyne Technologies Incorp",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 1.06
-  },
-  {
-   "sym": "KEYS",
-   "name": "Keysight Technologies Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 0.96
-  },
-  {
-   "sym": "H",
-   "name": "Hyatt Hotels Corporation",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 0.92
-  }
- ],
- "touch": [
-  {
-   "sym": "NVS",
-   "name": "Novartis AG",
-   "sector": "בריאות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.6
-  },
-  {
-   "sym": "VLYPP",
-   "name": "Valley National Bancorp - 6.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.7
-  },
-  {
-   "sym": "AYI",
-   "name": "Acuity Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.7
+   "vol": 2.73
   },
   {
    "sym": "AKO-B",
    "name": "Embotelladora Andina S.A.",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.7
+   "vol": 2.72
   },
   {
-   "sym": "HXL",
-   "name": "Hexcel Corporation",
+   "sym": "KVYO",
+   "name": "Klaviyo, Inc. Series A",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 2.43
+  },
+  {
+   "sym": "CWST",
+   "name": "Casella Waste Systems, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "vol": 2.27
+  },
+  {
+   "sym": "KTB",
+   "name": "Kontoor Brands, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 1.99
+  },
+  {
+   "sym": "SBCF",
+   "name": "Seacoast Banking Corporation",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.56
+  }
+ ],
+ "touch": [
+  {
+   "sym": "AYI",
+   "name": "Acuity Inc.",
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.8
+   "pct": -0.0
   },
   {
-   "sym": "HIG",
-   "name": "The Hartford Insurance Group",
-   "sector": "פיננסים",
+   "sym": "ADMA",
+   "name": "ADMA Biologics Inc",
+   "sector": "בריאות",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.8
+   "pct": -0.1
+  },
+  {
+   "sym": "ISRG",
+   "name": "Intuitive Surgical, Inc.",
+   "sector": "בריאות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "QSR",
+   "name": "Restaurant Brands Internatio",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.1
+  },
+  {
+   "sym": "GEHC",
+   "name": "GE HealthCare Technologies I",
+   "sector": "בריאות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
+  },
+  {
+   "sym": "FTS",
+   "name": "Fortis Inc.",
+   "sector": "תשתיות",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.2
   }
  ]
 }
