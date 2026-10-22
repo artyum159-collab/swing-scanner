@@ -1,13 +1,13 @@
 {
- "date": "2026-10-21",
- "dateHe": "רביעי 21/10/2026",
- "tradeDateHe": "יום שלישי 20/10/2026",
+ "date": "2026-10-22",
+ "dateHe": "חמישי 22/10/2026",
+ "tradeDateHe": "יום רביעי 21/10/2026",
  "checked": 5234,
- "pctAbove": 34,
+ "pctAbove": 35,
  "counts": {
-  "setup": 121,
-  "today": 58,
-  "touch": 48
+  "setup": 141,
+  "today": 38,
+  "touch": 38
  },
  "sectors": [
   [
@@ -16,11 +16,11 @@
   ],
   [
    "פיננסים",
-   45
+   46
   ],
   [
    "טכנולוגיה",
-   36
+   38
   ],
   [
    "צריכה בסיסית",
@@ -36,11 +36,11 @@
   ],
   [
    "תקשורת ומדיה",
-   29
+   30
   ],
   [
    "תעשייה",
-   25
+   28
   ],
   [
    "חומרי גלם",
@@ -52,47 +52,53 @@
   ],
   [
    "נדל\"ן",
-   15
+   14
   ]
  ],
  "top": {
   "n": 28,
-  "above": 19,
+  "above": 20,
   "below": [
    "GOOGL",
-   "AVGO",
-   "TSLA"
+   "AVGO"
   ],
   "between": [
    "WMT",
-   "ASML",
    "INTC",
    "CSCO"
   ],
   "setup": [
    "COST"
   ],
-  "today": [],
-  "touch": [],
+  "today": [
+   "ASML"
+  ],
+  "touch": [
+   [
+    "TSLA",
+    "SMA200",
+    -0.1
+   ]
+  ],
   "leaders": [
    [
     "AMD",
-    34.6
+    38.5
    ],
    [
     "PLTR",
-    26.0
+    31.9
    ],
    [
     "MU",
-    23.8
+    25.7
    ]
   ],
   "entered": [
-   "BRK-B"
+   "BRK-A"
   ],
   "exited": [
-   "BRK-A"
+   "BRK-B"
   ],
   "names": {
    "NVDA": "NVIDIA Corporation",
@@ -105,13 +111,13 @@
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "BRK-B": "Berkshire Hathaway Inc. New",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
    "WMT": "Walmart Inc.",
-   "JPM": "JP Morgan Chase & Co.",
    "AMD": "Advanced Micro Devices, Inc.",
+   "JPM": "JP Morgan Chase & Co.",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
@@ -127,16 +133,16 @@
  },
  "setups": [
   {
-   "sym": "RY",
-   "name": "Royal Bank Of Canada",
+   "sym": "BMO",
+   "name": "Bank Of Montreal",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 199.0500030517578,
-   "stop": 194.52762372850572,
-   "risk": 2.3,
-   "rsi": 52,
-   "vol": 2.12,
-   "days": 5,
+   "close": 170.4499969482422,
+   "stop": 165.97811755492884,
+   "risk": 2.6,
+   "rsi": 55,
+   "vol": 2.68,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -148,12 +154,12 @@
    "name": "Home BancShares, Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 29.389999389648438,
-   "stop": 28.62003224268444,
+   "close": 29.3700008392334,
+   "stop": 28.61967400658182,
    "risk": 2.6,
-   "rsi": 57,
+   "rsi": 56,
    "vol": 3.07,
-   "days": 3,
+   "days": 4,
    "score": 1,
    "conf": [
     "vol"
@@ -164,12 +170,12 @@
    "name": "Unilever PLC",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "close": 65.22000122070312,
-   "stop": 63.554514115656566,
+   "close": 64.4000015258789,
+   "stop": 62.73669164612656,
    "risk": 2.6,
-   "rsi": 63,
+   "rsi": 58,
    "vol": 2.85,
-   "days": 4,
+   "days": 5,
    "score": 1,
    "conf": [
     "vol"
@@ -180,12 +186,12 @@
    "name": "Waste Connections, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 169.47999572753906,
-   "stop": 164.42325657838967,
-   "risk": 3.0,
-   "rsi": 70,
+   "close": 168.27999877929688,
+   "stop": 163.35409879475165,
+   "risk": 2.9,
+   "rsi": 67,
    "vol": 2.74,
-   "days": 3,
+   "days": 4,
    "score": 1,
    "conf": [
     "vol"
@@ -194,96 +200,96 @@
  ],
  "watch": [
   {
-   "sym": "TDY",
-   "name": "Teledyne Technologies Incorp",
+   "sym": "KYIV",
+   "name": "Kyivstar Group Ltd.",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "vol": 3.78
+  },
+  {
+   "sym": "SMCI",
+   "name": "Super Micro Computer, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 2.73
+   "vol": 2.42
   },
   {
-   "sym": "AKO-B",
-   "name": "Embotelladora Andina S.A.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 2.72
-  },
-  {
-   "sym": "KVYO",
-   "name": "Klaviyo, Inc. Series A",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 2.43
-  },
-  {
-   "sym": "CWST",
-   "name": "Casella Waste Systems, Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 2.27
-  },
-  {
-   "sym": "KTB",
-   "name": "Kontoor Brands, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 1.99
-  },
-  {
-   "sym": "SBCF",
-   "name": "Seacoast Banking Corporation",
+   "sym": "PNFP",
+   "name": "Pinnacle Financial Partners,",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.56
+   "vol": 2.24
+  },
+  {
+   "sym": "IBM",
+   "name": "International Business Machi",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 1.84
+  },
+  {
+   "sym": "CHKP",
+   "name": "Check Point Software Technol",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 1.8
+  },
+  {
+   "sym": "COF",
+   "name": "Capital One Financial Corpor",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.74
   }
  ],
  "touch": [
   {
-   "sym": "AYI",
-   "name": "Acuity Inc.",
+   "sym": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": true,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "MGRC",
+   "name": "McGrath RentCorp",
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.0
   },
   {
-   "sym": "ADMA",
-   "name": "ADMA Biologics Inc",
-   "sector": "בריאות",
+   "sym": "ESS",
+   "name": "Essex Property Trust, Inc.",
+   "sector": "נדל\"ן",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
+   "level": "SMA150",
+   "pct": -0.0
   },
   {
-   "sym": "ISRG",
-   "name": "Intuitive Surgical, Inc.",
-   "sector": "בריאות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.1
-  },
-  {
-   "sym": "QSR",
-   "name": "Restaurant Brands Internatio",
-   "sector": "צריכה מחזורית",
+   "sym": "CUBI",
+   "name": "Customers Bancorp, Inc",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.1
   },
   {
-   "sym": "GEHC",
-   "name": "GE HealthCare Technologies I",
-   "sector": "בריאות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
-  },
-  {
-   "sym": "FTS",
-   "name": "Fortis Inc.",
-   "sector": "תשתיות",
+   "sym": "IX",
+   "name": "ORIX Corporation",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
+   "pct": -0.1
+  },
+  {
+   "sym": "INGM",
+   "name": "Ingram Micro Holding Corpora",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.1
   }
  ]
 }

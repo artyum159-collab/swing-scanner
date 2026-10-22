@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום רביעי 21/10/2026 | נתוני מסחר 20/10/2026
+סריקת סווינג כ״ח 28 | יום חמישי 22/10/2026 | נתוני מסחר 21/10/2026
 סט-אפים Top 28: COST
-סט-אפים גילוי: ADSK, CTSH, MDB, ENTG, BR, GIB, LOGI, TYL, EPAM, G, OTEX, MNDY, NTCT, ROG, VERX (+105)
-פרצו היום (מעקב): ADBE, TEL, TDY, HUBS, KVYO, VNT, RCL, MHK, KTB, DORM, COLM, PTON, BTI, PSMT, AKO-B
-נגעו מלמטה בממוצע: YMM, KD, FWONK, FWONA, SIRI, SBUX, ORLY, VIK, CCL, QSR, HTHT, ALV, WH, PFGC, COF (+33)
-שינוי ב-Top: נכנסו BRK-B | יצאו BRK-A
+סט-אפים גילוי: ADBE, TEL, ADSK, MDB, ENTG, BR, GIB, LOGI, HUBS, EPAM, G, KVYO, VNT, MNDY, NTCT (+125)
+פרצו היום (מעקב): ASML, IBM, QCOM, KEYS, ALAB, SMCI, WIT, CHKP, KD, KYIV, CCL, WH, KR, SAN, COF
+נגעו מלמטה בממוצע: TSLA, FTV, INGM, FWONK, VIK, QSR, PFGC, COCO, UBS, IX, UMBF, FULT, RNST, VLYPP, CUBI (+23)
+שינוי ב-Top: נכנסו BRK-A | יצאו BRK-B
