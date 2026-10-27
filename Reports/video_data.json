@@ -1,123 +1,128 @@
 {
- "date": "2026-10-24",
- "dateHe": "שבת 24/10/2026",
- "tradeDateHe": "יום שישי 23/10/2026",
- "checked": 5329,
+ "date": "2026-10-27",
+ "dateHe": "שלישי 27/10/2026",
+ "tradeDateHe": "יום שני 26/10/2026",
+ "checked": 5233,
  "pctAbove": 34,
  "counts": {
-  "setup": 126,
-  "today": 25,
-  "touch": 21
+  "setup": 131,
+  "today": 37,
+  "touch": 36
  },
  "sectors": [
   [
    "אנרגיה",
-   56
+   55
   ],
   [
    "פיננסים",
-   44
-  ],
-  [
-   "צריכה בסיסית",
-   37
+   45
   ],
   [
    "טכנולוגיה",
-   36
+   37
+  ],
+  [
+   "צריכה בסיסית",
+   34
   ],
   [
    "בריאות",
-   33
-  ],
-  [
-   "תשתיות",
-   30
+   31
   ],
   [
    "צריכה מחזורית",
    29
   ],
   [
-   "תקשורת ומדיה",
-   28
+   "תעשייה",
+   27
   ],
   [
-   "תעשייה",
+   "תקשורת ומדיה",
    26
   ],
   [
+   "תשתיות",
+   25
+  ],
+  [
    "חומרי גלם",
-   22
+   21
   ],
   [
    "נדל\"ן",
-   19
+   20
   ]
  ],
  "top": {
   "n": 28,
-  "above": 19,
+  "above": 20,
   "below": [
    "GOOGL",
-   "AVGO",
-   "TSLA",
-   "ASML"
+   "AVGO"
   ],
   "between": [
    "AMZN",
-   "INTC",
-   "CSCO"
+   "META",
+   "ASML",
+   "INTC"
   ],
   "setup": [
+   "TSM",
    "WMT"
   ],
   "today": [
-   "TSM"
+   "TSLA",
+   "CSCO"
   ],
   "touch": [],
   "leaders": [
    [
     "AMD",
-    28.5
+    31.6
    ],
    [
     "PLTR",
-    28.5
+    29.7
    ],
    [
-    "CVX",
-    21.7
+    "MU",
+    23.0
    ]
   ],
-  "entered": [],
-  "exited": [],
+  "entered": [
+   "BRK-B"
+  ],
+  "exited": [
+   "BRK-A"
+  ],
   "names": {
    "NVDA": "NVIDIA Corporation",
    "AAPL": "Apple Inc.",
-   "GOOGL": "Alphabet Inc.",
    "MSFT": "Microsoft Corporation",
+   "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
    "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
-   "BRK-A": "Berkshire Hathaway Inc.",
+   "BRK-B": "Berkshire Hathaway Inc. New",
    "LLY": "Eli Lilly and Company",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
    "WMT": "Walmart Inc.",
    "JPM": "JP Morgan Chase & Co.",
    "AMD": "Advanced Micro Devices, Inc.",
-   "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
+   "V": "Visa Inc.",
    "JNJ": "Johnson & Johnson",
    "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "PLTR": "Palantir Technologies Inc.",
    "INTC": "Intel Corporation",
+   "PLTR": "Palantir Technologies Inc.",
    "CVX": "Chevron Corporation",
    "COST": "Costco Wholesale Corporation",
    "CSCO": "Cisco Systems, Inc."
@@ -125,16 +130,50 @@
  },
  "setups": [
   {
+   "sym": "CUBI",
+   "name": "Customers Bancorp, Inc",
+   "sector": "פיננסים",
+   "isTop": false,
+   "close": 85.93000030517578,
+   "stop": 82.44930550647538,
+   "risk": 4.1,
+   "rsi": 78,
+   "vol": 3.8,
+   "days": 2,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "CCI",
+   "name": "Crown Castle Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "close": 87.47000122070312,
+   "stop": 82.39856309296204,
+   "risk": 5.8,
+   "rsi": 74,
+   "vol": 3.48,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
    "sym": "BMI",
    "name": "Badger Meter, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 151.24000549316406,
-   "stop": 142.56198607023043,
+   "close": 155.9499969482422,
+   "stop": 146.99183670947198,
    "risk": 5.7,
-   "rsi": 75,
+   "rsi": 78,
    "vol": 3.06,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -146,45 +185,11 @@
    "name": "Check Point Software Technol",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 159.02999877929688,
-   "stop": 151.43044216168934,
-   "risk": 4.8,
-   "rsi": 77,
+   "close": 159.6300048828125,
+   "stop": 152.11898743505535,
+   "risk": 4.7,
+   "rsi": 78,
    "vol": 2.64,
-   "days": 2,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "MSCI",
-   "name": "MSCI Inc.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "close": 615.6199951171875,
-   "stop": 594.1086886253472,
-   "risk": 3.5,
-   "rsi": 71,
-   "vol": 2.45,
-   "days": 3,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "KVYO",
-   "name": "Klaviyo, Inc. Series A",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "close": 21.110000610351562,
-   "stop": 19.595970626732797,
-   "risk": 7.2,
-   "rsi": 71,
-   "vol": 2.43,
    "days": 3,
    "score": 2,
    "conf": [
@@ -195,80 +200,56 @@
  ],
  "watch": [
   {
-   "sym": "CCI",
-   "name": "Crown Castle Inc.",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "vol": 3.48
-  },
-  {
-   "sym": "AVAL",
-   "name": "Grupo Aval Acciones y Valore",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 2.16
-  },
-  {
-   "sym": "NE",
-   "name": "Noble Corporation plc A",
+   "sym": "WTTR",
+   "name": "Select Water Solutions, Inc.",
    "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.84
+   "vol": 2.96
   },
   {
-   "sym": "VG",
-   "name": "Venture Global, Inc.",
-   "sector": "אנרגיה",
+   "sym": "AIT",
+   "name": "Applied Industrial Technolog",
+   "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.67
+   "vol": 1.74
   },
   {
-   "sym": "KYN",
-   "name": "Kayne Anderson MLP/Midstream",
+   "sym": "EFSC",
+   "name": "Enterprise Financial Service",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.66
+   "vol": 1.64
   },
   {
-   "sym": "INTR",
-   "name": "Inter & Co. Inc.",
-   "sector": "פיננסים",
+   "sym": "NVS",
+   "name": "Novartis AG",
+   "sector": "בריאות",
    "isTop": false,
-   "vol": 1.5
+   "vol": 1.47
+  },
+  {
+   "sym": "TSLA",
+   "name": "Tesla, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": true,
+   "vol": 1.46
+  },
+  {
+   "sym": "PSMT",
+   "name": "PriceSmart, Inc.",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "vol": 1.43
   }
  ],
  "touch": [
   {
-   "sym": "AMH",
-   "name": "American Homes 4 Rent",
-   "sector": "נדל\"ן",
+   "sym": "FRME",
+   "name": "First Merchants Corporation",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
-  },
-  {
-   "sym": "INGM",
-   "name": "Ingram Micro Holding Corpora",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.2
-  },
-  {
-   "sym": "DHI",
-   "name": "D.R. Horton, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.3
-  },
-  {
-   "sym": "SOBO",
-   "name": "South Bow Corporation",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.4
+   "pct": -0.1
   },
   {
    "sym": "WTFC",
@@ -276,12 +257,36 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.4
+   "pct": -0.2
   },
   {
-   "sym": "D",
-   "name": "Dominion Energy, Inc.",
-   "sector": "תשתיות",
+   "sym": "ADMA",
+   "name": "ADMA Biologics Inc",
+   "sector": "בריאות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.2
+  },
+  {
+   "sym": "VLYPP",
+   "name": "Valley National Bancorp - 6.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.3
+  },
+  {
+   "sym": "CDP",
+   "name": "COPT Defense Properties",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.3
+  },
+  {
+   "sym": "VTR",
+   "name": "Ventas, Inc.",
+   "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.4

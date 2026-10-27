@@ -1,5 +1,6 @@
-סריקת סווינג כ״ח 28 | יום שבת 24/10/2026 | נתוני מסחר 23/10/2026
-סט-אפים Top 28: WMT
-סט-אפים גילוי: IBM, ADBE, MDB, WIT, FTV, CHKP, GEN, HUBS, JKHY, EPAM, KVYO, VNT, BMI, KD, VERX (+110)
-פרצו היום (מעקב): TSM, NTCT, SIRI, TEO, KYIV, BPOP, MTG, AVAL, RDN, INTR, BBT, KYN, JCI, VG, EQT
-נגעו מלמטה בממוצע: INGM, DHI, YETI, WTFC, PB, FRME, EFSC, SNN, SOBO, NOV, VTR, SBAC, OHI, AMH, BXP (+6)
+סריקת סווינג כ״ח 28 | יום שלישי 27/10/2026 | נתוני מסחר 26/10/2026
+סט-אפים Top 28: TSM, WMT
+סט-אפים גילוי: IBM, ADBE, MDB, WIT, FTV, CHKP, HUBS, JKHY, EPAM, KVYO, VNT, BMI, KD, NTCT, VERX (+114)
+פרצו היום (מעקב): TSLA, CSCO, ANET, QCOM, SNPS, TEL, UMC, TDY, INGM, ORLY, HTHT, AEO, PSMT, UNFI, BBVA
+נגעו מלמטה בממוצע: ERIC, NOVT, IRDM, TM, DHI, PHM, MUSA, YETI, OSW, WFC, NTRS, RJF, LPLA, RF, WTFC (+21)
+שינוי ב-Top: נכנסו BRK-B | יצאו BRK-A
