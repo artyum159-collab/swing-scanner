@@ -1,18 +1,18 @@
 {
- "date": "2026-10-28",
- "dateHe": "רביעי 28/10/2026",
- "tradeDateHe": "יום שלישי 27/10/2026",
+ "date": "2026-10-29",
+ "dateHe": "חמישי 29/10/2026",
+ "tradeDateHe": "יום רביעי 28/10/2026",
  "checked": 5232,
  "pctAbove": 35,
  "counts": {
-  "setup": 132,
-  "today": 37,
-  "touch": 23
+  "setup": 127,
+  "today": 25,
+  "touch": 16
  },
  "sectors": [
   [
    "אנרגיה",
-   54
+   56
   ],
   [
    "פיננסים",
@@ -23,19 +23,19 @@
    39
   ],
   [
-   "צריכה בסיסית",
-   34
-  ],
-  [
    "בריאות",
-   33
+   35
   ],
   [
-   "תשתיות",
-   31
+   "צריכה בסיסית",
+   32
   ],
   [
    "צריכה מחזורית",
+   30
+  ],
+  [
+   "תעשייה",
    29
   ],
   [
@@ -43,16 +43,16 @@
    27
   ],
   [
-   "תעשייה",
-   27
+   "תשתיות",
+   26
   ],
   [
    "חומרי גלם",
-   22
+   24
   ],
   [
    "נדל\"ן",
-   18
+   17
   ]
  ],
  "top": {
@@ -61,53 +61,59 @@
   "below": [
    "GOOGL",
    "AVGO",
-   "META"
+   "META",
+   "ORCL"
   ],
   "between": [
-   "ASML",
    "INTC"
   ],
   "setup": [
+   "AMZN",
    "TSM",
    "TSLA",
-   "WMT",
-   "CSCO"
+   "WMT"
   ],
   "today": [
-   "AMZN"
+   "ASML"
   ],
   "touch": [],
   "leaders": [
    [
     "AMD",
-    38.2
-   ],
-   [
-    "PLTR",
-    29.6
+    42.0
    ],
    [
     "MU",
-    25.9
+    32.7
+   ],
+   [
+    "PLTR",
+    28.3
    ]
   ],
-  "entered": [],
-  "exited": [],
+  "entered": [
+   "BRK-A",
+   "ORCL"
+  ],
+  "exited": [
+   "BRK-B",
+   "CSCO"
+  ],
   "names": {
    "NVDA": "NVIDIA Corporation",
    "AAPL": "Apple Inc.",
-   "MSFT": "Microsoft Corporation",
    "GOOGL": "Alphabet Inc.",
+   "MSFT": "Microsoft Corporation",
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
    "META": "Meta Platforms, Inc.",
-   "BRK-B": "Berkshire Hathaway Inc. New",
+   "SKHY": "SK hynix Inc.",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
    "MU": "Micron Technology, Inc.",
-   "SKHY": "SK hynix Inc.",
    "WMT": "Walmart Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
    "JPM": "JP Morgan Chase & Co.",
@@ -120,8 +126,8 @@
    "INTC": "Intel Corporation",
    "PLTR": "Palantir Technologies Inc.",
    "CVX": "Chevron Corporation",
-   "COST": "Costco Wholesale Corporation",
-   "CSCO": "Cisco Systems, Inc."
+   "ORCL": "Oracle Corporation",
+   "COST": "Costco Wholesale Corporation"
   }
  },
  "setups": [
@@ -130,12 +136,12 @@
    "name": "Customers Bancorp, Inc",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 86.52999877929688,
-   "stop": 83.11899666240237,
+   "close": 86.68000030517578,
+   "stop": 83.26192730328457,
    "risk": 3.9,
    "rsi": 79,
    "vol": 3.8,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -147,12 +153,12 @@
    "name": "Crown Castle Inc.",
    "sector": "נדל\"ן",
    "isTop": false,
-   "close": 87.87000274658203,
-   "stop": 82.91438130099125,
-   "risk": 5.6,
+   "close": 87.73999786376953,
+   "stop": 82.64549239920532,
+   "risk": 5.8,
    "rsi": 74,
    "vol": 3.48,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -164,12 +170,12 @@
    "name": "Badger Meter, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 151.75,
-   "stop": 141.96170821892375,
-   "risk": 6.5,
-   "rsi": 71,
+   "close": 144.0500030517578,
+   "stop": 133.5294463325069,
+   "risk": 7.3,
+   "rsi": 59,
    "vol": 3.06,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -177,16 +183,16 @@
    ]
   },
   {
-   "sym": "CHKP",
-   "name": "Check Point Software Technol",
-   "sector": "טכנולוגיה",
+   "sym": "HWKN",
+   "name": "Hawkins, Inc.",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "close": 159.83999633789062,
-   "stop": 152.54190825006674,
-   "risk": 4.6,
-   "rsi": 78,
-   "vol": 2.64,
-   "days": 4,
+   "close": 154.05999755859375,
+   "stop": 146.49471837010944,
+   "risk": 4.9,
+   "rsi": 82,
+   "vol": 3.05,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
@@ -196,56 +202,56 @@
  ],
  "watch": [
   {
-   "sym": "OSW",
-   "name": "OneSpaWorld Holdings Limited",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 2.11
-  },
-  {
-   "sym": "EQT",
-   "name": "EQT Corporation",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "vol": 2.05
-  },
-  {
-   "sym": "AKO-B",
-   "name": "Embotelladora Andina S.A.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 1.95
-  },
-  {
-   "sym": "NGVT",
-   "name": "Ingevity Corporation",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "vol": 1.73
-  },
-  {
-   "sym": "NP",
-   "name": "Neptune Insurance Holdings I",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.62
-  },
-  {
-   "sym": "ESLT",
-   "name": "Elbit Systems Ltd.",
+   "sym": "ADT",
+   "name": "ADT Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.58
+   "vol": 3.42
+  },
+  {
+   "sym": "KB",
+   "name": "KB Financial Group Inc",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.75
+  },
+  {
+   "sym": "EPD",
+   "name": "Enterprise Products Partners",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.67
+  },
+  {
+   "sym": "WCC",
+   "name": "WESCO International, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "vol": 1.49
+  },
+  {
+   "sym": "RGLD",
+   "name": "Royal Gold, Inc.",
+   "sector": "חומרי גלם",
+   "isTop": false,
+   "vol": 1.43
+  },
+  {
+   "sym": "NE",
+   "name": "Noble Corporation plc A",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.42
   }
  ],
  "touch": [
   {
-   "sym": "LUV",
-   "name": "Southwest Airlines Company",
-   "sector": "תעשייה",
+   "sym": "NTRS",
+   "name": "Northern Trust Corporation",
+   "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
+   "level": "SMA150",
+   "pct": -0.1
   },
   {
    "sym": "VLYPP",
@@ -256,36 +262,36 @@
    "pct": -0.2
   },
   {
-   "sym": "WDFC",
-   "name": "WD-40 Company",
+   "sym": "SUZ",
+   "name": "Suzano S.A.",
    "sector": "חומרי גלם",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.5
   },
   {
-   "sym": "D",
-   "name": "Dominion Energy, Inc.",
-   "sector": "תשתיות",
+   "sym": "FTI",
+   "name": "TechnipFMC plc",
+   "sector": "אנרגיה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.3
+   "pct": -0.5
   },
   {
-   "sym": "NXPI",
-   "name": "NXP Semiconductors N.V.",
-   "sector": "טכנולוגיה",
+   "sym": "PHG",
+   "name": "Koninklijke Philips N.V. NY ",
+   "sector": "בריאות",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.3
+   "level": "SMA200",
+   "pct": -0.8
   },
   {
-   "sym": "GM",
-   "name": "General Motors Company",
-   "sector": "צריכה מחזורית",
+   "sym": "CBU",
+   "name": "Community Financial System, ",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.4
+   "pct": -0.8
   }
  ]
 }

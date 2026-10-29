@@ -1,5 +1,6 @@
-סריקת סווינג כ״ח 28 | יום רביעי 28/10/2026 | נתוני מסחר 27/10/2026
-סט-אפים Top 28: TSM, TSLA, WMT, CSCO
-סט-אפים גילוי: IBM, ANET, QCOM, SNPS, TEL, UMC, TDY, FTV, CHKP, HUBS, JKHY, INGM, KVYO, VNT, BMI (+113)
-פרצו היום (מעקב): AMZN, APH, KEYS, XYZ, ERIC, SMCI, ENTG, SMTC, NOVT, IRDM, KYIV, CCL, VFC, OSW, AKO-B
-נגעו מלמטה בממוצע: NXPI, GM, DHI, WFC, TFC, NTRS, LPLA, RF, WTFC, PB, TPG, VLYPP, FRME, LUV, SKYW (+8)
+סריקת סווינג כ״ח 28 | יום חמישי 29/10/2026 | נתוני מסחר 28/10/2026
+סט-אפים Top 28: AMZN, TSM, TSLA, WMT
+סט-אפים גילוי: CSCO, IBM, ANET, QCOM, CDNS, SNPS, TEL, XYZ, ERIC, TDY, ENTG, SMCI, FTV, CHKP, SMTC (+108)
+פרצו היום (מעקב): ASML, ALAB, GM, H, DORM, WFC, NWG, KB, BEN, BTSG, KRYS, ATR, GRDN, RTX, LUV
+נגעו מלמטה בממוצע: DHI, NTRS, ARES, WTFC, CBU, VLYPP, PHG, TPC, SKYW, HAL, FTI, MGY, SUZ, WDFC, D (+1)
+שינוי ב-Top: נכנסו BRK-A, ORCL | יצאו BRK-B, CSCO
