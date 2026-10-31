@@ -1,54 +1,54 @@
 {
- "date": "2026-10-30",
- "dateHe": "שישי 30/10/2026",
- "tradeDateHe": "יום חמישי 29/10/2026",
- "checked": 5233,
- "pctAbove": 37,
+ "date": "2026-10-31",
+ "dateHe": "שבת 31/10/2026",
+ "tradeDateHe": "יום שישי 30/10/2026",
+ "checked": 5327,
+ "pctAbove": 34,
  "counts": {
-  "setup": 119,
-  "today": 68,
-  "touch": 30
+  "setup": 130,
+  "today": 13,
+  "touch": 47
  },
  "sectors": [
   [
    "אנרגיה",
-   55
+   56
   ],
   [
    "פיננסים",
-   48
-  ],
-  [
-   "טכנולוגיה",
-   39
-  ],
-  [
-   "צריכה מחזורית",
-   34
-  ],
-  [
-   "בריאות",
-   34
+   41
   ],
   [
    "תשתיות",
-   34
+   36
   ],
   [
-   "תעשייה",
+   "טכנולוגיה",
+   35
+  ],
+  [
+   "צריכה מחזורית",
    33
+  ],
+  [
+   "בריאות",
+   32
   ],
   [
    "צריכה בסיסית",
    31
   ],
   [
+   "תעשייה",
+   30
+  ],
+  [
    "תקשורת ומדיה",
-   27
+   25
   ],
   [
    "חומרי גלם",
-   25
+   23
   ],
   [
    "נדל\"ן",
@@ -57,74 +57,73 @@
  ],
  "top": {
   "n": 28,
-  "above": 21,
+  "above": 18,
   "below": [
    "GOOGL",
+   "AMZN",
+   "META",
    "AVGO",
-   "META"
+   "ASML"
   ],
   "between": [
-   "AMZN",
-   "INTC"
+   "NVDA",
+   "TSM",
+   "CSCO"
   ],
   "setup": [
-   "TSM",
-   "TSLA",
-   "WMT",
-   "ASML",
-   "CSCO"
+   "TSLA"
   ],
   "today": [],
   "touch": [],
   "leaders": [
    [
-    "AMD",
-    38.5
-   ],
-   [
-    "PLTR",
-    27.9
-   ],
-   [
     "LLY",
-    26.1
+    29.9
+   ],
+   [
+    "ABBV",
+    24.4
+   ],
+   [
+    "AMD",
+    23.0
    ]
   ],
   "entered": [
-   "CSCO"
+   "KO"
   ],
   "exited": [
-   "ORCL"
+   "INTC"
   ],
   "names": {
-   "NVDA": "NVIDIA Corporation",
    "AAPL": "Apple Inc.",
+   "NVDA": "NVIDIA Corporation",
    "MSFT": "Microsoft Corporation",
    "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
-   "AVGO": "Broadcom Inc.",
-   "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
+   "META": "Meta Platforms, Inc.",
+   "AVGO": "Broadcom Inc.",
    "LLY": "Eli Lilly and Company",
    "BRK-A": "Berkshire Hathaway Inc.",
    "SKHY": "SK hynix Inc.",
    "MU": "Micron Technology, Inc.",
    "WMT": "Walmart Inc.",
-   "AMD": "Advanced Micro Devices, Inc.",
    "JPM": "JP Morgan Chase & Co.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
    "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "INTC": "Intel Corporation",
-   "PLTR": "Palantir Technologies Inc.",
    "CVX": "Chevron Corporation",
    "COST": "Costco Wholesale Corporation",
-   "CSCO": "Cisco Systems, Inc."
+   "PLTR": "Palantir Technologies Inc.",
+   "CSCO": "Cisco Systems, Inc.",
+   "KO": "Coca-Cola Company (The)"
   }
  },
  "setups": [
@@ -133,12 +132,12 @@
    "name": "ADT Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 9.869999885559082,
-   "stop": 9.316375176269467,
-   "risk": 5.6,
-   "rsi": 89,
-   "vol": 22.17,
-   "days": 1,
+   "close": 9.859999656677246,
+   "stop": 9.342169585828449,
+   "risk": 5.3,
+   "rsi": 88,
+   "vol": 22.18,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -146,37 +145,20 @@
    ]
   },
   {
-   "sym": "HHH",
-   "name": "Howard Hughes Holdings Inc.",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "close": 75.58000183105469,
-   "stop": 72.0174723069121,
-   "risk": 4.7,
-   "rsi": 64,
-   "vol": 7.71,
-   "days": 5,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "CUBI",
-   "name": "Customers Bancorp, Inc",
+   "sym": "NMR",
+   "name": "Nomura Holdings Inc",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 87.48999786376953,
-   "stop": 84.16928692487991,
-   "risk": 3.8,
-   "rsi": 80,
-   "vol": 3.8,
-   "days": 5,
+   "close": 9.380000114440918,
+   "stop": 9.07343013636659,
+   "risk": 3.3,
+   "rsi": 48,
+   "vol": 3.65,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
-    "res"
+    "rsi"
    ]
   },
   {
@@ -184,12 +166,29 @@
    "name": "Crown Castle Inc.",
    "sector": "נדל\"ן",
    "isTop": false,
-   "close": 88.83000183105469,
-   "stop": 83.88081808729774,
-   "risk": 5.6,
-   "rsi": 75,
+   "close": 88.69000244140625,
+   "stop": 83.88004610791765,
+   "risk": 5.4,
+   "rsi": 74,
    "vol": 3.48,
-   "days": 4,
+   "days": 5,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "FCN",
+   "name": "FTI Consulting, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 182.83999633789062,
+   "stop": 173.85272611247674,
+   "risk": 4.9,
+   "rsi": 81,
+   "vol": 3.2,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
@@ -199,80 +198,64 @@
  ],
  "watch": [
   {
-   "sym": "DVA",
-   "name": "DaVita Inc.",
+   "sym": "SNY",
+   "name": "Sanofi",
    "sector": "בריאות",
    "isTop": false,
-   "vol": 3.26
+   "vol": 4.37
   },
   {
-   "sym": "EPAC",
-   "name": "Enerpac Tool Group Corp.",
+   "sym": "SKY",
+   "name": "Champion Homes, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 2.62
+  },
+  {
+   "sym": "FDX",
+   "name": "FedEx Corporation",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 2.73
+   "vol": 2.17
   },
   {
-   "sym": "FSV",
-   "name": "FirstService Corporation",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "vol": 2.2
-  },
-  {
-   "sym": "OWL",
-   "name": "Blue Owl Capital Inc.",
+   "sym": "FHI",
+   "name": "Federated Hermes, Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.88
+   "vol": 1.75
   },
-  {
-   "sym": "CACC",
-   "name": "Credit Acceptance Corporatio",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.85
-  },
-  {
-   "sym": "GTES",
-   "name": "Gates Industrial Corporation",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 1.82
-  }
- ],
- "touch": [
   {
    "sym": "SMG",
    "name": "Scotts Miracle-Gro Company (",
    "sector": "חומרי גלם",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
+   "vol": 1.48
   },
   {
-   "sym": "CDP",
-   "name": "COPT Defense Properties",
-   "sector": "נדל\"ן",
+   "sym": "CNH",
+   "name": "CNH Industrial N.V.",
+   "sector": "תעשייה",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.0
-  },
+   "vol": 1.38
+  }
+ ],
+ "touch": [
   {
-   "sym": "RF",
-   "name": "Regions Financial Corporatio",
-   "sector": "פיננסים",
+   "sym": "PFGC",
+   "name": "Performance Food Group Compa",
+   "sector": "צריכה בסיסית",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.1
   },
   {
-   "sym": "PNC",
-   "name": "PNC Financial Services Group",
-   "sector": "פיננסים",
+   "sym": "TRP",
+   "name": "TC Energy Corporation",
+   "sector": "אנרגיה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
+   "pct": -0.1
   },
   {
    "sym": "VLYPP",
@@ -280,15 +263,31 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.3
   },
   {
-   "sym": "FHI",
-   "name": "Federated Hermes, Inc.",
-   "sector": "פיננסים",
+   "sym": "NWN",
+   "name": "Northwest Natural Holding Co",
+   "sector": "תשתיות",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.2
+   "pct": -0.5
+  },
+  {
+   "sym": "CWK",
+   "name": "Cushman & Wakefield Ltd.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.6
+  },
+  {
+   "sym": "BIP",
+   "name": "Brookfield Infrastructure Pa",
+   "sector": "תשתיות",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.7
   }
  ]
 }
