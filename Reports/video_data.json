@@ -1,73 +1,75 @@
 {
- "date": "2026-10-31",
- "dateHe": "שבת 31/10/2026",
- "tradeDateHe": "יום שישי 30/10/2026",
- "checked": 5327,
- "pctAbove": 34,
+ "date": "2026-11-03",
+ "dateHe": "שלישי 03/11/2026",
+ "tradeDateHe": "יום שני 02/11/2026",
+ "checked": 5363,
+ "pctAbove": 36,
  "counts": {
-  "setup": 130,
-  "today": 13,
-  "touch": 47
+  "setup": 127,
+  "today": 98,
+  "touch": 33
  },
  "sectors": [
   [
-   "אנרגיה",
-   56
+   "פיננסים",
+   45
   ],
   [
-   "פיננסים",
-   41
+   "אנרגיה",
+   44
   ],
   [
    "תשתיות",
-   36
-  ],
-  [
-   "טכנולוגיה",
-   35
+   44
   ],
   [
    "צריכה מחזורית",
-   33
-  ],
-  [
-   "בריאות",
-   32
+   39
   ],
   [
    "צריכה בסיסית",
-   31
+   34
+  ],
+  [
+   "טכנולוגיה",
+   33
   ],
   [
    "תעשייה",
-   30
+   32
+  ],
+  [
+   "בריאות",
+   31
   ],
   [
    "תקשורת ומדיה",
+   28
+  ],
+  [
+   "נדל\"ן",
    25
   ],
   [
    "חומרי גלם",
    23
-  ],
-  [
-   "נדל\"ן",
-   22
   ]
  ],
  "top": {
   "n": 28,
-  "above": 18,
+  "above": 16,
   "below": [
+   "NVDA",
    "GOOGL",
-   "AMZN",
+   "TSM",
    "META",
    "AVGO",
    "ASML"
   ],
   "between": [
-   "NVDA",
-   "TSM",
+   "AMZN",
+   "MU",
+   "AMD",
    "CSCO"
   ],
   "setup": [
@@ -78,23 +80,19 @@
   "leaders": [
    [
     "LLY",
-    29.9
+    29.1
    ],
    [
-    "ABBV",
-    24.4
+    "V",
+    24.2
    ],
    [
-    "AMD",
-    23.0
+    "MA",
+    22.7
    ]
   ],
-  "entered": [
-   "KO"
-  ],
-  "exited": [
-   "INTC"
-  ],
+  "entered": [],
+  "exited": [],
   "names": {
    "AAPL": "Apple Inc.",
    "NVDA": "NVIDIA Corporation",
@@ -109,21 +107,21 @@
    "LLY": "Eli Lilly and Company",
    "BRK-A": "Berkshire Hathaway Inc.",
    "SKHY": "SK hynix Inc.",
-   "MU": "Micron Technology, Inc.",
    "WMT": "Walmart Inc.",
+   "MU": "Micron Technology, Inc.",
    "JPM": "JP Morgan Chase & Co.",
-   "AMD": "Advanced Micro Devices, Inc.",
    "V": "Visa Inc.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
    "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "CVX": "Chevron Corporation",
    "COST": "Costco Wholesale Corporation",
+   "CVX": "Chevron Corporation",
    "PLTR": "Palantir Technologies Inc.",
-   "CSCO": "Cisco Systems, Inc.",
-   "KO": "Coca-Cola Company (The)"
+   "KO": "Coca-Cola Company (The)",
+   "CSCO": "Cisco Systems, Inc."
   }
  },
  "setups": [
@@ -132,12 +130,12 @@
    "name": "ADT Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 9.859999656677246,
-   "stop": 9.342169585828449,
-   "risk": 5.3,
+   "close": 9.829999923706055,
+   "stop": 9.34272909867331,
+   "risk": 5.0,
    "rsi": 88,
    "vol": 22.18,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -149,12 +147,12 @@
    "name": "Nomura Holdings Inc",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 9.380000114440918,
-   "stop": 9.07343013636659,
+   "close": 9.569999694824219,
+   "stop": 9.253184694747963,
    "risk": 3.3,
-   "rsi": 48,
+   "rsi": 54,
    "vol": 3.65,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -162,16 +160,16 @@
    ]
   },
   {
-   "sym": "CCI",
-   "name": "Crown Castle Inc.",
-   "sector": "נדל\"ן",
+   "sym": "FCN",
+   "name": "FTI Consulting, Inc.",
+   "sector": "תעשייה",
    "isTop": false,
-   "close": 88.69000244140625,
-   "stop": 83.88004610791765,
-   "risk": 5.4,
-   "rsi": 74,
-   "vol": 3.48,
-   "days": 5,
+   "close": 191.77000427246094,
+   "stop": 181.99753827841118,
+   "risk": 5.1,
+   "rsi": 84,
+   "vol": 3.2,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -179,15 +177,15 @@
    ]
   },
   {
-   "sym": "FCN",
-   "name": "FTI Consulting, Inc.",
-   "sector": "תעשייה",
+   "sym": "CPRI",
+   "name": "Capri Holdings Limited",
+   "sector": "צריכה מחזורית",
    "isTop": false,
-   "close": 182.83999633789062,
-   "stop": 173.85272611247674,
-   "risk": 4.9,
-   "rsi": 81,
-   "vol": 3.2,
+   "close": 20.049999237060547,
+   "stop": 18.643615843785106,
+   "risk": 7.0,
+   "rsi": 78,
+   "vol": 3.16,
    "days": 1,
    "score": 2,
    "conf": [
@@ -198,96 +196,96 @@
  ],
  "watch": [
   {
-   "sym": "SNY",
-   "name": "Sanofi",
+   "sym": "IDXX",
+   "name": "IDEXX Laboratories, Inc.",
    "sector": "בריאות",
    "isTop": false,
-   "vol": 4.37
+   "vol": 3.52
   },
   {
-   "sym": "SKY",
-   "name": "Champion Homes, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 2.62
-  },
-  {
-   "sym": "FDX",
-   "name": "FedEx Corporation",
+   "sym": "LOAR",
+   "name": "Loar Holdings Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 2.17
+   "vol": 3.03
   },
   {
-   "sym": "FHI",
-   "name": "Federated Hermes, Inc.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.75
-  },
-  {
-   "sym": "SMG",
-   "name": "Scotts Miracle-Gro Company (",
+   "sym": "USLM",
+   "name": "United States Lime & Mineral",
    "sector": "חומרי גלם",
    "isTop": false,
-   "vol": 1.48
+   "vol": 2.71
   },
   {
-   "sym": "CNH",
-   "name": "CNH Industrial N.V.",
+   "sym": "GXO",
+   "name": "GXO Logistics, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.38
+   "vol": 2.56
+  },
+  {
+   "sym": "WING",
+   "name": "Wingstop Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 2.11
+  },
+  {
+   "sym": "CPA",
+   "name": "Copa Holdings, S.A.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "vol": 2.1
   }
  ],
  "touch": [
   {
-   "sym": "PFGC",
-   "name": "Performance Food Group Compa",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
-  },
-  {
-   "sym": "TRP",
-   "name": "TC Energy Corporation",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
-  },
-  {
-   "sym": "VLYPP",
-   "name": "Valley National Bancorp - 6.",
+   "sym": "CNS",
+   "name": "Cohen & Steers Inc",
    "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.3
-  },
-  {
-   "sym": "NWN",
-   "name": "Northwest Natural Holding Co",
-   "sector": "תשתיות",
-   "isTop": false,
    "level": "SMA150",
-   "pct": -0.5
+   "pct": -0.0
   },
   {
-   "sym": "CWK",
-   "name": "Cushman & Wakefield Ltd.",
+   "sym": "LEN",
+   "name": "Lennar Corporation",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "CURB",
+   "name": "Curbline Properties Corp.",
    "sector": "נדל\"ן",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.6
+   "level": "SMA150",
+   "pct": -0.1
   },
   {
-   "sym": "BIP",
-   "name": "Brookfield Infrastructure Pa",
+   "sym": "NI",
+   "name": "NiSource Inc",
    "sector": "תשתיות",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.7
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "SW",
+   "name": "Smurfit WestRock plc",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "BKE",
+   "name": "Buckle, Inc. (The)",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
   }
  ]
 }
