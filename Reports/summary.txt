@@ -1,5 +1,5 @@
-סריקת סווינג כ״ח 28 | יום רביעי 04/11/2026 | נתוני מסחר 03/11/2026
-סט-אפים Top 28: אין
-סט-אפים גילוי: APH, NXPI, XYZ, ENTG, WIT, GEN, DOX, NOVT, ITRI, NATL, FWONK, OMC, FWONA, SIRI, CARG (+147)
-פרצו היום (מעקב): AMD, DELL, TWLO, FISV, ARW, AVT, BB, PENG, KYIV, GPK, ARGX, ENSG, WCC, PAC, CAE
-נגעו מלמטה בממוצע: YMM, PSN, SRAD, OLED, AMX, AZO, QSR, SW, ONON, DOO, PHIN, BKE, PNC, PRI, HASI (+19)
+סריקת סווינג כ״ח 28 | יום חמישי 05/11/2026 | נתוני מסחר 04/11/2026
+סט-אפים Top 28: AMD
+סט-אפים גילוי: NXPI, TWLO, WIT, GEN, BB, FWONK, OMC, FWONA, SIRI, CARG, KYIV, ROST, GM, CVNA, PHM (+124)
+פרצו היום (מעקב): AMZN, ERIC, YMM, DAVE, DLO, LIF, EEFT, NTES, AMX, TKO, PINS, MTCH, HD, TM, LOW
+נגעו מלמטה בממוצע: META, INTU, FSLR, NXT, LOGI, NVR, DPZ, NCLH, BIRK, FND, MHO, KBH, PHIN, HRL, CLX (+40)

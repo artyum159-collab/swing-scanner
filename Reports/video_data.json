@@ -1,29 +1,33 @@
 {
- "date": "2026-11-04",
- "dateHe": "רביעי 04/11/2026",
- "tradeDateHe": "יום שלישי 03/11/2026",
- "checked": 5252,
- "pctAbove": 35,
+ "date": "2026-11-05",
+ "dateHe": "חמישי 05/11/2026",
+ "tradeDateHe": "יום רביעי 04/11/2026",
+ "checked": 5244,
+ "pctAbove": 38,
  "counts": {
-  "setup": 162,
-  "today": 18,
-  "touch": 34
+  "setup": 140,
+  "today": 136,
+  "touch": 55
  },
  "sectors": [
   [
-   "פיננסים",
-   45
-  ],
-  [
-   "אנרגיה",
-   41
-  ],
-  [
    "תשתיות",
-   39
+   51
+  ],
+  [
+   "פיננסים",
+   50
   ],
   [
    "צריכה מחזורית",
+   44
+  ],
+  [
+   "צריכה בסיסית",
+   36
+  ],
+  [
+   "בריאות",
    35
   ],
   [
@@ -31,70 +35,72 @@
    34
   ],
   [
-   "בריאות",
-   32
+   "תקשורת ומדיה",
+   34
   ],
   [
    "תעשייה",
-   32
-  ],
-  [
-   "צריכה בסיסית",
-   31
-  ],
-  [
-   "תקשורת ומדיה",
-   28
-  ],
-  [
-   "חומרי גלם",
-   23
+   33
   ],
   [
    "נדל\"ן",
-   23
+   30
+  ],
+  [
+   "אנרגיה",
+   25
+  ],
+  [
+   "חומרי גלם",
+   25
   ]
  ],
  "top": {
   "n": 28,
-  "above": 17,
+  "above": 18,
   "below": [
+   "NVDA",
    "GOOGL",
-   "META",
+   "TSM",
    "AVGO",
    "ASML"
   ],
   "between": [
-   "NVDA",
-   "AMZN",
-   "TSM",
    "MU",
    "CSCO"
   ],
-  "setup": [],
-  "today": [
+  "setup": [
    "AMD"
   ],
-  "touch": [],
+  "today": [
+   "AMZN"
+  ],
+  "touch": [
+   [
+    "META",
+    "SMA200",
+    -0.3
+   ]
+  ],
   "leaders": [
    [
     "LLY",
-    28.7
+    29.3
    ],
    [
     "V",
-    22.5
+    27.0
    ],
    [
-    "MA",
-    20.6
+    "MSFT",
+    26.6
    ]
   ],
   "entered": [],
   "exited": [],
   "names": {
-   "NVDA": "NVIDIA Corporation",
    "AAPL": "Apple Inc.",
+   "NVDA": "NVIDIA Corporation",
    "MSFT": "Microsoft Corporation",
    "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
@@ -105,16 +111,16 @@
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
    "BRK-A": "Berkshire Hathaway Inc.",
-   "SKHY": "SK hynix Inc.",
    "WMT": "Walmart Inc.",
-   "MU": "Micron Technology, Inc.",
+   "SKHY": "SK hynix Inc.",
    "JPM": "JP Morgan Chase & Co.",
-   "AMD": "Advanced Micro Devices, Inc.",
+   "MU": "Micron Technology, Inc.",
    "V": "Visa Inc.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
-   "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
+   "ASML": "ASML Holding N.V. - New York Re",
    "ABBV": "AbbVie Inc.",
    "COST": "Costco Wholesale Corporation",
    "CVX": "Chevron Corporation",
@@ -129,12 +135,12 @@
    "name": "ADT Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 9.850000381469727,
-   "stop": 9.392177452074872,
-   "risk": 4.6,
+   "close": 9.899999618530273,
+   "stop": 9.467378359646743,
+   "risk": 4.4,
    "rsi": 88,
    "vol": 22.18,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -142,20 +148,20 @@
    ]
   },
   {
-   "sym": "NMR",
-   "name": "Nomura Holdings Inc",
-   "sector": "פיננסים",
+   "sym": "SNY",
+   "name": "Sanofi",
+   "sector": "בריאות",
    "isTop": false,
-   "close": 9.470000267028809,
-   "stop": 9.159743522115471,
-   "risk": 3.3,
-   "rsi": 50,
-   "vol": 3.65,
-   "days": 5,
+   "close": 47.470001220703125,
+   "stop": 45.979338107036064,
+   "risk": 3.1,
+   "rsi": 77,
+   "vol": 4.37,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
-    "rsi"
+    "res"
    ]
   },
   {
@@ -163,12 +169,12 @@
    "name": "IDEXX Laboratories, Inc.",
    "sector": "בריאות",
    "isTop": false,
-   "close": 672.0399780273438,
-   "stop": 637.4013709582853,
+   "close": 698.5499877929688,
+   "stop": 661.9177084923754,
    "risk": 5.2,
-   "rsi": 77,
+   "rsi": 79,
    "vol": 3.52,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -176,16 +182,16 @@
    ]
   },
   {
-   "sym": "DD",
-   "name": "DuPont de Nemours, Inc.",
-   "sector": "חומרי גלם",
+   "sym": "NBIX",
+   "name": "Neurocrine Biosciences, Inc.",
+   "sector": "בריאות",
    "isTop": false,
-   "close": 153.4600067138672,
-   "stop": 148.24443204713472,
-   "risk": 3.4,
-   "rsi": 82,
-   "vol": 3.37,
-   "days": 4,
+   "close": 166.0500030517578,
+   "stop": 158.3954474628221,
+   "risk": 4.6,
+   "rsi": 77,
+   "vol": 3.29,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
@@ -195,96 +201,96 @@
  ],
  "watch": [
   {
-   "sym": "FISV",
-   "name": "Fiserv, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 3.41
-  },
-  {
-   "sym": "GPK",
-   "name": "Graphic Packaging Holding Co",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 3.01
-  },
-  {
-   "sym": "AVT",
-   "name": "Avnet, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 2.2
-  },
-  {
-   "sym": "ARCB",
-   "name": "ArcBest Corporation",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 1.74
-  },
-  {
-   "sym": "AMD",
-   "name": "Advanced Micro Devices, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": true,
-   "vol": 1.59
-  },
-  {
-   "sym": "ENSG",
-   "name": "The Ensign Group, Inc.",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 1.59
-  }
- ],
- "touch": [
-  {
-   "sym": "FELE",
-   "name": "Franklin Electric Co., Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.0
-  },
-  {
-   "sym": "ONON",
-   "name": "On Holding AG",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
-  },
-  {
-   "sym": "SW",
-   "name": "Smurfit WestRock plc",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
-  },
-  {
    "sym": "TPC",
    "name": "Tutor Perini Corporation",
    "sector": "תעשייה",
    "isTop": false,
+   "vol": 4.61
+  },
+  {
+   "sym": "HASI",
+   "name": "HA Sustainable Infrastructur",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 3.44
+  },
+  {
+   "sym": "LEN-B",
+   "name": "Lennar Corporation",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 3.16
+  },
+  {
+   "sym": "SMG",
+   "name": "Scotts Miracle-Gro Company (",
+   "sector": "חומרי גלם",
+   "isTop": false,
+   "vol": 2.63
+  },
+  {
+   "sym": "CNM",
+   "name": "Core & Main, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "vol": 2.49
+  },
+  {
+   "sym": "PTON",
+   "name": "Peloton Interactive, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 2.48
+  }
+ ],
+ "touch": [
+  {
+   "sym": "META",
+   "name": "Meta Platforms, Inc.",
+   "sector": "תקשורת ומדיה",
+   "isTop": true,
+   "level": "SMA200",
+   "pct": -0.3
+  },
+  {
+   "sym": "PHIN",
+   "name": "PHINIA Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.0
+  },
+  {
+   "sym": "ENIC",
+   "name": "Enel Chile S.A.",
+   "sector": "תשתיות",
+   "isTop": false,
    "level": "SMA150",
    "pct": -0.1
   },
   {
-   "sym": "AMX",
-   "name": "America Movil, S.A.B. de C.V",
-   "sector": "תקשורת ומדיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.3
-  },
-  {
-   "sym": "CURB",
-   "name": "Curbline Properties Corp.",
+   "sym": "STAG",
+   "name": "Stag Industrial, Inc.",
    "sector": "נדל\"ן",
    "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "NJR",
+   "name": "NewJersey Resources Corporat",
+   "sector": "תשתיות",
+   "isTop": false,
    "level": "SMA150",
-   "pct": -0.3
+   "pct": -0.1
+  },
+  {
+   "sym": "GDV",
+   "name": "Gabelli Dividend & Income Tr",
+   "sector": "פיננסים",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.1
   }
  ]
 }
