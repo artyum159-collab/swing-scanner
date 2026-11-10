@@ -1,104 +1,101 @@
 {
- "date": "2026-11-07",
- "dateHe": "שבת 07/11/2026",
- "tradeDateHe": "יום שישי 06/11/2026",
- "checked": 5213,
- "pctAbove": 33,
+ "date": "2026-11-10",
+ "dateHe": "שלישי 10/11/2026",
+ "tradeDateHe": "יום שני 09/11/2026",
+ "checked": 5334,
+ "pctAbove": 37,
  "counts": {
-  "setup": 127,
-  "today": 29,
-  "touch": 8
+  "setup": 148,
+  "today": 112,
+  "touch": 36
  },
  "sectors": [
   [
    "פיננסים",
-   43
+   46
   ],
   [
    "תשתיות",
-   38
+   45
   ],
   [
    "צריכה מחזורית",
-   37
+   42
   ],
   [
    "צריכה בסיסית",
-   35
+   36
   ],
   [
    "בריאות",
+   34
+  ],
+  [
+   "תעשייה",
+   34
+  ],
+  [
+   "תקשורת ומדיה",
    33
   ],
   [
    "טכנולוגיה",
-   30
-  ],
-  [
-   "תקשורת ומדיה",
-   29
-  ],
-  [
-   "תעשייה",
-   29
-  ],
-  [
-   "נדל\"ן",
-   27
+   32
   ],
   [
    "חומרי גלם",
-   24
+   30
+  ],
+  [
+   "נדל\"ן",
+   29
   ],
   [
    "אנרגיה",
-   22
+   23
   ]
  ],
  "top": {
   "n": 28,
-  "above": 17,
+  "above": 19,
   "below": [
    "NVDA",
    "GOOGL",
    "TSM",
-   "META",
-   "TSLA",
    "AVGO",
+   "TSLA",
    "MU",
    "ASML"
   ],
-  "between": [
-   "AMD"
-  ],
+  "between": [],
   "setup": [
-   "AMZN"
+   "AMZN",
+   "PLTR"
   ],
   "today": [
-   "PLTR"
+   "META",
+   "AMD"
   ],
   "touch": [],
   "leaders": [
    [
     "LLY",
-    23.1
+    28.2
    ],
    [
-    "V",
-    22.6
+    "MSFT",
+    23.8
    ],
    [
     "ABBV",
-    21.9
+    22.6
    ]
   ],
   "entered": [
-   "BRK-A",
-   "PLTR"
+   "BRK-B"
   ],
   "exited": [
-   "BRK-B",
-   "CSCO"
+   "BRK-A"
   ],
   "names": {
    "AAPL": "Apple Inc.",
@@ -109,40 +106,57 @@
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
    "META": "Meta Platforms, Inc.",
-   "TSLA": "Tesla, Inc.",
    "AVGO": "Broadcom Inc.",
-   "BRK-A": "Berkshire Hathaway Inc.",
+   "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
+   "BRK-B": "Berkshire Hathaway Inc. New",
    "WMT": "Walmart Inc.",
    "SKHY": "SK hynix Inc.",
    "JPM": "JP Morgan Chase & Co.",
-   "V": "Visa Inc.",
-   "MU": "Micron Technology, Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
-   "XOM": "ExxonMobil Holdings Corporation",
+   "MU": "Micron Technology, Inc.",
+   "V": "Visa Inc.",
    "JNJ": "Johnson & Johnson",
-   "MA": "Mastercard Incorporated",
+   "XOM": "ExxonMobil Holdings Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
+   "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
    "COST": "Costco Wholesale Corporation",
-   "CVX": "Chevron Corporation",
    "KO": "Coca-Cola Company (The)",
+   "CVX": "Chevron Corporation",
    "PLTR": "Palantir Technologies Inc.",
    "PG": "Procter & Gamble Company (The)"
   }
  },
  "setups": [
   {
+   "sym": "LOAR",
+   "name": "Loar Holdings Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 78.56999969482422,
+   "stop": 73.49670320122628,
+   "risk": 6.5,
+   "rsi": 76,
+   "vol": 8.18,
+   "days": 5,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
    "sym": "YOU",
    "name": "Clear Secure, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 55.810001373291016,
-   "stop": 51.5338124734216,
-   "risk": 7.7,
-   "rsi": 73,
+   "close": 55.09000015258789,
+   "stop": 50.807467619057924,
+   "risk": 7.8,
+   "rsi": 70,
    "vol": 5.22,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -154,29 +168,12 @@
    "name": "ADMA Biologics Inc",
    "sector": "בריאות",
    "isTop": false,
-   "close": 12.729999542236328,
-   "stop": 11.710897382311012,
-   "risk": 8.0,
+   "close": 12.789999961853027,
+   "stop": 11.781869420746895,
+   "risk": 7.9,
    "rsi": 66,
    "vol": 4.45,
-   "days": 1,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "SNY",
-   "name": "Sanofi",
-   "sector": "בריאות",
-   "isTop": false,
-   "close": 47.040000915527344,
-   "stop": 45.46999060135547,
-   "risk": 3.3,
-   "rsi": 73,
-   "vol": 4.37,
-   "days": 5,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -188,12 +185,12 @@
    "name": "GXO Logistics, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 55.18000030517578,
-   "stop": 52.569772915358364,
+   "close": 56.08000183105469,
+   "stop": 53.42371945097825,
    "risk": 4.7,
-   "rsi": 73,
+   "rsi": 75,
    "vol": 4.2,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -203,55 +200,79 @@
  ],
  "watch": [
   {
-   "sym": "GRDN",
-   "name": "Guardian Pharmacy Services, ",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 2.65
-  },
-  {
-   "sym": "TPC",
-   "name": "Tutor Perini Corporation",
+   "sym": "CNM",
+   "name": "Core & Main, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 2.59
+   "vol": 2.43
   },
   {
-   "sym": "IAG",
-   "name": "Iamgold Corporation",
-   "sector": "חומרי גלם",
+   "sym": "ALGN",
+   "name": "Align Technology, Inc.",
+   "sector": "בריאות",
+   "isTop": false,
+   "vol": 2.2
+  },
+  {
+   "sym": "TRNO",
+   "name": "Terreno Realty Corporation",
+   "sector": "נדל\"ן",
    "isTop": false,
    "vol": 2.05
   },
   {
-   "sym": "SARO",
-   "name": "StandardAero, Inc.",
+   "sym": "APG",
+   "name": "APi Group Corporation",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.92
+   "vol": 1.93
   },
   {
-   "sym": "PLUS",
-   "name": "ePlus inc.",
+   "sym": "UI",
+   "name": "Ubiquiti Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 1.82
+   "vol": 1.87
   },
   {
-   "sym": "ITT",
-   "name": "ITT Inc.",
-   "sector": "תעשייה",
+   "sym": "TFPM",
+   "name": "Triple Flag Precious Metals ",
+   "sector": "חומרי גלם",
    "isTop": false,
-   "vol": 1.79
+   "vol": 1.86
   }
  ],
  "touch": [
   {
-   "sym": "RYAAY",
-   "name": "Ryanair Holdings plc",
+   "sym": "MPWR",
+   "name": "Monolithic Power Systems, In",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.0
+  },
+  {
+   "sym": "TDG",
+   "name": "Transdigm Group Incorporated",
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA200",
+   "pct": -0.0
+  },
+  {
+   "sym": "ATI",
+   "name": "ATI Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.0
+  },
+  {
+   "sym": "HGV",
+   "name": "Hilton Grand Vacations Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA150",
    "pct": -0.2
   },
   {
@@ -260,39 +281,15 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.5
+   "pct": -0.2
   },
   {
-   "sym": "OR",
-   "name": "OR Royalties Inc.",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.6
-  },
-  {
-   "sym": "PLNT",
-   "name": "Planet Fitness, Inc.",
+   "sym": "MCD",
+   "name": "McDonald's Corporation",
    "sector": "צריכה מחזורית",
    "isTop": false,
    "level": "SMA200",
-   "pct": -1.2
-  },
-  {
-   "sym": "HGV",
-   "name": "Hilton Grand Vacations Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -1.6
-  },
-  {
-   "sym": "HDB",
-   "name": "HDFC Bank Limited",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -1.8
+   "pct": -0.3
   }
  ]
 }

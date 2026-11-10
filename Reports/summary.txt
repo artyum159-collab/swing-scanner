@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום שבת 07/11/2026 | נתוני מסחר 06/11/2026
-סט-אפים Top 28: AMZN
-סט-אפים גילוי: YMM, YOU, BB, KD, EEFT, NTES, AMX, MTCH, CARG, ATHM, HD, TM, CVNA, ROST, CMG (+111)
-פרצו היום (מעקב): PLTR, SNPS, DLO, LIF, PLUS, JD, MAT, EDU, LNC, NNI, PURR, JAZZ, GRDN, CNH, ITT
-נגעו מלמטה בממוצע: EXTR, PLNT, HGV, HDB, FAF, VLYPP, RYAAY, OR
-שינוי ב-Top: נכנסו BRK-A, PLTR | יצאו BRK-B, CSCO
+סריקת סווינג כ״ח 28 | יום שלישי 10/11/2026 | נתוני מסחר 09/11/2026
+סט-אפים Top 28: AMZN, PLTR
+סט-אפים גילוי: SNPS, YMM, YOU, BB, DLO, KD, EEFT, PLUS, NTES, AMX, FWONK, FWONA, MTCH, CARG, ATHM (+131)
+פרצו היום (מעקב): META, AMD, TXN, ANET, APH, ADI, TEL, UI, TDY, RELY, EXTR, APP, TKO, NXST, LOW
+נגעו מלמטה בממוצע: CDNS, MPWR, NXT, OLED, FOUR, MCD, TPR, TSCO, NCLH, FND, ALH, PTRN, HGV, PHIN, AKO-B (+21)
+שינוי ב-Top: נכנסו BRK-B | יצאו BRK-A
