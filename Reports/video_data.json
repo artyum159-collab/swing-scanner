@@ -1,41 +1,37 @@
 {
- "date": "2026-11-10",
- "dateHe": "שלישי 10/11/2026",
- "tradeDateHe": "יום שני 09/11/2026",
- "checked": 5334,
- "pctAbove": 37,
+ "date": "2026-11-11",
+ "dateHe": "רביעי 11/11/2026",
+ "tradeDateHe": "יום שלישי 10/11/2026",
+ "checked": 5339,
+ "pctAbove": 36,
  "counts": {
-  "setup": 148,
-  "today": 112,
-  "touch": 36
+  "setup": 181,
+  "today": 26,
+  "touch": 20
  },
  "sectors": [
   [
    "פיננסים",
-   46
-  ],
-  [
-   "תשתיות",
    45
   ],
   [
+   "תשתיות",
+   43
+  ],
+  [
    "צריכה מחזורית",
-   42
+   39
   ],
   [
    "צריכה בסיסית",
-   36
-  ],
-  [
-   "בריאות",
-   34
+   35
   ],
   [
    "תעשייה",
    34
   ],
   [
-   "תקשורת ומדיה",
+   "בריאות",
    33
   ],
   [
@@ -43,16 +39,20 @@
    32
   ],
   [
-   "חומרי גלם",
-   30
+   "תקשורת ומדיה",
+   32
   ],
   [
    "נדל\"ן",
-   29
+   28
   ],
   [
    "אנרגיה",
-   23
+   26
+  ],
+  [
+   "חומרי גלם",
+   25
   ]
  ],
  "top": {
@@ -63,28 +63,28 @@
    "GOOGL",
    "TSM",
    "AVGO",
-   "TSLA",
    "MU",
    "ASML"
   ],
-  "between": [],
+  "between": [
+   "TSLA"
+  ],
   "setup": [
    "AMZN",
+   "META",
+   "AMD",
    "PLTR"
   ],
-  "today": [
-   "META",
-   "AMD"
-  ],
+  "today": [],
   "touch": [],
   "leaders": [
    [
     "LLY",
-    28.2
+    29.8
    ],
    [
-    "MSFT",
-    23.8
+    "AMD",
+    23.1
    ],
    [
     "ABBV",
@@ -92,10 +92,10 @@
    ]
   ],
   "entered": [
-   "BRK-B"
+   "BRK-A"
   ],
   "exited": [
-   "BRK-A"
+   "BRK-B"
   ],
   "names": {
    "AAPL": "Apple Inc.",
@@ -109,7 +109,7 @@
    "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
-   "BRK-B": "Berkshire Hathaway Inc. New",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "WMT": "Walmart Inc.",
    "SKHY": "SK hynix Inc.",
    "JPM": "JP Morgan Chase & Co.",
@@ -130,33 +130,16 @@
  },
  "setups": [
   {
-   "sym": "LOAR",
-   "name": "Loar Holdings Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "close": 78.56999969482422,
-   "stop": 73.49670320122628,
-   "risk": 6.5,
-   "rsi": 76,
-   "vol": 8.18,
-   "days": 5,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
    "sym": "YOU",
    "name": "Clear Secure, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 55.09000015258789,
-   "stop": 50.807467619057924,
-   "risk": 7.8,
-   "rsi": 70,
+   "close": 55.7400016784668,
+   "stop": 51.52764995844546,
+   "risk": 7.6,
+   "rsi": 71,
    "vol": 5.22,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -168,12 +151,12 @@
    "name": "ADMA Biologics Inc",
    "sector": "בריאות",
    "isTop": false,
-   "close": 12.789999961853027,
-   "stop": 11.781869420746895,
-   "risk": 7.9,
-   "rsi": 66,
+   "close": 12.670000076293945,
+   "stop": 11.69102175756715,
+   "risk": 7.7,
+   "rsi": 65,
    "vol": 4.45,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -181,16 +164,33 @@
    ]
   },
   {
-   "sym": "GXO",
-   "name": "GXO Logistics, Inc.",
-   "sector": "תעשייה",
+   "sym": "KD",
+   "name": "Kyndryl Holdings, Inc.",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 56.08000183105469,
-   "stop": 53.42371945097825,
-   "risk": 4.7,
-   "rsi": 75,
-   "vol": 4.2,
-   "days": 5,
+   "close": 17.270000457763672,
+   "stop": 15.79455022404059,
+   "risk": 8.5,
+   "rsi": 70,
+   "vol": 3.77,
+   "days": 4,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "SEZL",
+   "name": "Sezzle Inc.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "close": 149.27999877929688,
+   "stop": 133.0589201827894,
+   "risk": 10.9,
+   "rsi": 62,
+   "vol": 3.71,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -200,80 +200,80 @@
  ],
  "watch": [
   {
-   "sym": "CNM",
-   "name": "Core & Main, Inc.",
-   "sector": "תעשייה",
+   "sym": "BAP",
+   "name": "Credicorp Ltd.",
+   "sector": "פיננסים",
    "isTop": false,
-   "vol": 2.43
+   "vol": 2.39
   },
   {
-   "sym": "ALGN",
-   "name": "Align Technology, Inc.",
-   "sector": "בריאות",
+   "sym": "CHRD",
+   "name": "Chord Energy Corporation",
+   "sector": "אנרגיה",
    "isTop": false,
-   "vol": 2.2
-  },
-  {
-   "sym": "TRNO",
-   "name": "Terreno Realty Corporation",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "vol": 2.05
-  },
-  {
-   "sym": "APG",
-   "name": "APi Group Corporation",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 1.93
-  },
-  {
-   "sym": "UI",
-   "name": "Ubiquiti Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 1.87
-  },
-  {
-   "sym": "TFPM",
-   "name": "Triple Flag Precious Metals ",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "vol": 1.86
-  }
- ],
- "touch": [
-  {
-   "sym": "MPWR",
-   "name": "Monolithic Power Systems, In",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.0
+   "vol": 1.68
   },
   {
    "sym": "TDG",
    "name": "Transdigm Group Incorporated",
    "sector": "תעשייה",
    "isTop": false,
+   "vol": 1.59
+  },
+  {
+   "sym": "CNX",
+   "name": "CNX Resources Corporation",
+   "sector": "אנרגיה",
+   "isTop": false,
+   "vol": 1.36
+  },
+  {
+   "sym": "TIGO",
+   "name": "Millicom International Cellu",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "vol": 1.29
+  },
+  {
+   "sym": "CF",
+   "name": "CF Industries Holdings, Inc.",
+   "sector": "חומרי גלם",
+   "isTop": false,
+   "vol": 1.2
+  }
+ ],
+ "touch": [
+  {
+   "sym": "TSCO",
+   "name": "Tractor Supply Company",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
    "level": "SMA200",
    "pct": -0.0
   },
   {
-   "sym": "ATI",
-   "name": "ATI Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.0
-  },
-  {
-   "sym": "HGV",
-   "name": "Hilton Grand Vacations Inc.",
-   "sector": "צריכה מחזורית",
+   "sym": "AEG",
+   "name": "Aegon Ltd. New York Registry",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.2
+  },
+  {
+   "sym": "ESS",
+   "name": "Essex Property Trust, Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.3
+  },
+  {
+   "sym": "NCLH",
+   "name": "Norwegian Cruise Line Holdin",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.4
   },
   {
    "sym": "VLYPP",
@@ -281,15 +281,15 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.5
   },
   {
-   "sym": "MCD",
-   "name": "McDonald's Corporation",
-   "sector": "צריכה מחזורית",
+   "sym": "OLED",
+   "name": "Universal Display Corporatio",
+   "sector": "טכנולוגיה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.3
+   "pct": -0.6
   }
  ]
 }
