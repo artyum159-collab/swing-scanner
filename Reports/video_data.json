@@ -1,101 +1,103 @@
 {
- "date": "2026-11-11",
- "dateHe": "רביעי 11/11/2026",
- "tradeDateHe": "יום שלישי 10/11/2026",
- "checked": 5339,
- "pctAbove": 36,
+ "date": "2026-11-12",
+ "dateHe": "חמישי 12/11/2026",
+ "tradeDateHe": "יום רביעי 11/11/2026",
+ "checked": 5239,
+ "pctAbove": 37,
  "counts": {
-  "setup": 181,
-  "today": 26,
-  "touch": 20
+  "setup": 179,
+  "today": 33,
+  "touch": 24
  },
  "sectors": [
   [
    "פיננסים",
-   45
+   47
   ],
   [
    "תשתיות",
-   43
+   45
   ],
   [
    "צריכה מחזורית",
-   39
+   40
   ],
   [
    "צריכה בסיסית",
+   36
+  ],
+  [
+   "תקשורת ומדיה",
    35
+  ],
+  [
+   "בריאות",
+   34
   ],
   [
    "תעשייה",
    34
   ],
   [
-   "בריאות",
+   "טכנולוגיה",
    33
   ],
   [
-   "טכנולוגיה",
-   32
-  ],
-  [
-   "תקשורת ומדיה",
-   32
+   "אנרגיה",
+   29
   ],
   [
    "נדל\"ן",
-   28
-  ],
-  [
-   "אנרגיה",
    26
   ],
   [
    "חומרי גלם",
-   25
+   24
   ]
  ],
  "top": {
   "n": 28,
-  "above": 19,
+  "above": 18,
   "below": [
    "NVDA",
    "GOOGL",
-   "TSM",
    "AVGO",
-   "MU",
-   "ASML"
+   "META",
+   "ASML",
+   "ORCL"
   ],
   "between": [
-   "TSLA"
+   "TSM",
+   "MU"
   ],
   "setup": [
    "AMZN",
-   "META",
    "AMD",
    "PLTR"
   ],
-  "today": [],
+  "today": [
+   "TSLA"
+  ],
   "touch": [],
   "leaders": [
    [
-    "LLY",
-    29.8
-   ],
-   [
     "AMD",
-    23.1
+    31.6
    ],
    [
-    "ABBV",
-    22.6
+    "LLY",
+    30.0
+   ],
+   [
+    "V",
+    22.9
    ]
   ],
   "entered": [
-   "BRK-A"
+   "ORCL"
   ],
   "exited": [
-   "BRK-B"
+   "PG"
   ],
   "names": {
    "AAPL": "Apple Inc.",
@@ -105,19 +107,19 @@
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
-   "META": "Meta Platforms, Inc.",
    "AVGO": "Broadcom Inc.",
+   "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
    "BRK-A": "Berkshire Hathaway Inc.",
-   "WMT": "Walmart Inc.",
    "SKHY": "SK hynix Inc.",
+   "WMT": "Walmart Inc.",
+   "MU": "Micron Technology, Inc.",
    "JPM": "JP Morgan Chase & Co.",
    "AMD": "Advanced Micro Devices, Inc.",
-   "MU": "Micron Technology, Inc.",
    "V": "Visa Inc.",
-   "JNJ": "Johnson & Johnson",
    "XOM": "ExxonMobil Holdings Corporation",
+   "JNJ": "Johnson & Johnson",
    "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
@@ -125,7 +127,7 @@
    "KO": "Coca-Cola Company (The)",
    "CVX": "Chevron Corporation",
    "PLTR": "Palantir Technologies Inc.",
-   "PG": "Procter & Gamble Company (The)"
+   "ORCL": "Oracle Corporation"
   }
  },
  "setups": [
@@ -134,12 +136,12 @@
    "name": "Clear Secure, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 55.7400016784668,
-   "stop": 51.52764995844546,
+   "close": 55.40999984741211,
+   "stop": 51.21031625453062,
    "risk": 7.6,
-   "rsi": 71,
+   "rsi": 70,
    "vol": 5.22,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -151,12 +153,12 @@
    "name": "ADMA Biologics Inc",
    "sector": "בריאות",
    "isTop": false,
-   "close": 12.670000076293945,
-   "stop": 11.69102175756715,
-   "risk": 7.7,
-   "rsi": 65,
+   "close": 13.1899995803833,
+   "stop": 12.208091211047549,
+   "risk": 7.4,
+   "rsi": 68,
    "vol": 4.45,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -168,12 +170,12 @@
    "name": "Kyndryl Holdings, Inc.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 17.270000457763672,
-   "stop": 15.79455022404059,
-   "risk": 8.5,
-   "rsi": 70,
+   "close": 17.1299991607666,
+   "stop": 15.703152441597435,
+   "risk": 8.3,
+   "rsi": 69,
    "vol": 3.77,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -185,12 +187,12 @@
    "name": "Sezzle Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 149.27999877929688,
-   "stop": 133.0589201827894,
-   "risk": 10.9,
-   "rsi": 62,
+   "close": 152.64999389648438,
+   "stop": 136.82577799147546,
+   "risk": 10.4,
+   "rsi": 64,
    "vol": 3.71,
-   "days": 4,
+   "days": 5,
    "score": 2,
    "conf": [
     "vol",
@@ -200,88 +202,72 @@
  ],
  "watch": [
   {
-   "sym": "BAP",
-   "name": "Credicorp Ltd.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 2.39
-  },
-  {
-   "sym": "CHRD",
-   "name": "Chord Energy Corporation",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "vol": 1.68
-  },
-  {
-   "sym": "TDG",
-   "name": "Transdigm Group Incorporated",
+   "sym": "REZI",
+   "name": "Resideo Technologies, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.59
+   "vol": 5.2
   },
   {
-   "sym": "CNX",
-   "name": "CNX Resources Corporation",
-   "sector": "אנרגיה",
+   "sym": "ZM",
+   "name": "Zoom Communications, Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 1.75
+  },
+  {
+   "sym": "JCI",
+   "name": "Johnson Controls Internation",
+   "sector": "תעשייה",
    "isTop": false,
    "vol": 1.36
   },
   {
-   "sym": "TIGO",
-   "name": "Millicom International Cellu",
-   "sector": "תקשורת ומדיה",
+   "sym": "TXNM",
+   "name": "TXNM Energy, Inc.",
+   "sector": "תשתיות",
    "isTop": false,
-   "vol": 1.29
+   "vol": 1.13
   },
   {
-   "sym": "CF",
-   "name": "CF Industries Holdings, Inc.",
-   "sector": "חומרי גלם",
+   "sym": "CVI",
+   "name": "CVR Energy Inc.",
+   "sector": "אנרגיה",
    "isTop": false,
-   "vol": 1.2
+   "vol": 1.12
+  },
+  {
+   "sym": "EVT",
+   "name": "Eaton Vance Tax Advantaged D",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.08
   }
  ],
  "touch": [
   {
-   "sym": "TSCO",
-   "name": "Tractor Supply Company",
-   "sector": "צריכה מחזורית",
+   "sym": "INGM",
+   "name": "Ingram Micro Holding Corpora",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
+   "level": "SMA150",
+   "pct": -0.1
   },
   {
-   "sym": "AEG",
-   "name": "Aegon Ltd. New York Registry",
+   "sym": "BPOP",
+   "name": "Popular, Inc.",
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.2
   },
   {
-   "sym": "ESS",
-   "name": "Essex Property Trust, Inc.",
-   "sector": "נדל\"ן",
+   "sym": "MT",
+   "name": "Arcelor Mittal NY Registry S",
+   "sector": "חומרי גלם",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.3
-  },
-  {
-   "sym": "NCLH",
-   "name": "Norwegian Cruise Line Holdin",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.4
-  },
-  {
-   "sym": "VLYPP",
-   "name": "Valley National Bancorp - 6.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.5
   },
   {
    "sym": "OLED",
@@ -289,7 +275,23 @@
    "sector": "טכנולוגיה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.6
+   "pct": -0.3
+  },
+  {
+   "sym": "ATEN",
+   "name": "A10 Networks, Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.3
+  },
+  {
+   "sym": "ASX",
+   "name": "ASE Technology Holding Co., ",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.3
   }
  ]
 }
