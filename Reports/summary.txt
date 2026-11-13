@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום חמישי 12/11/2026 | נתוני מסחר 11/11/2026
-סט-אפים Top 28: AMZN, AMD, PLTR
-סט-אפים גילוי: TXN, ANET, ADI, APH, SNPS, NXPI, TEL, UI, TDY, YMM, YOU, RELY, DLO, KD, EXTR (+161)
-פרצו היום (מעקב): TSLA, IBM, MPWR, HPE, TWLO, ZM, ENTG, ORLY, VIK, CHWY, NCLH, PHIN, AEG, PURR, GDV
-נגעו מלמטה בממוצע: QCOM, CDNS, ASX, MDB, AVT, INGM, OLED, ATEN, CELH, LAUR, BCH, BPOP, VLYPP, TRP, MPLX (+9)
-שינוי ב-Top: נכנסו ORCL | יצאו PG
+סריקת סווינג כ״ח 28 | יום שישי 13/11/2026 | נתוני מסחר 12/11/2026
+סט-אפים Top 28: TSLA, AMD, PLTR
+סט-אפים גילוי: TXN, ANET, ADI, APH, SNPS, MPWR, NXPI, HPE, TEL, UI, TDY, ZM, ENTG, EXTR, PLUS (+97)
+פרצו היום (מעקב): INGM, GRND, ATEN, AZO, TRMK, TMDX, MIR, OXY, CNX, WDFC, CEG, NGG
+נגעו מלמטה בממוצע: QCOM, OLED, VZ, NYT, TSCO, AKO-B, UNFI, AXP, PNC, BPOP, BGC, FBP, ADX, VLYPP, FBK (+19)
+שינוי ב-Top: נכנסו CSCO | יצאו ORCL
