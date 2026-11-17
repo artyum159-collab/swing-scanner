@@ -1,162 +1,143 @@
 {
- "date": "2026-11-14",
- "dateHe": "שבת 14/11/2026",
- "tradeDateHe": "יום שישי 13/11/2026",
- "checked": 5211,
- "pctAbove": 35,
+ "date": "2026-11-17",
+ "dateHe": "שלישי 17/11/2026",
+ "tradeDateHe": "יום שני 16/11/2026",
+ "checked": 5243,
+ "pctAbove": 32,
  "counts": {
-  "setup": 110,
-  "today": 28,
-  "touch": 22
+  "setup": 73,
+  "today": 18,
+  "touch": 20
  },
  "sectors": [
   [
    "תשתיות",
-   48
+   47
   ],
   [
    "פיננסים",
-   44
-  ],
-  [
-   "צריכה מחזורית",
-   37
+   42
   ],
   [
    "צריכה בסיסית",
+   36
+  ],
+  [
+   "צריכה מחזורית",
    35
   ],
   [
    "תקשורת ומדיה",
-   34
-  ],
-  [
-   "טכנולוגיה",
-   32
-  ],
-  [
-   "בריאות",
-   32
-  ],
-  [
-   "אנרגיה",
    32
   ],
   [
    "תעשייה",
-   32
+   30
   ],
   [
-   "נדל\"ן",
+   "טכנולוגיה",
+   29
+  ],
+  [
+   "בריאות",
+   29
+  ],
+  [
+   "אנרגיה",
    26
   ],
   [
+   "נדל\"ן",
+   25
+  ],
+  [
    "חומרי גלם",
-   22
+   18
   ]
  ],
  "top": {
   "n": 28,
-  "above": 20,
+  "above": 18,
   "below": [
    "NVDA",
    "GOOGL",
    "TSM",
+   "META",
    "AVGO",
+   "MU",
    "ASML"
   ],
   "between": [
-   "MU"
+   "TSLA"
   ],
   "setup": [
-   "TSLA",
-   "AMD",
-   "PLTR"
+   "AMD"
   ],
-  "today": [
-   "META"
-  ],
+  "today": [],
   "touch": [],
   "leaders": [
    [
     "LLY",
-    30.1
-   ],
-   [
-    "AMD",
-    26.2
+    28.8
    ],
    [
     "V",
     22.7
+   ],
+   [
+    "ABBV",
+    22.1
    ]
   ],
   "entered": [
-   "PG"
+   "BRK-B"
   ],
   "exited": [
-   "CSCO"
+   "BRK-A"
   ],
   "names": {
    "AAPL": "Apple Inc.",
-   "NVDA": "NVIDIA Corporation",
    "MSFT": "Microsoft Corporation",
+   "NVDA": "NVIDIA Corporation",
    "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
-   "AVGO": "Broadcom Inc.",
    "META": "Meta Platforms, Inc.",
+   "AVGO": "Broadcom Inc.",
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
-   "BRK-A": "Berkshire Hathaway Inc.",
+   "BRK-B": "Berkshire Hathaway Inc. New",
    "WMT": "Walmart Inc.",
-   "SKHY": "SK hynix Inc.",
    "JPM": "JP Morgan Chase & Co.",
-   "MU": "Micron Technology, Inc.",
+   "SKHY": "SK hynix Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
+   "MU": "Micron Technology, Inc.",
    "V": "Visa Inc.",
    "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
-   "ASML": "ASML Holding N.V. - New York Re",
    "MA": "Mastercard Incorporated",
+   "ASML": "ASML Holding N.V. - New York Re",
    "ABBV": "AbbVie Inc.",
    "COST": "Costco Wholesale Corporation",
-   "CVX": "Chevron Corporation",
    "KO": "Coca-Cola Company (The)",
-   "PLTR": "Palantir Technologies Inc.",
-   "PG": "Procter & Gamble Company (The)"
+   "CVX": "Chevron Corporation",
+   "PG": "Procter & Gamble Company (The)",
+   "PLTR": "Palantir Technologies Inc."
   }
  },
  "setups": [
   {
-   "sym": "TNK",
-   "name": "Teekay Tankers Ltd.",
-   "sector": "אנרגיה",
+   "sym": "STN",
+   "name": "Stantec Inc",
+   "sector": "תעשייה",
    "isTop": false,
-   "close": 89.43000030517578,
-   "stop": 83.29823372760222,
-   "risk": 6.9,
-   "rsi": 43,
-   "vol": 2.73,
-   "days": 5,
-   "score": 2,
-   "conf": [
-    "vol",
-    "rsi"
-   ]
-  },
-  {
-   "sym": "GRDN",
-   "name": "Guardian Pharmacy Services, ",
-   "sector": "בריאות",
-   "isTop": false,
-   "close": 49.52000045776367,
-   "stop": 46.59899450294742,
-   "risk": 5.9,
+   "close": 84.08000183105469,
+   "stop": 80.00103761561626,
+   "risk": 4.9,
    "rsi": 71,
-   "vol": 2.65,
-   "days": 5,
+   "vol": 2.97,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
@@ -168,104 +149,112 @@
    "name": "Ferguson Enterprises Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 256.4700012207031,
-   "stop": 243.86776695041954,
+   "close": 253.1999969482422,
+   "stop": 240.70077914996978,
    "risk": 4.9,
-   "rsi": 63,
+   "rsi": 60,
    "vol": 2.63,
-   "days": 4,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "TPC",
-   "name": "Tutor Perini Corporation",
-   "sector": "תעשייה",
-   "isTop": false,
-   "close": 98.79000091552734,
-   "stop": 92.61102678572131,
-   "risk": 6.3,
-   "rsi": 70,
-   "vol": 2.59,
    "days": 5,
    "score": 2,
    "conf": [
     "vol",
     "res"
    ]
+  },
+  {
+   "sym": "APP",
+   "name": "Applovin Corporation",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "close": 415.2200012207031,
+   "stop": 383.1635838550263,
+   "risk": 7.7,
+   "rsi": 73,
+   "vol": 0.78,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "res",
+    "rsi"
+   ]
+  },
+  {
+   "sym": "TRMK",
+   "name": "Trustmark Corporation",
+   "sector": "פיננסים",
+   "isTop": false,
+   "close": 47.630001068115234,
+   "stop": 45.68343642794276,
+   "risk": 4.1,
+   "rsi": 64,
+   "vol": 9.95,
+   "days": 2,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
   }
  ],
  "watch": [
   {
-   "sym": "SO",
-   "name": "Southern Company (The)",
-   "sector": "תשתיות",
+   "sym": "TSN",
+   "name": "Tyson Foods, Inc.",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 3.03
+   "vol": 2.22
   },
   {
-   "sym": "STN",
-   "name": "Stantec Inc",
+   "sym": "ARMK",
+   "name": "Aramark",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 2.97
+   "vol": 2.03
   },
   {
-   "sym": "EPD",
-   "name": "Enterprise Products Partners",
-   "sector": "אנרגיה",
-   "isTop": false,
-   "vol": 1.36
-  },
-  {
-   "sym": "TDG",
-   "name": "Transdigm Group Incorporated",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 1.25
-  },
-  {
-   "sym": "OHI",
-   "name": "Omega Healthcare Investors, ",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "vol": 1.21
-  },
-  {
-   "sym": "DPZ",
-   "name": "Domino's Pizza Inc",
+   "sym": "VIK",
+   "name": "Viking Holdings Ltd",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "vol": 1.09
+   "vol": 1.9
+  },
+  {
+   "sym": "FRHC",
+   "name": "Freedom Holding Corp.",
+   "sector": "פיננסים",
+   "isTop": false,
+   "vol": 1.79
+  },
+  {
+   "sym": "HUBS",
+   "name": "HubSpot, Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "vol": 1.58
+  },
+  {
+   "sym": "HRL",
+   "name": "Hormel Foods Corporation",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "vol": 1.29
   }
  ],
  "touch": [
-  {
-   "sym": "LYB",
-   "name": "LyondellBasell Industries NV",
-   "sector": "חומרי גלם",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
-  },
   {
    "sym": "MPLX",
    "name": "MPLX LP",
    "sector": "אנרגיה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.1
+   "pct": -0.0
   },
   {
-   "sym": "EMA",
-   "name": "Emera Incorporated",
-   "sector": "תשתיות",
+   "sym": "KSPI",
+   "name": "Joint Stock Company Kaspi.kz",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
+   "level": "SMA150",
+   "pct": -0.1
   },
   {
    "sym": "VLYPP",
@@ -273,23 +262,31 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -0.5
   },
   {
-   "sym": "PEP",
-   "name": "Pepsico, Inc.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
-  },
-  {
-   "sym": "SM",
-   "name": "SM Energy Company",
-   "sector": "אנרגיה",
+   "sym": "REG",
+   "name": "Regency Centers Corporation",
+   "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.3
+   "pct": -0.6
+  },
+  {
+   "sym": "ADBE",
+   "name": "Adobe Inc.",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.6
+  },
+  {
+   "sym": "PPL",
+   "name": "PPL Corporation",
+   "sector": "תשתיות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.7
   }
  ]
 }
