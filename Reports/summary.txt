@@ -1,6 +1,5 @@
-סריקת סווינג כ״ח 28 | יום שלישי 17/11/2026 | נתוני מסחר 16/11/2026
-סט-אפים Top 28: AMD
-סט-אפים גילוי: TXN, ANET, TEL, UI, ZM, EXTR, APP, NXST, LOW, ORLY, AZO, DPZ, ALSN, WH, PLNT (+57)
-פרצו היום (מעקב): HUBS, ATEN, NYT, VIK, TSCO, MAT, HGV, PEP, TSN, HRL, EDU, FRHC, TMDX, CPRT, ARMK
-נגעו מלמטה בממוצע: ADBE, INTU, INFY, KSPI, FOUR, VZ, CMCSA, MUSA, CELH, TAP, PNC, RF, NP, VLYPP, MPLX (+5)
-שינוי ב-Top: נכנסו BRK-B | יצאו BRK-A
+סריקת סווינג כ״ח 28 | יום רביעי 18/11/2026 | נתוני מסחר 17/11/2026
+סט-אפים Top 28: אין
+סט-אפים גילוי: ATEN, NYT, ORLY, AZO, TSCO, DPZ, PLNT, PTRN, HGV, PHIN, TSN, CPB, UNFI, KB, HIG (+18)
+פרצו היום (מעקב): ILMN, RTX, ACM, MPLX
+נגעו מלמטה בממוצע: KSPI, CMCSA, VSNT, NP, VLYPP, FSS, REG

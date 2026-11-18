@@ -1,110 +1,106 @@
 {
- "date": "2026-11-17",
- "dateHe": "שלישי 17/11/2026",
- "tradeDateHe": "יום שני 16/11/2026",
- "checked": 5243,
- "pctAbove": 32,
+ "date": "2026-11-18",
+ "dateHe": "רביעי 18/11/2026",
+ "tradeDateHe": "יום שלישי 17/11/2026",
+ "checked": 5246,
+ "pctAbove": 30,
  "counts": {
-  "setup": 73,
-  "today": 18,
-  "touch": 20
+  "setup": 33,
+  "today": 4,
+  "touch": 7
  },
  "sectors": [
   [
    "תשתיות",
-   47
+   38
   ],
   [
    "פיננסים",
-   42
-  ],
-  [
-   "צריכה בסיסית",
-   36
+   37
   ],
   [
    "צריכה מחזורית",
-   35
+   33
   ],
   [
-   "תקשורת ומדיה",
+   "צריכה בסיסית",
    32
   ],
   [
-   "תעשייה",
+   "תקשורת ומדיה",
    30
   ],
   [
-   "טכנולוגיה",
-   29
+   "בריאות",
+   28
   ],
   [
-   "בריאות",
-   29
+   "תעשייה",
+   28
+  ],
+  [
+   "טכנולוגיה",
+   27
   ],
   [
    "אנרגיה",
-   26
-  ],
-  [
-   "נדל\"ן",
    25
   ],
   [
+   "נדל\"ן",
+   20
+  ],
+  [
    "חומרי גלם",
-   18
+   16
   ]
  ],
  "top": {
   "n": 28,
-  "above": 18,
+  "above": 16,
   "below": [
    "NVDA",
    "GOOGL",
    "TSM",
-   "META",
    "AVGO",
+   "META",
    "MU",
    "ASML"
   ],
   "between": [
-   "TSLA"
+   "TSLA",
+   "JPM",
+   "PLTR"
   ],
-  "setup": [
-   "AMD"
-  ],
+  "setup": [],
   "today": [],
   "touch": [],
   "leaders": [
    [
     "LLY",
-    28.8
-   ],
-   [
-    "V",
-    22.7
+    27.2
    ],
    [
     "ABBV",
-    22.1
+    21.3
+   ],
+   [
+    "V",
+    19.8
    ]
   ],
-  "entered": [
-   "BRK-B"
-  ],
-  "exited": [
-   "BRK-A"
-  ],
+  "entered": [],
+  "exited": [],
   "names": {
    "AAPL": "Apple Inc.",
    "MSFT": "Microsoft Corporation",
    "NVDA": "NVIDIA Corporation",
    "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
-   "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
-   "META": "Meta Platforms, Inc.",
+   "TSM": "Taiwan Semiconductor Manufactur",
    "AVGO": "Broadcom Inc.",
+   "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
    "BRK-B": "Berkshire Hathaway Inc. New",
@@ -132,12 +128,12 @@
    "name": "Stantec Inc",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 84.08000183105469,
-   "stop": 80.00103761561626,
+   "close": 82.77999877929688,
+   "stop": 78.75131772210405,
    "risk": 4.9,
-   "rsi": 71,
+   "rsi": 67,
    "vol": 2.97,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -145,37 +141,20 @@
    ]
   },
   {
-   "sym": "FERG",
-   "name": "Ferguson Enterprises Inc.",
-   "sector": "תעשייה",
+   "sym": "TSN",
+   "name": "Tyson Foods, Inc.",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "close": 253.1999969482422,
-   "stop": 240.70077914996978,
-   "risk": 4.9,
-   "rsi": 60,
-   "vol": 2.63,
-   "days": 5,
+   "close": 63.650001525878906,
+   "stop": 60.86891939825564,
+   "risk": 4.4,
+   "rsi": 75,
+   "vol": 2.22,
+   "days": 1,
    "score": 2,
    "conf": [
     "vol",
     "res"
-   ]
-  },
-  {
-   "sym": "APP",
-   "name": "Applovin Corporation",
-   "sector": "תקשורת ומדיה",
-   "isTop": false,
-   "close": 415.2200012207031,
-   "stop": 383.1635838550263,
-   "risk": 7.7,
-   "rsi": 73,
-   "vol": 0.78,
-   "days": 1,
-   "score": 2,
-   "conf": [
-    "res",
-    "rsi"
    ]
   },
   {
@@ -183,12 +162,28 @@
    "name": "Trustmark Corporation",
    "sector": "פיננסים",
    "isTop": false,
-   "close": 47.630001068115234,
-   "stop": 45.68343642794276,
-   "risk": 4.1,
-   "rsi": 64,
+   "close": 46.720001220703125,
+   "stop": 44.776405434354004,
+   "risk": 4.2,
+   "rsi": 56,
    "vol": 9.95,
-   "days": 2,
+   "days": 3,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
+  },
+  {
+   "sym": "TXNM",
+   "name": "TXNM Energy, Inc.",
+   "sector": "תשתיות",
+   "isTop": false,
+   "close": 58.93000030517578,
+   "stop": 58.42749920010833,
+   "risk": 0.9,
+   "rsi": 60,
+   "vol": 3.45,
+   "days": 4,
    "score": 1,
    "conf": [
     "vol"
@@ -197,64 +192,42 @@
  ],
  "watch": [
   {
-   "sym": "TSN",
-   "name": "Tyson Foods, Inc.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 2.22
-  },
-  {
-   "sym": "ARMK",
-   "name": "Aramark",
+   "sym": "ACM",
+   "name": "AECOM",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 2.03
+   "vol": 3.16
   },
   {
-   "sym": "VIK",
-   "name": "Viking Holdings Ltd",
-   "sector": "צריכה מחזורית",
+   "sym": "RTX",
+   "name": "RTX Corporation",
+   "sector": "תעשייה",
    "isTop": false,
-   "vol": 1.9
+   "vol": 0.98
   },
-  {
-   "sym": "FRHC",
-   "name": "Freedom Holding Corp.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "vol": 1.79
-  },
-  {
-   "sym": "HUBS",
-   "name": "HubSpot, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 1.58
-  },
-  {
-   "sym": "HRL",
-   "name": "Hormel Foods Corporation",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 1.29
-  }
- ],
- "touch": [
   {
    "sym": "MPLX",
    "name": "MPLX LP",
    "sector": "אנרגיה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.0
+   "vol": 0.76
   },
   {
-   "sym": "KSPI",
-   "name": "Joint Stock Company Kaspi.kz",
-   "sector": "טכנולוגיה",
+   "sym": "ILMN",
+   "name": "Illumina, Inc.",
+   "sector": "בריאות",
+   "isTop": false,
+   "vol": 0.76
+  }
+ ],
+ "touch": [
+  {
+   "sym": "NP",
+   "name": "Neptune Insurance Holdings I",
+   "sector": "פיננסים",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.1
+   "pct": -0.7
   },
   {
    "sym": "VLYPP",
@@ -262,7 +235,23 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.5
+   "pct": -0.9
+  },
+  {
+   "sym": "VSNT",
+   "name": "Versant Media Group, Inc.",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -2.0
+  },
+  {
+   "sym": "CMCSA",
+   "name": "Comcast Corporation",
+   "sector": "תקשורת ומדיה",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -2.0
   },
   {
    "sym": "REG",
@@ -270,23 +259,15 @@
    "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.6
+   "pct": -2.0
   },
   {
-   "sym": "ADBE",
-   "name": "Adobe Inc.",
-   "sector": "טכנולוגיה",
+   "sym": "FSS",
+   "name": "Federal Signal Corporation",
+   "sector": "תעשייה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.6
-  },
-  {
-   "sym": "PPL",
-   "name": "PPL Corporation",
-   "sector": "תשתיות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.7
+   "level": "SMA150",
+   "pct": -2.1
   }
  ]
 }
