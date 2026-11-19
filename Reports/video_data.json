@@ -1,30 +1,30 @@
 {
- "date": "2026-11-18",
- "dateHe": "רביעי 18/11/2026",
- "tradeDateHe": "יום שלישי 17/11/2026",
- "checked": 5246,
+ "date": "2026-11-19",
+ "dateHe": "חמישי 19/11/2026",
+ "tradeDateHe": "יום רביעי 18/11/2026",
+ "checked": 5248,
  "pctAbove": 30,
  "counts": {
-  "setup": 33,
-  "today": 4,
-  "touch": 7
+  "setup": 29,
+  "today": 25,
+  "touch": 12
  },
  "sectors": [
   [
    "תשתיות",
-   38
-  ],
-  [
-   "פיננסים",
-   37
+   40
   ],
   [
    "צריכה מחזורית",
-   33
+   36
+  ],
+  [
+   "פיננסים",
+   36
   ],
   [
    "צריכה בסיסית",
-   32
+   34
   ],
   [
    "תקשורת ומדיה",
@@ -43,54 +43,60 @@
    27
   ],
   [
-   "אנרגיה",
-   25
+   "נדל\"ן",
+   22
   ],
   [
-   "נדל\"ן",
-   20
+   "אנרגיה",
+   19
   ],
   [
    "חומרי גלם",
-   16
+   17
   ]
  ],
  "top": {
   "n": 28,
-  "above": 16,
+  "above": 17,
   "below": [
    "NVDA",
    "GOOGL",
    "TSM",
    "AVGO",
    "META",
-   "MU",
-   "ASML"
-  ],
-  "between": [
-   "TSLA",
    "JPM",
-   "PLTR"
+   "MU",
+   "ASML",
+   "CSCO"
   ],
+  "between": [],
   "setup": [],
-  "today": [],
+  "today": [
+   "TSLA"
+  ],
   "touch": [],
   "leaders": [
    [
-    "LLY",
-    27.2
+    "AMD",
+    24.1
    ],
    [
-    "ABBV",
-    21.3
+    "LLY",
+    24.0
    ],
    [
     "V",
-    19.8
+    19.2
    ]
   ],
-  "entered": [],
-  "exited": [],
+  "entered": [
+   "BRK-A",
+   "CSCO"
+  ],
+  "exited": [
+   "BRK-B",
+   "PLTR"
+  ],
   "names": {
    "AAPL": "Apple Inc.",
    "MSFT": "Microsoft Corporation",
@@ -103,15 +109,15 @@
    "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
    "LLY": "Eli Lilly and Company",
-   "BRK-B": "Berkshire Hathaway Inc. New",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "WMT": "Walmart Inc.",
-   "JPM": "JP Morgan Chase & Co.",
-   "SKHY": "SK hynix Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
+   "SKHY": "SK hynix Inc.",
+   "JPM": "JP Morgan Chase & Co.",
    "MU": "Micron Technology, Inc.",
    "V": "Visa Inc.",
-   "XOM": "ExxonMobil Holdings Corporation",
    "JNJ": "Johnson & Johnson",
+   "XOM": "ExxonMobil Holdings Corporation",
    "MA": "Mastercard Incorporated",
    "ASML": "ASML Holding N.V. - New York Re",
    "ABBV": "AbbVie Inc.",
@@ -119,20 +125,54 @@
    "KO": "Coca-Cola Company (The)",
    "CVX": "Chevron Corporation",
    "PG": "Procter & Gamble Company (The)",
-   "PLTR": "Palantir Technologies Inc."
+   "CSCO": "Cisco Systems, Inc."
   }
  },
  "setups": [
+  {
+   "sym": "ACM",
+   "name": "AECOM",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 82.37999725341797,
+   "stop": 78.0339602324689,
+   "risk": 5.3,
+   "rsi": 87,
+   "vol": 3.16,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
   {
    "sym": "STN",
    "name": "Stantec Inc",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 82.77999877929688,
-   "stop": 78.75131772210405,
-   "risk": 4.9,
-   "rsi": 67,
+   "close": 83.19000244140625,
+   "stop": 79.2701559416259,
+   "risk": 4.7,
+   "rsi": 68,
    "vol": 2.97,
+   "days": 3,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
+   "sym": "VIK",
+   "name": "Viking Holdings Ltd",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "close": 100.37000274658203,
+   "stop": 94.7540283947833,
+   "risk": 5.6,
+   "rsi": 73,
+   "vol": 2.75,
    "days": 2,
    "score": 2,
    "conf": [
@@ -145,89 +185,71 @@
    "name": "Tyson Foods, Inc.",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "close": 63.650001525878906,
-   "stop": 60.86891939825564,
-   "risk": 4.4,
-   "rsi": 75,
+   "close": 64.25,
+   "stop": 61.492924032912185,
+   "risk": 4.3,
+   "rsi": 76,
    "vol": 2.22,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
     "res"
    ]
-  },
-  {
-   "sym": "TRMK",
-   "name": "Trustmark Corporation",
-   "sector": "פיננסים",
-   "isTop": false,
-   "close": 46.720001220703125,
-   "stop": 44.776405434354004,
-   "risk": 4.2,
-   "rsi": 56,
-   "vol": 9.95,
-   "days": 3,
-   "score": 1,
-   "conf": [
-    "vol"
-   ]
-  },
-  {
-   "sym": "TXNM",
-   "name": "TXNM Energy, Inc.",
-   "sector": "תשתיות",
-   "isTop": false,
-   "close": 58.93000030517578,
-   "stop": 58.42749920010833,
-   "risk": 0.9,
-   "rsi": 60,
-   "vol": 3.45,
-   "days": 4,
-   "score": 1,
-   "conf": [
-    "vol"
-   ]
   }
  ],
  "watch": [
   {
-   "sym": "ACM",
-   "name": "AECOM",
-   "sector": "תעשייה",
+   "sym": "AKO-A",
+   "name": "Embotelladora Andina S.A.",
+   "sector": "צריכה בסיסית",
    "isTop": false,
-   "vol": 3.16
+   "vol": 3.67
   },
   {
-   "sym": "RTX",
-   "name": "RTX Corporation",
-   "sector": "תעשייה",
+   "sym": "PANW",
+   "name": "Palo Alto Networks, Inc.",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "vol": 0.98
+   "vol": 2.71
   },
   {
-   "sym": "MPLX",
-   "name": "MPLX LP",
+   "sym": "ALH",
+   "name": "Alliance Laundry Holdings In",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "vol": 1.97
+  },
+  {
+   "sym": "CNX",
+   "name": "CNX Resources Corporation",
    "sector": "אנרגיה",
    "isTop": false,
-   "vol": 0.76
+   "vol": 1.74
   },
   {
-   "sym": "ILMN",
-   "name": "Illumina, Inc.",
-   "sector": "בריאות",
+   "sym": "ALV",
+   "name": "Autoliv, Inc.",
+   "sector": "צריכה מחזורית",
    "isTop": false,
-   "vol": 0.76
+   "vol": 1.63
+  },
+  {
+   "sym": "COCO",
+   "name": "The Vita Coco Company, Inc.",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "vol": 1.31
   }
  ],
  "touch": [
   {
-   "sym": "NP",
-   "name": "Neptune Insurance Holdings I",
-   "sector": "פיננסים",
+   "sym": "MSA",
+   "name": "MSA Safety Incorporated",
+   "sector": "תעשייה",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.7
+   "level": "SMA200",
+   "pct": -0.1
   },
   {
    "sym": "VLYPP",
@@ -235,39 +257,39 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.9
+   "pct": -0.2
   },
   {
-   "sym": "VSNT",
-   "name": "Versant Media Group, Inc.",
-   "sector": "תקשורת ומדיה",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -2.0
-  },
-  {
-   "sym": "CMCSA",
-   "name": "Comcast Corporation",
-   "sector": "תקשורת ומדיה",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -2.0
-  },
-  {
-   "sym": "REG",
-   "name": "Regency Centers Corporation",
+   "sym": "AKR",
+   "name": "Acadia Realty Trust",
    "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
-   "pct": -2.0
+   "pct": -0.3
   },
   {
-   "sym": "FSS",
-   "name": "Federal Signal Corporation",
-   "sector": "תעשייה",
+   "sym": "ORI",
+   "name": "Old Republic International C",
+   "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -2.1
+   "level": "SMA200",
+   "pct": -0.8
+  },
+  {
+   "sym": "SYK",
+   "name": "Stryker Corporation",
+   "sector": "בריאות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.9
+  },
+  {
+   "sym": "CELH",
+   "name": "Celsius Holdings, Inc.",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.9
   }
  ]
 }
