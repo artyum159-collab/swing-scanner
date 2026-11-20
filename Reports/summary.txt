@@ -1,6 +1,6 @@
-סריקת סווינג כ״ח 28 | יום חמישי 19/11/2026 | נתוני מסחר 18/11/2026
+סריקת סווינג כ״ח 28 | יום שישי 20/11/2026 | נתוני מסחר 19/11/2026
 סט-אפים Top 28: אין
-סט-אפים גילוי: ATEN, ORLY, AZO, VIK, TSCO, DPZ, PLNT, HGV, PHIN, TSN, CPB, UNFI, TRMK, ILMN, TMDX (+14)
-פרצו היום (מעקב): TSLA, PANW, TEL, UI, BB, GRND, TOL, ALV, ALH, SHAK, HRL, COCO, AKO-A, TROW, HSIC
-נגעו מלמטה בממוצע: PSN, SHOO, CELH, AKO-B, ORI, OMF, NP, VLYPP, SYK, FSS, MSA, AKR
-שינוי ב-Top: נכנסו BRK-A, CSCO | יצאו BRK-B, PLTR
+סט-אפים גילוי: ATEN, AZO, VIK, TSCO, DPZ, PLNT, HGV, TSN, HRL, CPB, AKO-A, UNFI, ILMN, HSIC, TMDX (+6)
+פרצו היום (מעקב): VVV, VIRT
+נגעו מלמטה בממוצע: LOGI, DT, PSN, SHOO, OMF, BGC, VLYPP, PURR, MSA, FSS, RPM
+שינוי ב-Top: נכנסו ANT | יצאו CSCO

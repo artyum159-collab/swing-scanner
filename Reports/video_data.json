@@ -1,101 +1,99 @@
 {
- "date": "2026-11-19",
- "dateHe": "חמישי 19/11/2026",
- "tradeDateHe": "יום רביעי 18/11/2026",
- "checked": 5248,
- "pctAbove": 30,
+ "date": "2026-11-20",
+ "dateHe": "שישי 20/11/2026",
+ "tradeDateHe": "יום חמישי 19/11/2026",
+ "checked": 5240,
+ "pctAbove": 26,
  "counts": {
-  "setup": 29,
-  "today": 25,
-  "touch": 12
+  "setup": 21,
+  "today": 2,
+  "touch": 11
  },
  "sectors": [
   [
    "תשתיות",
-   40
-  ],
-  [
-   "צריכה מחזורית",
-   36
-  ],
-  [
-   "פיננסים",
-   36
-  ],
-  [
-   "צריכה בסיסית",
    34
   ],
   [
-   "תקשורת ומדיה",
+   "פיננסים",
+   32
+  ],
+  [
+   "צריכה בסיסית",
+   32
+  ],
+  [
+   "צריכה מחזורית",
    30
   ],
   [
-   "בריאות",
-   28
-  ],
-  [
-   "תעשייה",
-   28
-  ],
-  [
-   "טכנולוגיה",
+   "תקשורת ומדיה",
    27
   ],
   [
+   "בריאות",
+   26
+  ],
+  [
+   "תעשייה",
+   25
+  ],
+  [
+   "טכנולוגיה",
+   24
+  ],
+  [
    "נדל\"ן",
-   22
+   18
   ],
   [
    "אנרגיה",
-   19
+   15
   ],
   [
    "חומרי גלם",
-   17
+   14
   ]
  ],
  "top": {
   "n": 28,
-  "above": 17,
+  "above": 15,
   "below": [
    "NVDA",
    "GOOGL",
    "TSM",
    "AVGO",
    "META",
+   "TSLA",
    "JPM",
    "MU",
-   "ASML",
-   "CSCO"
+   "ASML"
   ],
-  "between": [],
+  "between": [
+   "AMD"
+  ],
   "setup": [],
-  "today": [
-   "TSLA"
-  ],
+  "today": [],
   "touch": [],
   "leaders": [
    [
-    "AMD",
-    24.1
+    "LLY",
+    21.0
    ],
    [
-    "LLY",
-    24.0
+    "ABBV",
+    17.1
    ],
    [
     "V",
-    19.2
+    15.3
    ]
   ],
   "entered": [
-   "BRK-A",
-   "CSCO"
+   "ANT"
   ],
   "exited": [
-   "BRK-B",
-   "PLTR"
+   "CSCO"
   ],
   "names": {
    "AAPL": "Apple Inc.",
@@ -108,24 +106,24 @@
    "AVGO": "Broadcom Inc.",
    "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
-   "LLY": "Eli Lilly and Company",
+   "ANT": "Anthropic, PBC Class A Common Stock",
    "BRK-A": "Berkshire Hathaway Inc.",
+   "LLY": "Eli Lilly and Company",
    "WMT": "Walmart Inc.",
-   "AMD": "Advanced Micro Devices, Inc.",
-   "SKHY": "SK hynix Inc.",
    "JPM": "JP Morgan Chase & Co.",
+   "SKHY": "SK hynix Inc.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "MU": "Micron Technology, Inc.",
    "V": "Visa Inc.",
-   "JNJ": "Johnson & Johnson",
    "XOM": "ExxonMobil Holdings Corporation",
+   "JNJ": "Johnson & Johnson",
    "MA": "Mastercard Incorporated",
    "ASML": "ASML Holding N.V. - New York Re",
    "ABBV": "AbbVie Inc.",
    "COST": "Costco Wholesale Corporation",
    "KO": "Coca-Cola Company (The)",
    "CVX": "Chevron Corporation",
-   "PG": "Procter & Gamble Company (The)",
-   "CSCO": "Cisco Systems, Inc."
+   "PG": "Procter & Gamble Company (The)"
   }
  },
  "setups": [
@@ -134,12 +132,12 @@
    "name": "AECOM",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 82.37999725341797,
-   "stop": 78.0339602324689,
-   "risk": 5.3,
-   "rsi": 87,
+   "close": 80.30999755859375,
+   "stop": 75.97653474135927,
+   "risk": 5.4,
+   "rsi": 79,
    "vol": 3.16,
-   "days": 1,
+   "days": 2,
    "score": 2,
    "conf": [
     "vol",
@@ -151,12 +149,12 @@
    "name": "Stantec Inc",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 83.19000244140625,
-   "stop": 79.2701559416259,
-   "risk": 4.7,
-   "rsi": 68,
+   "close": 83.16000366210938,
+   "stop": 79.37443184691726,
+   "risk": 4.6,
+   "rsi": 67,
    "vol": 2.97,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
@@ -168,12 +166,12 @@
    "name": "Viking Holdings Ltd",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "close": 100.37000274658203,
-   "stop": 94.7540283947833,
-   "risk": 5.6,
-   "rsi": 73,
+   "close": 95.0,
+   "stop": 89.1851660193804,
+   "risk": 6.1,
+   "rsi": 61,
    "vol": 2.75,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -185,12 +183,12 @@
    "name": "Tyson Foods, Inc.",
    "sector": "צריכה בסיסית",
    "isTop": false,
-   "close": 64.25,
-   "stop": 61.492924032912185,
+   "close": 63.86000061035156,
+   "stop": 61.14021560393436,
    "risk": 4.3,
-   "rsi": 76,
+   "rsi": 74,
    "vol": 2.22,
-   "days": 2,
+   "days": 3,
    "score": 2,
    "conf": [
     "vol",
@@ -200,46 +198,18 @@
  ],
  "watch": [
   {
-   "sym": "AKO-A",
-   "name": "Embotelladora Andina S.A.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 3.67
-  },
-  {
-   "sym": "PANW",
-   "name": "Palo Alto Networks, Inc.",
-   "sector": "טכנולוגיה",
-   "isTop": false,
-   "vol": 2.71
-  },
-  {
-   "sym": "ALH",
-   "name": "Alliance Laundry Holdings In",
+   "sym": "VVV",
+   "name": "Valvoline Inc.",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "vol": 1.97
+   "vol": 3.19
   },
   {
-   "sym": "CNX",
-   "name": "CNX Resources Corporation",
-   "sector": "אנרגיה",
+   "sym": "VIRT",
+   "name": "Virtu Financial, Inc.",
+   "sector": "פיננסים",
    "isTop": false,
-   "vol": 1.74
-  },
-  {
-   "sym": "ALV",
-   "name": "Autoliv, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 1.63
-  },
-  {
-   "sym": "COCO",
-   "name": "The Vita Coco Company, Inc.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "vol": 1.31
+   "vol": 1.16
   }
  ],
  "touch": [
@@ -249,7 +219,23 @@
    "sector": "תעשייה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.1
+   "pct": -0.7
+  },
+  {
+   "sym": "PSN",
+   "name": "Parsons Corporation",
+   "sector": "טכנולוגיה",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -1.2
+  },
+  {
+   "sym": "RPM",
+   "name": "RPM International Inc.",
+   "sector": "חומרי גלם",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -1.2
   },
   {
    "sym": "VLYPP",
@@ -257,39 +243,23 @@
    "sector": "פיננסים",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.2
+   "pct": -1.6
   },
   {
-   "sym": "AKR",
-   "name": "Acadia Realty Trust",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.3
-  },
-  {
-   "sym": "ORI",
-   "name": "Old Republic International C",
+   "sym": "BGC",
+   "name": "BGC Group, Inc.",
    "sector": "פיננסים",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.8
+   "level": "SMA150",
+   "pct": -2.2
   },
   {
-   "sym": "SYK",
-   "name": "Stryker Corporation",
-   "sector": "בריאות",
+   "sym": "LOGI",
+   "name": "Logitech International S.A. ",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.9
-  },
-  {
-   "sym": "CELH",
-   "name": "Celsius Holdings, Inc.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.9
+   "level": "SMA150",
+   "pct": -3.4
   }
  ]
 }
