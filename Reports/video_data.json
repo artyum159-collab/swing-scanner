@@ -1,13 +1,13 @@
 {
- "date": "2026-11-24",
- "dateHe": "שלישי 24/11/2026",
- "tradeDateHe": "יום שלישי 24/11/2026",
- "checked": 5261,
- "pctAbove": 28,
+ "date": "2026-11-25",
+ "dateHe": "רביעי 25/11/2026",
+ "tradeDateHe": "יום רביעי 25/11/2026",
+ "checked": 5353,
+ "pctAbove": 26,
  "counts": {
-  "setup": 98,
-  "today": 41,
-  "touch": 16
+  "setup": 102,
+  "today": 4,
+  "touch": 9
  },
  "sectors": [
   [
@@ -16,31 +16,31 @@
   ],
   [
    "פיננסים",
-   35
-  ],
-  [
-   "צריכה מחזורית",
    31
   ],
   [
    "צריכה בסיסית",
-   31
+   30
+  ],
+  [
+   "צריכה מחזורית",
+   28
   ],
   [
    "בריאות",
-   29
+   26
   ],
   [
    "תקשורת ומדיה",
-   27
+   25
   ],
   [
    "טכנולוגיה",
-   26
+   23
   ],
   [
    "תעשייה",
-   26
+   23
   ],
   [
    "נדל\"ן",
@@ -48,7 +48,7 @@
   ],
   [
    "אנרגיה",
-   14
+   15
   ],
   [
    "חומרי גלם",
@@ -57,70 +57,72 @@
  ],
  "top": {
   "n": 28,
-  "above": 15,
+  "above": 14,
   "below": [
    "NVDA",
    "GOOGL",
+   "AMZN",
    "TSM",
    "META",
+   "TSLA",
    "AVGO",
    "JPM",
    "MU",
    "AMD",
    "ASML"
   ],
-  "between": [
-   "AMZN"
-  ],
+  "between": [],
   "setup": [
-   "TSLA"
-  ],
-  "today": [
    "XOM"
   ],
+  "today": [],
   "touch": [],
   "leaders": [
    [
     "LLY",
-    25.7
+    23.1
    ],
    [
     "ABBV",
-    21.4
+    22.9
    ],
    [
     "V",
-    18.5
+    18.4
    ]
   ],
-  "entered": [],
-  "exited": [],
+  "entered": [
+   "BRK-A"
+  ],
+  "exited": [
+   "BRK-B"
+  ],
   "names": {
    "AAPL": "Apple Inc.",
-   "NVDA": "NVIDIA Corporation",
    "MSFT": "Microsoft Corporation",
+   "NVDA": "NVIDIA Corporation",
    "GOOGL": "Alphabet Inc.",
    "AMZN": "Amazon.com, Inc.",
    "TSM": "Taiwan Semiconductor Manufactur",
    "SPCX": "Space Exploration Technologies ",
-   "TSLA": "Tesla, Inc.",
    "META": "Meta Platforms, Inc.",
+   "TSLA": "Tesla, Inc.",
    "AVGO": "Broadcom Inc.",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
-   "BRK-B": "Berkshire Hathaway Inc. New",
-   "ANT": "Anthropic, PBC",
    "WMT": "Walmart Inc.",
+   "ANT": "Anthropic, PBC",
    "JPM": "JP Morgan Chase & Co.",
-   "SKHY": "SK hynix Inc.",
    "V": "Visa Inc.",
-   "MU": "Micron Technology, Inc.",
-   "AMD": "Advanced Micro Devices, Inc.",
+   "SKHY": "SK hynix Inc.",
    "JNJ": "Johnson & Johnson",
    "XOM": "ExxonMobil Holdings Corporation",
+   "MU": "Micron Technology, Inc.",
+   "AMD": "Advanced Micro Devices, Inc.",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "ASML": "ASML Holding N.V. - New York Re",
    "COST": "Costco Wholesale Corporation",
+   "ASML": "ASML Holding N.V. - New York Re",
    "KO": "Coca-Cola Company (The)",
    "CVX": "Chevron Corporation",
    "PG": "Procter & Gamble Company (The)"
@@ -128,53 +130,37 @@
  },
  "setups": [
   {
+   "sym": "AMTM",
+   "name": "Amentum Holdings, Inc.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 24.889999389648438,
+   "stop": 23.227310650641137,
+   "risk": 6.7,
+   "rsi": 70,
+   "vol": 5.54,
+   "days": 1,
+   "score": 2,
+   "conf": [
+    "vol",
+    "res"
+   ]
+  },
+  {
    "sym": "VVV",
    "name": "Valvoline Inc.",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "close": 38.029998779296875,
-   "stop": 35.817139226319476,
-   "risk": 5.8,
-   "rsi": 67,
+   "close": 37.76750183105469,
+   "stop": 35.67018335600603,
+   "risk": 5.6,
+   "rsi": 66,
    "vol": 3.19,
-   "days": 3,
+   "days": 4,
    "score": 2,
    "conf": [
     "vol",
     "res"
-   ]
-  },
-  {
-   "sym": "ACM",
-   "name": "AECOM",
-   "sector": "תעשייה",
-   "isTop": false,
-   "close": 81.6449966430664,
-   "stop": 77.34656219364958,
-   "risk": 5.3,
-   "rsi": 76,
-   "vol": 3.16,
-   "days": 5,
-   "score": 2,
-   "conf": [
-    "vol",
-    "res"
-   ]
-  },
-  {
-   "sym": "AKO-A",
-   "name": "Embotelladora Andina S.A.",
-   "sector": "צריכה בסיסית",
-   "isTop": false,
-   "close": 23.829999923706055,
-   "stop": 23.381140819498228,
-   "risk": 1.9,
-   "rsi": 43,
-   "vol": 3.67,
-   "days": 3,
-   "score": 1,
-   "conf": [
-    "vol"
    ]
   },
   {
@@ -182,12 +168,28 @@
    "name": "Globant S.A.",
    "sector": "טכנולוגיה",
    "isTop": false,
-   "close": 49.279998779296875,
-   "stop": 45.375083356655445,
+   "close": 49.84000015258789,
+   "stop": 45.90467086058966,
    "risk": 7.9,
    "rsi": 63,
    "vol": 3.54,
-   "days": 2,
+   "days": 3,
+   "score": 1,
+   "conf": [
+    "vol"
+   ]
+  },
+  {
+   "sym": "APG",
+   "name": "APi Group Corporation",
+   "sector": "תעשייה",
+   "isTop": false,
+   "close": 43.72999954223633,
+   "stop": 41.34097406190904,
+   "risk": 5.5,
+   "rsi": 54,
+   "vol": 2.88,
+   "days": 3,
    "score": 1,
    "conf": [
     "vol"
@@ -196,96 +198,82 @@
  ],
  "watch": [
   {
-   "sym": "AMTM",
-   "name": "Amentum Holdings, Inc.",
-   "sector": "תעשייה",
-   "isTop": false,
-   "vol": 1.41
-  },
-  {
-   "sym": "AZN",
-   "name": "AstraZeneca PLC",
+   "sym": "HCM",
+   "name": "HUTCHMED (China) Limited",
    "sector": "בריאות",
    "isTop": false,
-   "vol": 0.15
+   "vol": 0.18
   },
   {
-   "sym": "FIVE",
-   "name": "Five Below, Inc.",
-   "sector": "צריכה מחזורית",
-   "isTop": false,
-   "vol": 0.15
-  },
-  {
-   "sym": "BMY",
-   "name": "Bristol-Myers Squibb Company",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 0.14
-  },
-  {
-   "sym": "VTMX",
-   "name": "Corporacion Inmobiliaria Ves",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "vol": 0.12
-  },
-  {
-   "sym": "RTX",
-   "name": "RTX Corporation",
+   "sym": "CNH",
+   "name": "CNH Industrial N.V.",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 0.11
-  }
- ],
- "touch": [
+   "vol": 0.1
+  },
   {
-   "sym": "DOC",
-   "name": "Healthpeak Properties, Inc.",
-   "sector": "נדל\"ן",
+   "sym": "FE",
+   "name": "FirstEnergy Corp.",
+   "sector": "תשתיות",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.0
+   "vol": 0.06
   },
   {
    "sym": "SITE",
    "name": "SiteOne Landscape Supply, In",
    "sector": "תעשייה",
    "isTop": false,
-   "level": "SMA200",
+   "vol": 0.01
+  }
+ ],
+ "touch": [
+  {
+   "sym": "ESS",
+   "name": "Essex Property Trust, Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
    "pct": -0.1
   },
   {
-   "sym": "RKT",
-   "name": "Rocket Companies, Inc.",
-   "sector": "פיננסים",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
-  },
-  {
-   "sym": "TRNO",
-   "name": "Terreno Realty Corporation",
+   "sym": "CURB",
+   "name": "Curbline Properties Corp.",
    "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.2
   },
   {
-   "sym": "MDLN",
-   "name": "Medline Inc.",
-   "sector": "בריאות",
-   "isTop": false,
-   "level": "SMA200",
-   "pct": -0.2
-  },
-  {
-   "sym": "WOR",
-   "name": "Worthington Enterprises, Inc",
-   "sector": "תעשייה",
+   "sym": "BTI",
+   "name": "British American Tobacco  In",
+   "sector": "צריכה בסיסית",
    "isTop": false,
    "level": "SMA150",
    "pct": -0.3
+  },
+  {
+   "sym": "PEP",
+   "name": "Pepsico, Inc.",
+   "sector": "צריכה בסיסית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.4
+  },
+  {
+   "sym": "STAG",
+   "name": "Stag Industrial, Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.5
+  },
+  {
+   "sym": "AEP",
+   "name": "American Electric Power Comp",
+   "sector": "תשתיות",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.7
   }
  ]
 }
