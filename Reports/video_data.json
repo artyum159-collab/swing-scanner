@@ -1,58 +1,58 @@
 {
- "date": "2026-11-25",
- "dateHe": "רביעי 25/11/2026",
+ "date": "2026-11-26",
+ "dateHe": "חמישי 26/11/2026",
  "tradeDateHe": "יום רביעי 25/11/2026",
- "checked": 5353,
- "pctAbove": 26,
+ "checked": 5247,
+ "pctAbove": 29,
  "counts": {
-  "setup": 102,
-  "today": 4,
-  "touch": 9
+  "setup": 131,
+  "today": 38,
+  "touch": 33
  },
  "sectors": [
   [
    "תשתיות",
-   41
+   43
   ],
   [
    "פיננסים",
-   31
-  ],
-  [
-   "צריכה בסיסית",
-   30
+   35
   ],
   [
    "צריכה מחזורית",
-   28
+   32
+  ],
+  [
+   "צריכה בסיסית",
+   32
   ],
   [
    "בריאות",
-   26
+   30
   ],
   [
    "תקשורת ומדיה",
-   25
-  ],
-  [
-   "טכנולוגיה",
-   23
+   29
   ],
   [
    "תעשייה",
-   23
+   27
+  ],
+  [
+   "טכנולוגיה",
+   25
   ],
   [
    "נדל\"ן",
-   22
+   25
   ],
   [
    "אנרגיה",
-   15
+   17
   ],
   [
    "חומרי גלם",
-   14
+   17
   ]
  ],
  "top": {
@@ -64,14 +64,15 @@
    "AMZN",
    "TSM",
    "META",
-   "TSLA",
    "AVGO",
    "JPM",
    "MU",
    "AMD",
    "ASML"
   ],
-  "between": [],
+  "between": [
+   "TSLA"
+  ],
   "setup": [
    "XOM"
   ],
@@ -80,23 +81,19 @@
   "leaders": [
    [
     "LLY",
-    23.1
-   ],
-   [
-    "ABBV",
-    22.9
+    24.0
    ],
    [
     "V",
-    18.4
+    21.1
+   ],
+   [
+    "ABBV",
+    20.9
    ]
   ],
-  "entered": [
-   "BRK-A"
-  ],
-  "exited": [
-   "BRK-B"
-  ],
+  "entered": [],
+  "exited": [],
   "names": {
    "AAPL": "Apple Inc.",
    "MSFT": "Microsoft Corporation",
@@ -108,21 +105,21 @@
    "META": "Meta Platforms, Inc.",
    "TSLA": "Tesla, Inc.",
    "AVGO": "Broadcom Inc.",
-   "BRK-A": "Berkshire Hathaway Inc.",
    "LLY": "Eli Lilly and Company",
-   "WMT": "Walmart Inc.",
+   "BRK-A": "Berkshire Hathaway Inc.",
    "ANT": "Anthropic, PBC",
+   "WMT": "Walmart Inc.",
    "JPM": "JP Morgan Chase & Co.",
    "V": "Visa Inc.",
    "SKHY": "SK hynix Inc.",
-   "JNJ": "Johnson & Johnson",
-   "XOM": "ExxonMobil Holdings Corporation",
    "MU": "Micron Technology, Inc.",
    "AMD": "Advanced Micro Devices, Inc.",
+   "JNJ": "Johnson & Johnson",
+   "XOM": "ExxonMobil Holdings Corporation",
    "MA": "Mastercard Incorporated",
    "ABBV": "AbbVie Inc.",
-   "COST": "Costco Wholesale Corporation",
    "ASML": "ASML Holding N.V. - New York Re",
+   "COST": "Costco Wholesale Corporation",
    "KO": "Coca-Cola Company (The)",
    "CVX": "Chevron Corporation",
    "PG": "Procter & Gamble Company (The)"
@@ -134,9 +131,9 @@
    "name": "Amentum Holdings, Inc.",
    "sector": "תעשייה",
    "isTop": false,
-   "close": 24.889999389648438,
-   "stop": 23.227310650641137,
-   "risk": 6.7,
+   "close": 24.860000610351562,
+   "stop": 23.129490504897905,
+   "risk": 7.0,
    "rsi": 70,
    "vol": 5.54,
    "days": 1,
@@ -151,10 +148,10 @@
    "name": "Valvoline Inc.",
    "sector": "צריכה מחזורית",
    "isTop": false,
-   "close": 37.76750183105469,
-   "stop": 35.67018335600603,
-   "risk": 5.6,
-   "rsi": 66,
+   "close": 39.029998779296875,
+   "stop": 36.77078727707885,
+   "risk": 5.8,
+   "rsi": 70,
    "vol": 3.19,
    "days": 4,
    "score": 2,
@@ -164,116 +161,132 @@
    ]
   },
   {
-   "sym": "GLOB",
-   "name": "Globant S.A.",
-   "sector": "טכנולוגיה",
+   "sym": "AWI",
+   "name": "Armstrong World Industries I",
+   "sector": "תעשייה",
    "isTop": false,
-   "close": 49.84000015258789,
-   "stop": 45.90467086058966,
-   "risk": 7.9,
-   "rsi": 63,
-   "vol": 3.54,
-   "days": 3,
-   "score": 1,
+   "close": 184.8300018310547,
+   "stop": 176.2202360024074,
+   "risk": 4.7,
+   "rsi": 65,
+   "vol": 2.51,
+   "days": 2,
+   "score": 2,
    "conf": [
-    "vol"
+    "vol",
+    "res"
    ]
   },
   {
-   "sym": "APG",
-   "name": "APi Group Corporation",
-   "sector": "תעשייה",
+   "sym": "ALH",
+   "name": "Alliance Laundry Holdings In",
+   "sector": "צריכה מחזורית",
    "isTop": false,
-   "close": 43.72999954223633,
-   "stop": 41.34097406190904,
-   "risk": 5.5,
-   "rsi": 54,
-   "vol": 2.88,
+   "close": 25.719999313354492,
+   "stop": 24.39824463423691,
+   "risk": 5.1,
+   "rsi": 68,
+   "vol": 2.45,
    "days": 3,
-   "score": 1,
+   "score": 2,
    "conf": [
-    "vol"
+    "vol",
+    "res"
    ]
   }
  ],
  "watch": [
   {
-   "sym": "HCM",
-   "name": "HUTCHMED (China) Limited",
-   "sector": "בריאות",
-   "isTop": false,
-   "vol": 0.18
-  },
-  {
-   "sym": "CNH",
-   "name": "CNH Industrial N.V.",
+   "sym": "DE",
+   "name": "Deere & Company",
    "sector": "תעשייה",
    "isTop": false,
-   "vol": 0.1
+   "vol": 1.79
   },
   {
-   "sym": "FE",
-   "name": "FirstEnergy Corp.",
-   "sector": "תשתיות",
+   "sym": "AMX",
+   "name": "America Movil, S.A.B. de C.V",
+   "sector": "תקשורת ומדיה",
    "isTop": false,
-   "vol": 0.06
+   "vol": 1.76
   },
   {
-   "sym": "SITE",
-   "name": "SiteOne Landscape Supply, In",
-   "sector": "תעשייה",
+   "sym": "ZGN",
+   "name": "Ermenegildo Zegna N.V.",
+   "sector": "צריכה מחזורית",
    "isTop": false,
-   "vol": 0.01
-  }
- ],
- "touch": [
-  {
-   "sym": "ESS",
-   "name": "Essex Property Trust, Inc.",
-   "sector": "נדל\"ן",
-   "isTop": false,
-   "level": "SMA150",
-   "pct": -0.1
+   "vol": 1.55
   },
   {
    "sym": "CURB",
    "name": "Curbline Properties Corp.",
    "sector": "נדל\"ן",
    "isTop": false,
-   "level": "SMA150",
-   "pct": -0.2
+   "vol": 1.55
   },
   {
-   "sym": "BTI",
-   "name": "British American Tobacco  In",
-   "sector": "צריכה בסיסית",
+   "sym": "COMP",
+   "name": "Compass, Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "vol": 1.55
+  },
+  {
+   "sym": "CNH",
+   "name": "CNH Industrial N.V.",
+   "sector": "תעשייה",
+   "isTop": false,
+   "vol": 1.49
+  }
+ ],
+ "touch": [
+  {
+   "sym": "WOR",
+   "name": "Worthington Enterprises, Inc",
+   "sector": "תעשייה",
    "isTop": false,
    "level": "SMA150",
-   "pct": -0.3
+   "pct": -0.0
   },
   {
-   "sym": "PEP",
-   "name": "Pepsico, Inc.",
-   "sector": "צריכה בסיסית",
+   "sym": "BXP",
+   "name": "BXP, Inc.",
+   "sector": "נדל\"ן",
+   "isTop": false,
+   "level": "SMA150",
+   "pct": -0.1
+  },
+  {
+   "sym": "RBA",
+   "name": "RB Global, Inc.",
+   "sector": "תעשייה",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.4
+   "pct": -0.1
   },
   {
-   "sym": "STAG",
-   "name": "Stag Industrial, Inc.",
+   "sym": "BBWI",
+   "name": "Bath & Body Works, Inc.",
+   "sector": "צריכה מחזורית",
+   "isTop": false,
+   "level": "SMA200",
+   "pct": -0.1
+  },
+  {
+   "sym": "CSGP",
+   "name": "CoStar Group, Inc.",
    "sector": "נדל\"ן",
    "isTop": false,
    "level": "SMA200",
-   "pct": -0.5
+   "pct": -0.1
   },
   {
-   "sym": "AEP",
-   "name": "American Electric Power Comp",
-   "sector": "תשתיות",
+   "sym": "OTEX",
+   "name": "Open Text Corporation",
+   "sector": "טכנולוגיה",
    "isTop": false,
-   "level": "SMA200",
-   "pct": -0.7
+   "level": "SMA150",
+   "pct": -0.2
   }
  ]
 }

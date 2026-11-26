@@ -1,6 +1,5 @@
-סריקת סווינג כ״ח 28 | יום רביעי 25/11/2026 | נתוני מסחר 25/11/2026
+סריקת סווינג כ״ח 28 | יום חמישי 26/11/2026 | נתוני מסחר 25/11/2026
 סט-אפים Top 28: XOM
-סט-אפים גילוי: PANW, INFY, CTSH, WIT, SSNC, YMM, GLOB, VZ, FOX, RCI, MTCH, MCD, LOW, GM, DHI (+86)
-פרצו היום (מעקב): HCM, CNH, SITE, FE
-נגעו מלמטה בממוצע: CMCSA, PEP, BTI, SNN, ESS, EGP, STAG, CURB, AEP
-שינוי ב-Top: נכנסו BRK-A | יצאו BRK-B
+סט-אפים גילוי: PLTR, PANW, INFY, TEAM, CTSH, WIT, SSNC, ZBRA, YMM, ACIW, GLOB, VZ, FOX, RCI, MTCH (+115)
+פרצו היום (מעקב): PSN, CMCSA, AMX, ALSN, ALV, GLBE, MMYT, ZGN, ABG, BTI, FRPT, MFC, AMP, RJF, SSB
+נגעו מלמטה בממוצע: IBM, GWRE, OTEX, FOUR, TME, TKO, NYT, LEN, BBWI, PEP, TAP, ARCC, OBDC, PEN, PBH (+18)
